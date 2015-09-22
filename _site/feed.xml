@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lllki</title>
+    <description>Lirian Su&#39;s Blog</description>
+    <link>http://www.cloudisdream.com/</link>
+    <atom:link href="http://www.cloudisdream.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 22 Sep 2015 17:44:43 +0800</pubDate>
+    <lastBuildDate>Tue, 22 Sep 2015 17:44:43 +0800</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>用Openpyxl做两个Excel文件的比对</title>
+        <description>&lt;h1 id=&quot;openpyxlexcel&quot;&gt;用Openpyxl做两个Excel文件的比对&lt;/h1&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;起因&lt;/h2&gt;
+
+&lt;p&gt;最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。
+关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。
+这次写小工具的同时也是学习一下新的东西。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;准备工作&lt;/h2&gt;
+
+&lt;p&gt;由于本次要比对的报表是Office07的.xlsx文件，上网查了一下Python怎么做比较合适。
+看了几篇心得以后，敲定用Openpyxl（参考如下链接：）&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://www.gocalf.com/blog/python-read-write-excel.html&quot;&gt;Python处理Excel的四个工具&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;于是接下来是装Openpyxl，到官网上按照流程装了一发：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://pythonhosted.org/openpyxl/&quot;&gt;A Python Library: Openpyxl&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;由于源码是到BitBucket上拖下来的，所以顺便还装了SourceTree。
+据说SourceTree还有Git的相关功能，下次可以体验一下。&lt;/p&gt;
+
+&lt;h2 id=&quot;openpyxl&quot;&gt;使用Openpyxl&lt;/h2&gt;
+
+&lt;p&gt;Openpyxl装好以后直接import就能用啦：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;python
+from openpyxl import *
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Openpyxl还提供了一个非常棒的教程~~（有点过于简单~~&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://pythonhosted.org/openpyxl/tutorial.html&quot;&gt;Openpyxl Tutorial&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Openpyxl还有个弊端就是文档不怎么详细，只能去翻源码。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;最终代码&lt;/h2&gt;
+
+&lt;p&gt;可以到我写的PythonScripts里找到我写的版本：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/LKI/PythonScripts/tree/master/ExcelComparer&quot;&gt;PythonScripts - ExcelComparer&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 28 Aug 2014 18:31:08 +0800</pubDate>
+        <link>http://www.cloudisdream.com/compare-excel-using-openpyxl/</link>
+        <guid isPermaLink="true">http://www.cloudisdream.com/compare-excel-using-openpyxl/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

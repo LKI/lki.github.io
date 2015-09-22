@@ -1,0 +1,12 @@
+# Site settings
+title: lllki
+email: liriansu@gmail.com
+description: "Lirian Su's Blog"
+baseurl: ""
+url: "http://www.cloudisdream.com"
+twitter_username: cloudisdream
+github_username:  LKI
+
+# Build settings
+markdown: kramdown
+permalink: pretty
