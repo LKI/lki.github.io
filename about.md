@@ -4,8 +4,21 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+# 关于我
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+TODO (本部分还在完善)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+毕竟每一天都会认识一个全新的自己
+
+喜欢XKCD，喜欢逻辑问题，不喜欢政治
+
+![xkcd 246][xkcd-246]
+
+# 关于本博客
+
+[由Jekyll生成][jekyll.com], 挂在[GitHub][lki.github.com]上
+
+
+[xkcd-246]:   http://imgs.xkcd.com/comics/labyrinth_puzzle.png
+[jekyll.com]: http://jekyllrb.com/
+[lki.github.com]: https://github.com/LKI/lki.github.com
