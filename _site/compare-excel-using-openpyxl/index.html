@@ -61,54 +61,50 @@
   </header>
 
   <article class="post-content">
-  <h1 id="openpyxlexcel">用Openpyxl做两个Excel文件的比对</h1>
+  <h1>用Openpyxl做两个Excel文件的比对</h1>
 
-<h2 id="section">起因</h2>
+<h2>起因</h2>
 
 <p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。
 关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。
 这次写小工具的同时也是学习一下新的东西。</p>
 
-<h2 id="section-1">准备工作</h2>
+<h2>准备工作</h2>
 
 <p>由于本次要比对的报表是Office07的.xlsx文件，上网查了一下Python怎么做比较合适。
 看了几篇心得以后，敲定用Openpyxl（参考如下链接：）</p>
 
 <blockquote>
-  <p><a href="http://www.gocalf.com/blog/python-read-write-excel.html">Python处理Excel的四个工具</a></p>
+<p><a href="http://www.gocalf.com/blog/python-read-write-excel.html">Python处理Excel的四个工具</a></p>
 </blockquote>
 
 <p>于是接下来是装Openpyxl，到官网上按照流程装了一发：</p>
 
 <blockquote>
-  <p><a href="https://pythonhosted.org/openpyxl/">A Python Library: Openpyxl</a></p>
+<p><a href="https://pythonhosted.org/openpyxl/">A Python Library: Openpyxl</a></p>
 </blockquote>
 
 <p>由于源码是到BitBucket上拖下来的，所以顺便还装了SourceTree。
 据说SourceTree还有Git的相关功能，下次可以体验一下。</p>
 
-<h2 id="openpyxl">使用Openpyxl</h2>
+<h2>使用Openpyxl</h2>
 
 <p>Openpyxl装好以后直接import就能用啦：</p>
-
-<p><code>python
-from openpyxl import *
-</code></p>
-
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">openpyxl</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
 <p>Openpyxl还提供了一个非常棒的教程~~（有点过于简单~~</p>
 
 <blockquote>
-  <p><a href="https://pythonhosted.org/openpyxl/tutorial.html">Openpyxl Tutorial</a></p>
+<p><a href="https://pythonhosted.org/openpyxl/tutorial.html">Openpyxl Tutorial</a></p>
 </blockquote>
 
 <p>Openpyxl还有个弊端就是文档不怎么详细，只能去翻源码。</p>
 
-<h2 id="section-2">最终代码</h2>
+<h2>最终代码</h2>
 
 <p>可以到我写的PythonScripts里找到我写的版本：</p>
 
 <p><a href="https://github.com/LKI/PythonScripts/tree/master/ExcelComparer">PythonScripts - ExcelComparer</a></p>
-
 
   </article>
 
