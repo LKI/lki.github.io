@@ -8,5 +8,5 @@ twitter_username: cloudisdream
 github_username:  LKI
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
