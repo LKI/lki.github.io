@@ -1,4 +1,9 @@
-# 为什么我要写博客
+---
+layout:    post
+title:     "为什么我要写博客"
+date:      2015-9-23
+permalink: /why-im-blogging
+---
 
 我其实很喜欢看别人写的东西，[技术类的][howToWriteBadCode]、[非技术类的][pixelMoon]，[中文的][emacsGeniusInOneYear]、[英文的][showDontTell]。
 
@@ -8,6 +13,8 @@
 但是往往[他们写的都非常好][nakedVimTip]
 
 这样的文章看的我特手痒，想也写博客，但是问题就来了
+
+<!--MORE-->
 
 
 ## 博客的主题是什么？

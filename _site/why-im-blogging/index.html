@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浮云计算</title>
+    <title>为什么我要写博客</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.cloudisdream.com/">
+    <link rel="canonical" href="http://www.cloudisdream.com/why-im-blogging">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,14 +53,15 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Sep 23, 2015</span>
-        <a class="post-link" href="/why-im-blogging">为什么我要写博客</a>
-        <p>我其实很喜欢看别人写的东西，<a href="http://coolshell.cn/articles/4758.html">技术类的</a>、<a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">非技术类的</a>，<a href="http://blog.csdn.net/redguardtoo/article/details/7222501">中文的</a>、<a href="http://blog.codinghorror.com/show-dont-tell/">英文的</a>。</p>
+  <header class="post-header">
+    <h1>为什么我要写博客</h1>
+    <p class="meta">Sep 23, 2015</p>
+  </header>
+
+  <article class="post-content">
+  <p>我其实很喜欢看别人写的东西，<a href="http://coolshell.cn/articles/4758.html">技术类的</a>、<a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">非技术类的</a>，<a href="http://blog.csdn.net/redguardtoo/article/details/7222501">中文的</a>、<a href="http://blog.codinghorror.com/show-dont-tell/">英文的</a>。</p>
 
 <p>很多人写文章的时候总喜欢说一句<br />
 &gt; 我先抛砖引玉</p>
@@ -69,58 +70,51 @@
 
 <p>这样的文章看的我特手痒，想也写博客，但是问题就来了</p>
 
+<!--MORE-->
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Jul 26, 2015</span>
-        <a class="post-link" href="/how-to-set-perl-constant-module">如何优雅地使用Perl的常量模块</a>
-        <p>最近的Perl Coding遇到了一个问题：需要对一系列常量进行合法性检测。</p>
+<h2 id="section">博客的主题是什么？</h2>
 
-<p>在Research&amp;Develop后，有一些心得。</p>
+<p>我一直有着写点什么的习惯，以前总是休闲散文写的比较多，更多是偏向于一种日记类的文章。<br />
+自从看了<a href="http://coolshell.cn/haoel">陈皓</a>和<a href="http://blog.codinghorror.com/about-me/">Jeff Atwood</a>的技术类博客以后，总有种写<em>好的</em>技术博客的冲动。<br />
+因为我对逻辑、语言、思考都感兴趣，而我又不能准确描述我这些兴趣，那我就把它们都写出来好了。</p>
 
-<p>本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。</p>
+<p>XKCD的自我描述是<br />
+&gt; A webcomic of romance, sarcasm, math and language</p>
 
+<p><img src="http://imgs.xkcd.com/comics/standards.png" alt="XKCD-927" /></p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-zh">Vagrant-up遇到mount no device的解决方案</a>
-        <p>今天跑<code>vagrant up</code>的时候遇到了这个问题：</p>
+<p>希望我也能写出这种主题鲜明，又有趣又妙不可言的文章</p>
 
+<h2 id="section-1">我有什么能写出来的?</h2>
+<p>作为一个菜鸟，我最熟练的VIM水平其实放在网络上也只是一般<br />
+同时根据<code>三人行必有我师焉</code>，也意味着来到这个博客的人中每三个里就有一个比我厉害</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-en">Solution for vagrant-up error: mount no device</a>
-        <p>Today I encounter a problem running <code>vagrant up</code>：</p>
+<p>（我是不是应该放一个博客访问计数器？然后每到三个倍数就alert(“Congratulations”)一下…</p>
 
+<p>不过既然大家都比我懂的多，那我也就不怕献丑了。<br />
+好玩的，要费脑子的问题，或者对人生的杂念都会被我写下来。</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Aug 28, 2014</span>
-        <a class="post-link" href="/compare-excel-using-openpyxl/">用Openpyxl做两个Excel文件的比对</a>
-        <h2 id="section">起因</h2>
+<h2 id="section-2">中文博客还是英文博客？</h2>
+<p>讲道理的话，这个问题我想了很久。<br />
+以至于我都快走火入魔了，同样的文章写了<a href="/vagrant-up-but-mount-no-device-zh">一份中文的</a>和<a href="/vagrant-up-but-mount-no-device-en">一份英文的</a></p>
 
-<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。<br />
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。<br />
-这次写小工具的同时也是学习一下新的东西。</p>
+<p>后来想了想，主要基于几个观点：<br />
+1. 母语是中文，所以中文写的会比英文写的更顺畅<br />
+2. 语言的选择决定了受众的范围，而外国受众大部分不了解中国的亚文化<br />
+3. 个人而言，以后认识的国内朋友可能会更多，这本身是一个不错的名片</p>
+
+<p>于是，我便踏上了博客之路。</p>
+
+<p>现阶段目标是每周一篇吧，就像<a href="http://discourse.codinghorror.com/t/how-to-achieve-ultimate-blog-success-in-one-easy-step/445/27">Jeff说的一样</a>：</p>
+
+<blockquote>
+  <p>Pick whatever schedule works for you. And be realistic. I think starting with one post a month, like Catto, is a fine goal. Try to slowly ramp it up a bit over time as you get into the groove, and you’re on your way.</p>
+</blockquote>
 
 
-      </li>
-      <br>
-    
-  </ul>
+  </article>
 
 </div>
-
       </div>
     </div>
 
