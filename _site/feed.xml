@@ -5,8 +5,8 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.cloudisdream.com/</link>
     <atom:link href="http://www.cloudisdream.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Sep 2015 13:58:10 +0800</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2015 13:58:10 +0800</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 14:12:42 +0800</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 14:12:42 +0800</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -121,9 +121,7 @@ we run:&lt;code&gt;yum install kernel-devel-2.6.18-404.el5&lt;/code&gt;&lt;/p&gt
     
       <item>
         <title>用Openpyxl做两个Excel文件的比对</title>
-        <description>&lt;h1&gt;用Openpyxl做两个Excel文件的比对&lt;/h1&gt;
-
-&lt;h2&gt;起因&lt;/h2&gt;
+        <description>&lt;h2&gt;起因&lt;/h2&gt;
 
 &lt;p&gt;最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。
 关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。

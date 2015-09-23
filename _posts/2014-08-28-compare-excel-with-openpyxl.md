@@ -5,9 +5,6 @@ date:   2014-08-28 10:31:08
 permalink: /compare-excel-using-openpyxl/
 ---
 
-# 用Openpyxl做两个Excel文件的比对
-
-
 ## 起因
 
 最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。

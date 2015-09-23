@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# 关于我
+## 关于我
 
 TODO (本部分还在完善)
 
@@ -14,7 +14,7 @@ TODO (本部分还在完善)
 
 ![xkcd 246][xkcd-246]
 
-# 关于本博客
+## 关于本博客
 
 [由Jekyll生成][jekyll.com], 挂在[GitHub][lki.github.com]上
 
