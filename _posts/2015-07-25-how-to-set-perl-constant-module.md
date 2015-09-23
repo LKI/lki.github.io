@@ -11,6 +11,8 @@ permalink: /how-to-set-perl-constant-module
 
 本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。
 
+<!--MORE-->
+
 ## Perl中一般的常量定义
 
 在写项目的时候为了避免Magic Number的情况，我们经常需要定义常量。
@@ -168,8 +170,6 @@ permalink: /how-to-set-perl-constant-module
 大功告成！从此以后在加常量的同时，validate_config会自动地检验新增的配置选项啦~
 
 此时便可以使用[一个酷炫的Git Commit Message][5]来提交工作啦！
-
-
 
 [1]:http://coolshell.cn/articles/4758.html
 [2]:http://perldoc.perl.org/Exporter.html

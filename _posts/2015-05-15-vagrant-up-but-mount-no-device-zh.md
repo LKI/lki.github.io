@@ -7,6 +7,8 @@ permalink: /vagrant-up-but-mount-no-device-zh
 
 今天跑```vagrant up```的时候遇到了这个问题：
 
+<!--MORE-->
+
 ```
 ==> cvc-tools: Machine booted and ready!
 ==> cvc-tools: Checking for guest additions in VM...

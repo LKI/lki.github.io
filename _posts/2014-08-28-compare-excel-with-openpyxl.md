@@ -1,7 +1,7 @@
 ---
-layout: post
-title:  "用Openpyxl做两个Excel文件的比对"
-date:   2014-08-28 10:31:08
+layout:    post
+title:     "用Openpyxl做两个Excel文件的比对"
+date:      2014-08-28 10:31:08
 permalink: /compare-excel-using-openpyxl/
 ---
 
@@ -11,6 +11,7 @@ permalink: /compare-excel-using-openpyxl/
 关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。
 这次写小工具的同时也是学习一下新的东西。
 
+<!--MORE-->
 
 ## 准备工作
 
@@ -47,7 +48,6 @@ Openpyxl还有个弊端就是文档不怎么详细，只能去翻源码。
 可以到我写的PythonScripts里找到我写的版本：
 
 [PythonScripts - ExcelComparer][ExcelComparer]
-
 
 [4toolForPythonExcel]:http://www.gocalf.com/blog/python-read-write-excel.html
 [Openpyxl]:https://pythonhosted.org/openpyxl/

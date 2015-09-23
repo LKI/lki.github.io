@@ -5,9 +5,9 @@ date:      2015-05-15 10:29:05
 permalink: /vagrant-up-but-mount-no-device-en
 ---
 
-Solution for vagrant up failure with mount no such device error:
-
 Today I encounter a problem running ```vagrant up```：
+
+<!--MORE-->
 
 ```
 ==> cvc-tools: Machine booted and ready!

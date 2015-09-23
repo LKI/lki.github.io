@@ -5,8 +5,8 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.cloudisdream.com/</link>
     <atom:link href="http://www.cloudisdream.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Sep 2015 14:39:13 +0800</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2015 14:39:13 +0800</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 15:33:30 +0800</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 15:33:30 +0800</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -16,6 +16,8 @@
 &lt;p&gt;在Research&amp;amp;Develop后，有一些心得。&lt;/p&gt;
 
 &lt;p&gt;本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。&lt;/p&gt;
+
+&lt;!--MORE--&gt;
 
 &lt;h2 id=&quot;perl&quot;&gt;Perl中一般的常量定义&lt;/h2&gt;
 
@@ -201,6 +203,8 @@
         <title>Vagrant-up遇到mount no device的解决方案</title>
         <description>&lt;p&gt;今天跑&lt;code&gt;vagrant up&lt;/code&gt;的时候遇到了这个问题：&lt;/p&gt;
 
+&lt;!--MORE--&gt;
+
 &lt;pre&gt;&lt;code&gt;==&amp;gt; cvc-tools: Machine booted and ready!
 ==&amp;gt; cvc-tools: Checking for guest additions in VM...
 ==&amp;gt; cvc-tools: Configuring and enabling network interfaces...
@@ -261,9 +265,9 @@ mount -t vboxsf -o uid=`id -u devel`,gid=`id -g devel` work /work
     
       <item>
         <title>Solution for vagrant-up error: mount no device</title>
-        <description>&lt;p&gt;Solution for vagrant up failure with mount no such device error:&lt;/p&gt;
+        <description>&lt;p&gt;Today I encounter a problem running &lt;code&gt;vagrant up&lt;/code&gt;：&lt;/p&gt;
 
-&lt;p&gt;Today I encounter a problem running &lt;code&gt;vagrant up&lt;/code&gt;：&lt;/p&gt;
+&lt;!--MORE--&gt;
 
 &lt;pre&gt;&lt;code&gt;==&amp;gt; cvc-tools: Machine booted and ready!
 ==&amp;gt; cvc-tools: Checking for guest additions in VM...
@@ -324,6 +328,8 @@ we run:&lt;code&gt;yum install kernel-devel-2.6.18-404.el5&lt;/code&gt;&lt;/p&gt
 &lt;p&gt;最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。&lt;br /&gt;
 关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。&lt;br /&gt;
 这次写小工具的同时也是学习一下新的东西。&lt;/p&gt;
+
+&lt;!--MORE--&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;准备工作&lt;/h2&gt;
 
