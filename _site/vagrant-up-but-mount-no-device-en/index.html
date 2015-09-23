@@ -64,13 +64,14 @@
   <p>Solution for vagrant up failure with mount no such device error:</p>
 
 <p>Today I encounter a problem running <code>vagrant up</code>：</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">==&gt; cvc-tools: Machine booted and ready!
+
+<pre><code>==&gt; cvc-tools: Machine booted and ready!
 ==&gt; cvc-tools: Checking for guest additions in VM...
 ==&gt; cvc-tools: Configuring and enabling network interfaces...
 ==&gt; cvc-tools: Mounting shared folders...
     cvc-tools: /work =&gt; D:/work/
 Failed to mount folders in Linux guest. This is usually because
-the &quot;vboxsf&quot; file system is not available. Please verify that
+the "vboxsf" file system is not available. Please verify that
 the guest additions are properly installed in the guest and
 can work properly. The command attempted was:
 
@@ -81,14 +82,16 @@ mount -t vboxsf -o uid=`id -u devel`,gid=`id -g devel` work /work
 The error output from the last command was:
 
 /sbin/mount.vboxsf: mounting failed with the error: No such device
-</code></pre></div>
+</code></pre>
+
 <p>Refer to https://github.com/mitchellh/vagrant/issues/1657 </p>
 
 <p>_This is usually a result of the guest’s package manager upgrading the</p>
 
-<p>kernel without rebuilding the VirtualBox Guest Additions_ by lenciel. So
+<p>kernel without rebuilding the VirtualBox Guest Additions_ by lenciel. So<br />
 we run vboxadd accordingly:</p>
-<div class="highlight"><pre><code class="language-text" data-lang="text">    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
+
+<pre><code>    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
     Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
     Building the VirtualBox Guest Additions kernel modules
     The headers for the current running kernel were not found. If the
@@ -100,8 +103,9 @@ we run vboxadd accordingly:</p>
     Building the main Guest Additions module                   [FAILED]
     (Look at /var/log/vboxadd-install.log to find out what went wrong)
     Doing non-kernel setup of the Guest Additions              [  OK  ]
-</code></pre></div>
-<p>From the message we can know current running kernel were not found. So
+</code></pre>
+
+<p>From the message we can know current running kernel were not found. So<br />
 we run:<code>yum install kernel-devel-2.6.18-404.el5</code></p>
 
 <p>After all, we can run <code>vagrant up</code> or mount the directory manually.</p>

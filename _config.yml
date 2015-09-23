@@ -8,5 +8,9 @@ twitter_username: cloudisdream
 github_username:  LKI
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
+
+# Use Github Flavored Markdown
+kramdown:
+    input: GFM
