@@ -8,6 +8,7 @@ permalink: /why-im-blogging
 我其实很喜欢看别人写的东西，[技术类的][howToWriteBadCode]、[非技术类的][pixelMoon]，[中文的][emacsGeniusInOneYear]、[英文的][showDontTell]。
 
 很多人写文章的时候总喜欢说一句
+
 > 我先抛砖引玉
 
 但是往往[他们写的都非常好][nakedVimTip]
@@ -24,6 +25,7 @@ permalink: /why-im-blogging
 因为我对逻辑、语言、思考都感兴趣，而我又不能准确描述我这些兴趣，那我就把它们都写出来好了。
 
 XKCD的自我描述是
+
 > A webcomic of romance, sarcasm, math and language
 
 ![XKCD-927][standards]

@@ -5,16 +5,19 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.cloudisdream.com/</link>
     <atom:link href="http://www.cloudisdream.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 23 Sep 2015 17:42:43 +0800</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2015 17:42:43 +0800</lastBuildDate>
-    <generator>Jekyll v2.2.0</generator>
+    <pubDate>Wed, 23 Sep 2015 23:10:48 +0800</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 23:10:48 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>为什么我要写博客</title>
         <description>&lt;p&gt;我其实很喜欢看别人写的东西，&lt;a href=&quot;http://coolshell.cn/articles/4758.html&quot;&gt;技术类的&lt;/a&gt;、&lt;a href=&quot;http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html&quot;&gt;非技术类的&lt;/a&gt;，&lt;a href=&quot;http://blog.csdn.net/redguardtoo/article/details/7222501&quot;&gt;中文的&lt;/a&gt;、&lt;a href=&quot;http://blog.codinghorror.com/show-dont-tell/&quot;&gt;英文的&lt;/a&gt;。&lt;/p&gt;
 
-&lt;p&gt;很多人写文章的时候总喜欢说一句&lt;br /&gt;
-&amp;gt; 我先抛砖引玉&lt;/p&gt;
+&lt;p&gt;很多人写文章的时候总喜欢说一句&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;我先抛砖引玉&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;但是往往&lt;a href=&quot;http://coolshell.cn/articles/11312.html&quot;&gt;他们写的都非常好&lt;/a&gt;&lt;/p&gt;
 
@@ -28,8 +31,11 @@
 自从看了&lt;a href=&quot;http://coolshell.cn/haoel&quot;&gt;陈皓&lt;/a&gt;和&lt;a href=&quot;http://blog.codinghorror.com/about-me/&quot;&gt;Jeff Atwood&lt;/a&gt;的技术类博客以后，总有种写&lt;em&gt;好的&lt;/em&gt;技术博客的冲动。&lt;br /&gt;
 因为我对逻辑、语言、思考都感兴趣，而我又不能准确描述我这些兴趣，那我就把它们都写出来好了。&lt;/p&gt;
 
-&lt;p&gt;XKCD的自我描述是&lt;br /&gt;
-&amp;gt; A webcomic of romance, sarcasm, math and language&lt;/p&gt;
+&lt;p&gt;XKCD的自我描述是&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A webcomic of romance, sarcasm, math and language&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/standards.png&quot; alt=&quot;XKCD-927&quot; /&gt;&lt;/p&gt;
 
@@ -87,11 +93,8 @@
 
 &lt;p&gt;一般来说，Perl中的常量如下：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    use constant CONST_PI =&amp;gt; 3.1416;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    use constant CONST_PI =&amp;gt; 3.1416;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;在模块化的编码过程中，随着常量的增多，我们会需要把这些常量放到一个常量模块(Perl Module)里面：&lt;/p&gt;
 
@@ -99,46 +102,43 @@
 
 &lt;p&gt;比如说在哼哧哼哧地写了一阵子以后，我们有下面这个常量模块。&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    package Lirian::Constants;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    use strict;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    use warnings;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    #Math Const
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    use constant CONST_PI =&amp;gt; 3.1416;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    use constant CONST_E  =&amp;gt; 2.718;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    #Default Config Parm Name
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    use constant PARM_DB_NAME  =&amp;gt; &#39;dbName&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    use constant PARM_DB_HOST  =&amp;gt; &#39;dbHost&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;    use constant PARM_GIT_USER =&amp;gt; &#39;gitUser&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;    require Exporter;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;    our @ISA = qw(Exporter);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;    our @EXPORT_OK = qw(
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;&lt;/span&gt;        CONST_PI
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;&lt;/span&gt;        CONST_E
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        PARM_DB_NAME
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;&lt;/span&gt;        PARM_DB_HOST
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;&lt;/span&gt;        PARM_GIT_USER
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;&lt;/span&gt;    );
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n24&quot; name=&quot;n24&quot;&gt;24&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n25&quot; name=&quot;n25&quot;&gt;25&lt;/a&gt;&lt;/span&gt;    our %EXPORT_TAGS = (
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n26&quot; name=&quot;n26&quot;&gt;26&lt;/a&gt;&lt;/span&gt;        all  =&amp;gt; \@EXPORT_OK,
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n27&quot; name=&quot;n27&quot;&gt;27&lt;/a&gt;&lt;/span&gt;        math =&amp;gt; [qw(
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n28&quot; name=&quot;n28&quot;&gt;28&lt;/a&gt;&lt;/span&gt;            CONST_PI
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n29&quot; name=&quot;n29&quot;&gt;29&lt;/a&gt;&lt;/span&gt;            CONST_E
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n30&quot; name=&quot;n30&quot;&gt;30&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        )],
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n31&quot; name=&quot;n31&quot;&gt;31&lt;/a&gt;&lt;/span&gt;        parm =&amp;gt; [qw(
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n32&quot; name=&quot;n32&quot;&gt;32&lt;/a&gt;&lt;/span&gt;            PARM_DB_NAME
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n33&quot; name=&quot;n33&quot;&gt;33&lt;/a&gt;&lt;/span&gt;            PARM_DB_HOST
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n34&quot; name=&quot;n34&quot;&gt;34&lt;/a&gt;&lt;/span&gt;            PARM_GIT_USER
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n35&quot; name=&quot;n35&quot;&gt;35&lt;/a&gt;&lt;/span&gt;        )],
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n36&quot; name=&quot;n36&quot;&gt;36&lt;/a&gt;&lt;/span&gt;    );
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    package Lirian::Constants;
+    use strict;
+    use warnings;
+
+    #Math Const
+    use constant CONST_PI =&amp;gt; 3.1416;
+    use constant CONST_E  =&amp;gt; 2.718;
+
+    #Default Config Parm Name
+    use constant PARM_DB_NAME  =&amp;gt; &#39;dbName&#39;;
+    use constant PARM_DB_HOST  =&amp;gt; &#39;dbHost&#39;;
+    use constant PARM_GIT_USER =&amp;gt; &#39;gitUser&#39;;
+
+    require Exporter;
+    our @ISA = qw(Exporter);
+
+    our @EXPORT_OK = qw(
+        CONST_PI
+        CONST_E
+        PARM_DB_NAME
+        PARM_DB_HOST
+        PARM_GIT_USER
+    );
+
+    our %EXPORT_TAGS = (
+        all  =&amp;gt; \@EXPORT_OK,
+        math =&amp;gt; [qw(
+            CONST_PI
+            CONST_E
+        )],
+        parm =&amp;gt; [qw(
+            PARM_DB_NAME
+            PARM_DB_HOST
+            PARM_GIT_USER
+        )],
+    );
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;上面这段代码简单粗暴地展示了Perl中的常量模块。&lt;/p&gt;
 
@@ -154,23 +154,20 @@
 
 &lt;p&gt;而一般地，我们会这么使用：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    package Lirian::Math;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    use Lirian::Constants qw(:all);
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;    use strict;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    use warnings;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    sub get_circum {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;        my ($r) = @_;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        return 2 * CONST_PI * $r;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    }
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;    1;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    package Lirian::Math;
+
+    use Lirian::Constants qw(:all);
+    use strict;
+    use warnings;
+
+    sub get_circum {
+        my ($r) = @_;
+
+        return 2 * CONST_PI * $r;
+    }
+
+    1;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;在正常的情况下，常量的使用方法比较简单，但假如需求有些绕：&lt;/p&gt;
 
@@ -178,27 +175,21 @@
 
 &lt;p&gt;比如说需求文件如下：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    dbName=github
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    dbHost=localhost
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    gitUser=LKI
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-config&quot;&gt;    dbName=github
+    dbHost=localhost
+    gitUser=LKI
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;显然地，一种简单但稍微蠢了点的方法是这么做：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    sub validate_config_dumb {
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        my ($conf) = @_;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_DB_NAME);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_DB_HOST);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_GIT_USER);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    }
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    sub validate_config_dumb {
+        my ($conf) = @_;
+
+        validate_parm($conf, PARM_DB_NAME);
+        validate_parm($conf, PARM_DB_HOST);
+        validate_parm($conf, PARM_GIT_USER);
+    }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;这样做有几个问题：&lt;/p&gt;
 
@@ -213,39 +204,30 @@
 
 &lt;p&gt;在Exporter中，定义在%EXPORT_TAGS中的文件可以直接引用：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    my $math_tags = $tags-&amp;gt;{math}; # [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    my $parm_tags = $tags-&amp;gt;{parm}; # [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+    my $math_tags = $tags-&amp;gt;{math}; # [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];
+    my $parm_tags = $tags-&amp;gt;{parm}; # [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;这样就可以拿到常量的名字了，此时我们便需要&lt;a href=&quot;http://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable&quot;&gt;在Perl中根据变量名获取变量值&lt;/a&gt;&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    my $name  = &#39;CONST_PI&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    my $value = Lirian::Constants-&amp;gt;$name; # 3.1416
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    my $name  = &#39;CONST_PI&#39;;
+    my $value = Lirian::Constants-&amp;gt;$name; # 3.1416
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;所以在上一小节的问题中，我们可以得出一个更优雅的解决方案啦~&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    sub validate_config {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        my ($conf) = @_;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;        my $parm_tags = $tags-&amp;gt;{parm};
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;        foreach my $parm_name (@$parm_tags) {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;            my $parm_value = Lirian::Constants-&amp;gt;$parm_name;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;            validate_parm($conf, $parm_value);
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;        }
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    }
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    sub validate_config {
+        my ($conf) = @_;
+
+        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+        my $parm_tags = $tags-&amp;gt;{parm};
+        foreach my $parm_name (@$parm_tags) {
+            my $parm_value = Lirian::Constants-&amp;gt;$parm_name;
+            validate_parm($conf, $parm_value);
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;大功告成！从此以后在加常量的同时，validate_config会自动地检验新增的配置选项啦~&lt;/p&gt;
 
@@ -348,7 +330,7 @@ The error output from the last command was:
 /sbin/mount.vboxsf: mounting failed with the error: No such device
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Refer to https://github.com/mitchellh/vagrant/issues/1657 &lt;/p&gt;
+&lt;p&gt;Refer to https://github.com/mitchellh/vagrant/issues/1657&lt;/p&gt;
 
 &lt;p&gt;_This is usually a result of the guest’s package manager upgrading the&lt;/p&gt;
 
@@ -413,11 +395,8 @@ we run:&lt;code&gt;yum install kernel-devel-2.6.18-404.el5&lt;/code&gt;&lt;/p&gt
 
 &lt;p&gt;Openpyxl装好以后直接import就能用啦：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color:#B44;font-weight:bold&quot;&gt;openpyxl&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color:#B44;font-weight:bold&quot;&gt;*&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;from openpyxl import *
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Openpyxl还提供了一个非常棒的教程~~（有点过于简单~~&lt;/p&gt;
 
