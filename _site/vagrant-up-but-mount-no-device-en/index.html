@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>lllki</title>
+    <title>Solution for vagrant-up error: mount no device</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.cloudisdream.com/">
+    <link rel="canonical" href="http://www.cloudisdream.com/vagrant-up-but-mount-no-device-en">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,33 +53,65 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <h1>Posts</h1>
+  <header class="post-header">
+    <h1>Solution for vagrant-up error: mount no device</h1>
+    <p class="meta">May 15, 2015</p>
+  </header>
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-zh">Vagrant-up遇到mount no device的解决方案</a>
-      </li>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-en">Solution for vagrant-up error: mount no device</a>
-      </li>
-    
-      <li>
-        <span class="post-date">Aug 28, 2014</span>
-        <a class="post-link" href="/compare-excel-using-openpyxl/">用Openpyxl做两个Excel文件的比对</a>
-      </li>
-    
-  </ul>
+  <article class="post-content">
+  <p>Solution for vagrant up failure with mount no such device error:</p>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<p>Today I encounter a problem running <code>vagrant up</code>：</p>
+
+<p>```
+    ==&gt; cvc-tools: Machine booted and ready!
+    ==&gt; cvc-tools: Checking for guest additions in VM…
+    ==&gt; cvc-tools: Configuring and enabling network interfaces…
+    ==&gt; cvc-tools: Mounting shared folders…
+        cvc-tools: /work =&gt; D:/work/
+    Failed to mount folders in Linux guest. This is usually because
+    the “vboxsf” file system is not available. Please verify that
+    the guest additions are properly installed in the guest and
+    can work properly. The command attempted was:</p>
+
+<pre><code>mount -t vboxsf -o uid=`id -u devel`,gid=`getent group devel | cut -d:
+-f3` work /work
+mount -t vboxsf -o uid=`id -u devel`,gid=`id -g devel` work /work
+
+The error output from the last command was:
+
+/sbin/mount.vboxsf: mounting failed with the error: No such device ```
+</code></pre>
+
+<p>Refer to https://github.com/mitchellh/vagrant/issues/1657 
+<em>This is usually a result of the guest’s package manager upgrading the
+kernel without rebuilding the VirtualBox Guest Additions</em> by lenciel. So
+we run vboxadd accordingly:</p>
+
+<p>```
+    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
+    Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
+    Building the VirtualBox Guest Additions kernel modules
+    The headers for the current running kernel were not found. If the
+    following
+    module compilation fails then this could be the reason.
+    The missing package can be probably installed with
+    yum install kernel-devel-2.6.18-404.el5</p>
+
+<pre><code>Building the main Guest Additions module                   [FAILED]
+(Look at /var/log/vboxadd-install.log to find out what went wrong)
+Doing non-kernel setup of the Guest Additions              [  OK  ] ```
+</code></pre>
+
+<p>From the message we can know current running kernel were not found. So
+we run:<code>yum install kernel-devel-2.6.18-404.el5</code>
+After all, we can run <code>vagrant up</code> or mount the directory manually.</p>
+
+  </article>
 
 </div>
-
       </div>
     </div>
 
