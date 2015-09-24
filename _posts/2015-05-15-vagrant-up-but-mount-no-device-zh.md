@@ -2,6 +2,7 @@
 layout:    post
 title:     "Vagrant-up遇到mount no device的解决方案"
 date:      2015-05-15 10:29:05
+comments:  true
 permalink: /vagrant-up-but-mount-no-device-zh
 ---
 

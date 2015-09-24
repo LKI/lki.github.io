@@ -2,6 +2,7 @@
 layout:    post
 title:     "为什么我要写博客"
 date:      2015-9-23
+comments:  true
 permalink: /why-im-blogging
 ---
 
