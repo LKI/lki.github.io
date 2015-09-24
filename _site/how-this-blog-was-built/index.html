@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浮云计算</title>
+    <title>这篇博客是怎么建成的</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.cloudisdream.com/">
+    <link rel="canonical" href="http://www.cloudisdream.com/how-this-blog-was-built">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,14 +53,15 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Sep 25, 2015</span>
-        <a class="post-link" href="/how-this-blog-was-built">这篇博客是怎么建成的</a>
-        <p>其实最开始的时候我是用<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a>在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：</p>
+  <header class="post-header">
+    <h1>这篇博客是怎么建成的</h1>
+    <p class="meta">Sep 25, 2015</p>
+  </header>
+
+  <article class="post-content">
+  <p>其实最开始的时候我是用<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a>在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：</p>
 
 <ul>
   <li>晚上11点断网，早上6点才恢复网络，所以这个“个人博客”会断网</li>
@@ -68,79 +69,90 @@
   <li>由于是自己的电脑做服务器，还得保证一直开着，这样始终不太好</li>
 </ul>
 
+<!--MORE-->
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 23, 2015</span>
-        <a class="post-link" href="/why-im-blogging">为什么我要写博客</a>
-        <p>我其实很喜欢看别人写的东西，<a href="http://coolshell.cn/articles/4758.html">技术类的</a>、<a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">非技术类的</a>，<a href="http://blog.csdn.net/redguardtoo/article/details/7222501">中文的</a>、<a href="http://blog.codinghorror.com/show-dont-tell/">英文的</a>。</p>
-
-<p>很多人写文章的时候总喜欢说一句</p>
+<h2 id="java--servlet--structs--spring--hibernate">JAVA / Servlet / Structs + Spring + Hibernate</h2>
 
 <blockquote>
-  <p>我先抛砖引玉</p>
+  <p>在收了可观的小费以后，旅店老板悄悄地告诉你： 每个大学的软件工程专业都会教JAVA+SSH</p>
 </blockquote>
 
-<p>但是往往<a href="http://coolshell.cn/articles/11312.html">他们写的都非常好</a></p>
+<p>其实在LAMP之前，我曾经试过用课程里的Java+Servlet写过一个类微博的（个人？）网站</p>
 
-<p>这样的文章看的我特手痒，想也写博客，但是问题就来了</p>
+<p>大概长这样子:<br />
+<img src="/assets/thatsMoonPage.jpg" alt="First site" /></p>
+
+<p>一边写我就一边感慨网页设计真是艰难，而且其实这个主页也是模仿当时的网易微博的</p>
+
+<h2 id="lamp--wordpress">LAMP + WordPress</h2>
+
+<p>在前台HTML CSS JS到后台JAVA SQL都写过一遍以后，我开始意识到全栈工程师虽然听起来很美好，但是写起来实在是心太累了</p>
+
+<p>那个时候和ED聊天，刚好聊到<a href="http://edward-mj.com/">他的博客</a>是用WordPress搭的，于是我就在自己的电脑上搭了一个服务器</p>
+
+<p>虽然文章开头说了这么搭建服务器的缺点，但是其实学校还是给我们提供了一个便利：<strong>固定IP</strong></p>
+
+<p>于是我就去万网买了个域名，CNAME一下到学校IP。</p>
+
+<p>但是因为实在遭不住一直开机，还要断网，后来还是抛弃掉了这个方式。</p>
+
+<h2 id="github-pages--jekyll">Github Pages + Jekyll</h2>
+
+<p>现在的博客就是最简单的<a href="https://pages.github.com/">GitHub Pages</a> + <a href="http://jekyllrb.com/">Jekyll</a></p>
+
+<p>网页放在GitHub上可以享受版本控制这个得天独厚的优势，Jekyll用的是Ruby，简单易用好上手。</p>
+
+<p>从无到有搭建博客基本上就这么几步：</p>
+
+<ol>
+  <li>注册Github账号，并创建 account.github.com 这个目录</li>
+  <li>跑<code>gem install jekyll</code>，然后<code>gem new my-site</code></li>
+  <li>修改<code>_config.yml</code>到自己的配置，然后在<code>_post</code>文件夹里面新增博客即可</li>
+</ol>
+
+<h2 id="comments">Comments</h2>
+
+<p>博客少了评论总感觉哪里不对，因为是GitHub上的静态页面，基本上解决方案有：用<a href="http://duoshuo.com/">多说评论</a>，<a href="https://disqus.com/">Disqus</a>，或者是用GitHub issue来定制化评论<br />
+（我一开始还以为disqus == disquz）</p>
+
+<p>综合各方面，我采用了Disqus，根据<a href="https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions">官方的说明文档</a></p>
+
+<p>直接在Page里面插入一段Comment Code就可以了。</p>
+
+<h2 id="enhancement">Enhancement</h2>
+
+<p>至此，基本主题的博客已全部搭建完毕</p>
+
+<p>但是还有几点不足的地方：</p>
+
+<ol>
+  <li>页面最下方的Twitter图标最好要改成Weibo的（但是我还没搞懂怎么画）</li>
+  <li>要补完About界面</li>
+  <li>使用Kramdown的GFM render方式感觉还是不够好，尤其是界面上，还是<a href="https://github.com/LKI/blogs/issues/3">GitHub Issue的Render方式</a>看起来比较舒服</li>
+</ol>
+
+<p>看来以后在写博客的同时，也要对网站持续进行优化才可以呀！</p>
 
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Jul 26, 2015</span>
-        <a class="post-link" href="/how-to-set-perl-constant-module">如何优雅地使用Perl的常量模块</a>
-        <p>最近的Perl Coding遇到了一个问题：需要对一系列常量进行合法性检测。</p>
-
-<p>在Research&amp;Develop后，有一些心得。</p>
-
-<p>本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-zh">Vagrant-up遇到mount no device的解决方案</a>
-        <p>今天跑<code>vagrant up</code>的时候遇到了这个问题：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-en">Solution for vagrant-up error: mount no device</a>
-        <p>Today I encounter a problem running <code>vagrant up</code>：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Aug 28, 2014</span>
-        <a class="post-link" href="/compare-excel-using-openpyxl/">用Openpyxl做两个Excel文件的比对</a>
-        <h2 id="section">起因</h2>
-
-<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。<br />
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。<br />
-这次写小工具的同时也是学习一下新的东西。</p>
-
-
-      </li>
-      <br>
-    
-  </ul>
+  </article>
 
 </div>
 
-
       
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'liriansu';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 
 
       </div>
