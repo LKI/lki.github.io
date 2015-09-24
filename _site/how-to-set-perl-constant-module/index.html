@@ -77,8 +77,11 @@
 
 <p>一般来说，Perl中的常量如下：</p>
 
-<pre><code class="language-perl">    use constant CONST_PI =&gt; 3.1416;
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    use constant CONST_PI =&gt; 3.1416;
+</pre></div>
+</div>
+</div>
 
 <p>在模块化的编码过程中，随着常量的增多，我们会需要把这些常量放到一个常量模块(Perl Module)里面：</p>
 
@@ -86,43 +89,46 @@
 
 <p>比如说在哼哧哼哧地写了一阵子以后，我们有下面这个常量模块。</p>
 
-<pre><code class="language-perl">    package Lirian::Constants;
-    use strict;
-    use warnings;
-
-    #Math Const
-    use constant CONST_PI =&gt; 3.1416;
-    use constant CONST_E  =&gt; 2.718;
-
-    #Default Config Parm Name
-    use constant PARM_DB_NAME  =&gt; 'dbName';
-    use constant PARM_DB_HOST  =&gt; 'dbHost';
-    use constant PARM_GIT_USER =&gt; 'gitUser';
-
-    require Exporter;
-    our @ISA = qw(Exporter);
-
-    our @EXPORT_OK = qw(
-        CONST_PI
-        CONST_E
-        PARM_DB_NAME
-        PARM_DB_HOST
-        PARM_GIT_USER
-    );
-
-    our %EXPORT_TAGS = (
-        all  =&gt; \@EXPORT_OK,
-        math =&gt; [qw(
-            CONST_PI
-            CONST_E
-        )],
-        parm =&gt; [qw(
-            PARM_DB_NAME
-            PARM_DB_HOST
-            PARM_GIT_USER
-        )],
-    );
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>    package Lirian::Constants;
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>    use strict;
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>    use warnings;
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    #Math Const
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>    use constant CONST_PI =&gt; 3.1416;
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    use constant CONST_E  =&gt; 2.718;
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>    #Default Config Parm Name
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    use constant PARM_DB_NAME  =&gt; 'dbName';
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>    use constant PARM_DB_HOST  =&gt; 'dbHost';
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>    use constant PARM_GIT_USER =&gt; 'gitUser';
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>
+<span class="line-numbers"><a href="#n14" name="n14">14</a></span>    require Exporter;
+<span class="line-numbers"><a href="#n15" name="n15">15</a></span>    our @ISA = qw(Exporter);
+<span class="line-numbers"><a href="#n16" name="n16">16</a></span>
+<span class="line-numbers"><a href="#n17" name="n17">17</a></span>    our @EXPORT_OK = qw(
+<span class="line-numbers"><a href="#n18" name="n18">18</a></span>        CONST_PI
+<span class="line-numbers"><a href="#n19" name="n19">19</a></span>        CONST_E
+<span class="line-numbers"><strong><a href="#n20" name="n20">20</a></strong></span>        PARM_DB_NAME
+<span class="line-numbers"><a href="#n21" name="n21">21</a></span>        PARM_DB_HOST
+<span class="line-numbers"><a href="#n22" name="n22">22</a></span>        PARM_GIT_USER
+<span class="line-numbers"><a href="#n23" name="n23">23</a></span>    );
+<span class="line-numbers"><a href="#n24" name="n24">24</a></span>
+<span class="line-numbers"><a href="#n25" name="n25">25</a></span>    our %EXPORT_TAGS = (
+<span class="line-numbers"><a href="#n26" name="n26">26</a></span>        all  =&gt; \@EXPORT_OK,
+<span class="line-numbers"><a href="#n27" name="n27">27</a></span>        math =&gt; [qw(
+<span class="line-numbers"><a href="#n28" name="n28">28</a></span>            CONST_PI
+<span class="line-numbers"><a href="#n29" name="n29">29</a></span>            CONST_E
+<span class="line-numbers"><strong><a href="#n30" name="n30">30</a></strong></span>        )],
+<span class="line-numbers"><a href="#n31" name="n31">31</a></span>        parm =&gt; [qw(
+<span class="line-numbers"><a href="#n32" name="n32">32</a></span>            PARM_DB_NAME
+<span class="line-numbers"><a href="#n33" name="n33">33</a></span>            PARM_DB_HOST
+<span class="line-numbers"><a href="#n34" name="n34">34</a></span>            PARM_GIT_USER
+<span class="line-numbers"><a href="#n35" name="n35">35</a></span>        )],
+<span class="line-numbers"><a href="#n36" name="n36">36</a></span>    );
+</pre></div>
+</div>
+</div>
 
 <p>上面这段代码简单粗暴地展示了Perl中的常量模块。</p>
 
@@ -138,20 +144,23 @@
 
 <p>而一般地，我们会这么使用：</p>
 
-<pre><code class="language-perl">    package Lirian::Math;
-
-    use Lirian::Constants qw(:all);
-    use strict;
-    use warnings;
-
-    sub get_circum {
-        my ($r) = @_;
-
-        return 2 * CONST_PI * $r;
-    }
-
-    1;
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>    package Lirian::Math;
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>    use Lirian::Constants qw(:all);
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>    use strict;
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>    use warnings;
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>    sub get_circum {
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>        my ($r) = @_;
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>        return 2 * CONST_PI * $r;
+<span class="line-numbers"><a href="#n11" name="n11">11</a></span>    }
+<span class="line-numbers"><a href="#n12" name="n12">12</a></span>
+<span class="line-numbers"><a href="#n13" name="n13">13</a></span>    1;
+</pre></div>
+</div>
+</div>
 
 <p>在正常的情况下，常量的使用方法比较简单，但假如需求有些绕：</p>
 
@@ -159,21 +168,27 @@
 
 <p>比如说需求文件如下：</p>
 
-<pre><code class="language-config">    dbName=github
-    dbHost=localhost
-    gitUser=LKI
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    dbName=github
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    dbHost=localhost
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>    gitUser=LKI
+</pre></div>
+</div>
+</div>
 
 <p>显然地，一种简单但稍微蠢了点的方法是这么做：</p>
 
-<pre><code class="language-perl">    sub validate_config_dumb {
-        my ($conf) = @_;
-
-        validate_parm($conf, PARM_DB_NAME);
-        validate_parm($conf, PARM_DB_HOST);
-        validate_parm($conf, PARM_GIT_USER);
-    }
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    sub validate_config_dumb {
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>        my ($conf) = @_;
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"><a href="#n4" name="n4">4</a></span>        validate_parm($conf, PARM_DB_NAME);
+<span class="line-numbers"><a href="#n5" name="n5">5</a></span>        validate_parm($conf, PARM_DB_HOST);
+<span class="line-numbers"><a href="#n6" name="n6">6</a></span>        validate_parm($conf, PARM_GIT_USER);
+<span class="line-numbers"><a href="#n7" name="n7">7</a></span>    }
+</pre></div>
+</div>
+</div>
 
 <p>这样做有几个问题：</p>
 
@@ -188,30 +203,39 @@
 
 <p>在Exporter中，定义在%EXPORT_TAGS中的文件可以直接引用：</p>
 
-<pre><code class="language-perl">    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-    my $math_tags = $tags-&gt;{math}; # ['CONST_PI', 'CONST_E'];
-    my $parm_tags = $tags-&gt;{parm}; # ['PARM_DB_NAME', 'PARM_DB_HOST', 'PARM_GIT_USER'];
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    my $math_tags = $tags-&gt;{math}; # ['CONST_PI', 'CONST_E'];
+<span class="line-numbers"><a href="#n3" name="n3">3</a></span>    my $parm_tags = $tags-&gt;{parm}; # ['PARM_DB_NAME', 'PARM_DB_HOST', 'PARM_GIT_USER'];
+</pre></div>
+</div>
+</div>
 
 <p>这样就可以拿到常量的名字了，此时我们便需要<a href="http://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable">在Perl中根据变量名获取变量值</a></p>
 
-<pre><code class="language-perl">    my $name  = 'CONST_PI';
-    my $value = Lirian::Constants-&gt;$name; # 3.1416
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    my $name  = 'CONST_PI';
+<span class="line-numbers"><a href="#n2" name="n2">2</a></span>    my $value = Lirian::Constants-&gt;$name; # 3.1416
+</pre></div>
+</div>
+</div>
 
 <p>所以在上一小节的问题中，我们可以得出一个更优雅的解决方案啦~</p>
 
-<pre><code class="language-perl">    sub validate_config {
-        my ($conf) = @_;
-
-        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-        my $parm_tags = $tags-&gt;{parm};
-        foreach my $parm_name (@$parm_tags) {
-            my $parm_value = Lirian::Constants-&gt;$parm_name;
-            validate_parm($conf, $parm_value);
-        }
-    }
-</code></pre>
+<div><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"> <a href="#n1" name="n1">1</a></span>    sub validate_config {
+<span class="line-numbers"> <a href="#n2" name="n2">2</a></span>        my ($conf) = @_;
+<span class="line-numbers"> <a href="#n3" name="n3">3</a></span>
+<span class="line-numbers"> <a href="#n4" name="n4">4</a></span>        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+<span class="line-numbers"> <a href="#n5" name="n5">5</a></span>        my $parm_tags = $tags-&gt;{parm};
+<span class="line-numbers"> <a href="#n6" name="n6">6</a></span>        foreach my $parm_name (@$parm_tags) {
+<span class="line-numbers"> <a href="#n7" name="n7">7</a></span>            my $parm_value = Lirian::Constants-&gt;$parm_name;
+<span class="line-numbers"> <a href="#n8" name="n8">8</a></span>            validate_parm($conf, $parm_value);
+<span class="line-numbers"> <a href="#n9" name="n9">9</a></span>        }
+<span class="line-numbers"><strong><a href="#n10" name="n10">10</a></strong></span>    }
+</pre></div>
+</div>
+</div>
 
 <p>大功告成！从此以后在加常量的同时，validate_config会自动地检验新增的配置选项啦~</p>
 
@@ -221,6 +245,24 @@
   </article>
 
 </div>
+
+      
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'liriansu';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
       </div>
     </div>
 
