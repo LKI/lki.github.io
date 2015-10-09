@@ -5,9 +5,180 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.cloudisdream.com/</link>
     <atom:link href="http://www.cloudisdream.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 29 Sep 2015 15:30:16 +0800</pubDate>
-    <lastBuildDate>Tue, 29 Sep 2015 15:30:16 +0800</lastBuildDate>
+    <pubDate>Fri, 09 Oct 2015 16:19:53 +0800</pubDate>
+    <lastBuildDate>Fri, 09 Oct 2015 16:19:53 +0800</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>VIM中小键盘失灵的解决方案(Putty)</title>
+        <description>&lt;p&gt;我目前的开发环境是用&lt;a href=&quot;https://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt;起一个虚拟机，然后用&lt;a href=&quot;http://www.putty.org/&quot;&gt;Putty&lt;/a&gt;连上去，用VIM做日常的开发工作。&lt;/p&gt;
+
+&lt;p&gt;但某一天更新了一些配置以后，我在VIM里用小键盘输入1的时候，VIM就会在前一行加了一个q字符，让我很是困惑。&lt;/p&gt;
+
+&lt;p&gt;后来&lt;a href=&quot;http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings&quot;&gt;谷歌了一下这个问题&lt;/a&gt;，得知只要把Putty的Application keypad mode给关了就行了。&lt;/p&gt;
+
+&lt;!--MORE--&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;奇怪的错误&lt;/h2&gt;
+
+&lt;p&gt;当刚开始小键盘的输入和预期有差别的时候，其实我是很困惑的。&lt;/p&gt;
+
+&lt;p&gt;首先我在Bash里面小键盘一切正常，这说明我键盘没问题，应该是VIM哪里不对。&lt;/p&gt;
+
+&lt;p&gt;其次我按的是1，结果出来的是前一行的q，我再按一下2，出来的是前一行的r。&lt;br /&gt;
+假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：
+&lt;code&gt;inoremap &amp;lt;Num1&amp;gt; &amp;lt;Esc&amp;gt;Oq&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;但是这也太奇怪了吧，VIM里面怎么可能把&lt;code&gt;&amp;lt;Num1&amp;gt;&lt;/code&gt;给替换成&lt;code&gt;&amp;lt;Esc&amp;gt;Oq&lt;/code&gt;这么奇怪的东西？&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;寻求答案&lt;/h2&gt;
+
+&lt;p&gt;于是我找到了&lt;a href=&quot;http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings&quot;&gt;VIM wiki上的一篇解答&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;根据这篇解答，问题是出在Putty上。&lt;br /&gt;
+Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&lt;br /&gt;
+所有小键盘上的按键（包括&lt;numlock&gt;）都会输出一串按键序列：&lt;/numlock&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;原按键&lt;/th&gt;
+      &lt;th&gt;生成序列&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num1&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Oq&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num2&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Or&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num3&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Os&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num4&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Ot&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num5&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Ou&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num6&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Ov&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num7&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Ow&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num8&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Ox&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num9&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Oy&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Num0&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Op&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;.&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;On&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;/&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;OQ&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;OR&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;+&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;Ol&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;-&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;OS&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Enter&amp;gt;&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;&amp;lt;Esc&amp;gt;OM&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;居然&lt;code&gt;&amp;lt;Num1&amp;gt;&lt;/code&gt;真的变成了&lt;code&gt;&amp;lt;Esc&amp;gt;Oq&lt;/code&gt;！&lt;/p&gt;
+
+&lt;p&gt;再去翻&lt;a href=&quot;http://the.earth.li/~sgtatham/putty/0.60/htmldoc/Chapter4.html#config-appkeypad&quot;&gt;Putty关于Application keypad mode的说明&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Application Keypad mode is a way for the server to change the behaviour of the numeric keypad&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;唔，好吧，是服务器端决定的配置。&lt;/p&gt;
+
+&lt;p&gt;所以在Putty下简单的解决方案就是关掉这个模式了：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;打开Putty配置&lt;/li&gt;
+  &lt;li&gt;选中左边的Terminal -&amp;gt; Features&lt;/li&gt;
+  &lt;li&gt;在”Disable application keypad mode”处打钩&lt;/li&gt;
+  &lt;li&gt;选中左边的Session&lt;/li&gt;
+  &lt;li&gt;保存Putty配置&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/putty_application_keypad_mode.jpg&quot; alt=&quot;关闭application keypad mode&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;更多奇怪的答案&lt;/h2&gt;
+
+&lt;p&gt;在&lt;a href=&quot;http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings#Comments&quot;&gt;VIM wiki页面的讨论板块&lt;/a&gt;，有人给出了一个看起来很蠢的解决方案：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;:inoremap &amp;lt;Esc&amp;gt;Oq 1
+:inoremap &amp;lt;Esc&amp;gt;Or 2
+:inoremap &amp;lt;Esc&amp;gt;Os 3
+:inoremap &amp;lt;Esc&amp;gt;Ot 4
+:inoremap &amp;lt;Esc&amp;gt;Ou 5
+:inoremap &amp;lt;Esc&amp;gt;Ov 6
+:inoremap &amp;lt;Esc&amp;gt;Ow 7
+:inoremap &amp;lt;Esc&amp;gt;Ox 8
+:inoremap &amp;lt;Esc&amp;gt;Oy 9
+:inoremap &amp;lt;Esc&amp;gt;Op 0
+:inoremap &amp;lt;Esc&amp;gt;On .
+:inoremap &amp;lt;Esc&amp;gt;OQ /
+:inoremap &amp;lt;Esc&amp;gt;OR *
+:inoremap &amp;lt;Esc&amp;gt;Ol +
+:inoremap &amp;lt;Esc&amp;gt;OS -
+:inoremap &amp;lt;Esc&amp;gt;OM &amp;lt;Enter&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;刚开始看到这个答案我立刻想到了这张XKCD&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/workflow.png&quot; alt=&quot;workflow&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我认为mapping不应该是一个合适的解决方案，但是下面又有人讲了他自己苦逼的故事：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;After a while struggling with this very problem with vnc viewer 4.1.3 under XP with a Debian lenny vnc4server 4.1.1+X4.3.0-31, this vim remapping is the only solution which work.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;好吧，至少他找到了解决方案。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png&quot; alt=&quot;solution&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 09 Oct 2015 23:34:16 +0800</pubDate>
+        <link>http://www.cloudisdream.com/use-keypad-with-vim-and-putty</link>
+        <guid isPermaLink="true">http://www.cloudisdream.com/use-keypad-with-vim-and-putty</guid>
+        
+        
+      </item>
     
       <item>
         <title>这篇博客是怎么建成的</title>

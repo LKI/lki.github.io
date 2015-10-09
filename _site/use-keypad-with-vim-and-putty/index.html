@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>这篇博客是怎么建成的</title>
+    <title>VIM中小键盘失灵的解决方案(Putty)</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.cloudisdream.com/how-this-blog-was-built">
+    <link rel="canonical" href="http://www.cloudisdream.com/use-keypad-with-vim-and-putty">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -56,82 +56,171 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>这篇博客是怎么建成的</h1>
-    <p class="meta">Sep 25, 2015</p>
+    <h1>VIM中小键盘失灵的解决方案(Putty)</h1>
+    <p class="meta">Oct 9, 2015</p>
   </header>
 
   <article class="post-content">
-  <p>其实最开始的时候我是用<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a>在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：</p>
+  <p>我目前的开发环境是用<a href="https://www.vagrantup.com/">Vagrant</a>起一个虚拟机，然后用<a href="http://www.putty.org/">Putty</a>连上去，用VIM做日常的开发工作。</p>
 
-<ul>
-  <li>晚上11点断网，早上6点才恢复网络，所以这个“个人博客”会断网</li>
-  <li>学校把对外的80端口给封了，而域名访问默认就是80，所以校外访问博客要变成 <code>http://cloudisdream:8080</code>这种奇怪的模式</li>
-  <li>由于是自己的电脑做服务器，还得保证一直开着，这样始终不太好</li>
-</ul>
+<p>但某一天更新了一些配置以后，我在VIM里用小键盘输入1的时候，VIM就会在前一行加了一个q字符，让我很是困惑。</p>
+
+<p>后来<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings">谷歌了一下这个问题</a>，得知只要把Putty的Application keypad mode给关了就行了。</p>
 
 <!--MORE-->
 
-<h2 id="java--servlet--structs--spring--hibernate">JAVA / Servlet / Structs + Spring + Hibernate</h2>
+<h2 id="section">奇怪的错误</h2>
+
+<p>当刚开始小键盘的输入和预期有差别的时候，其实我是很困惑的。</p>
+
+<p>首先我在Bash里面小键盘一切正常，这说明我键盘没问题，应该是VIM哪里不对。</p>
+
+<p>其次我按的是1，结果出来的是前一行的q，我再按一下2，出来的是前一行的r。<br />
+假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：
+<code>inoremap &lt;Num1&gt; &lt;Esc&gt;Oq</code></p>
+
+<p>但是这也太奇怪了吧，VIM里面怎么可能把<code>&lt;Num1&gt;</code>给替换成<code>&lt;Esc&gt;Oq</code>这么奇怪的东西？</p>
+
+<h2 id="section-1">寻求答案</h2>
+
+<p>于是我找到了<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings">VIM wiki上的一篇解答</a></p>
+
+<p>根据这篇解答，问题是出在Putty上。<br />
+Putty会默认启用“Application Keypad Mode”，这个选项被启用以后<br />
+所有小键盘上的按键（包括<numlock>）都会输出一串按键序列：</numlock></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>原按键</th>
+      <th>生成序列</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>&lt;Num1&gt;</code></td>
+      <td><code>&lt;Esc&gt;Oq</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num2&gt;</code></td>
+      <td><code>&lt;Esc&gt;Or</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num3&gt;</code></td>
+      <td><code>&lt;Esc&gt;Os</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num4&gt;</code></td>
+      <td><code>&lt;Esc&gt;Ot</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num5&gt;</code></td>
+      <td><code>&lt;Esc&gt;Ou</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num6&gt;</code></td>
+      <td><code>&lt;Esc&gt;Ov</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num7&gt;</code></td>
+      <td><code>&lt;Esc&gt;Ow</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num8&gt;</code></td>
+      <td><code>&lt;Esc&gt;Ox</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num9&gt;</code></td>
+      <td><code>&lt;Esc&gt;Oy</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Num0&gt;</code></td>
+      <td><code>&lt;Esc&gt;Op</code></td>
+    </tr>
+    <tr>
+      <td><code>.</code></td>
+      <td><code>&lt;Esc&gt;On</code></td>
+    </tr>
+    <tr>
+      <td><code>/</code></td>
+      <td><code>&lt;Esc&gt;OQ</code></td>
+    </tr>
+    <tr>
+      <td><code>*</code></td>
+      <td><code>&lt;Esc&gt;OR</code></td>
+    </tr>
+    <tr>
+      <td><code>+</code></td>
+      <td><code>&lt;Esc&gt;Ol</code></td>
+    </tr>
+    <tr>
+      <td><code>-</code></td>
+      <td><code>&lt;Esc&gt;OS</code></td>
+    </tr>
+    <tr>
+      <td><code>&lt;Enter&gt;</code></td>
+      <td><code>&lt;Esc&gt;OM</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>居然<code>&lt;Num1&gt;</code>真的变成了<code>&lt;Esc&gt;Oq</code>！</p>
+
+<p>再去翻<a href="http://the.earth.li/~sgtatham/putty/0.60/htmldoc/Chapter4.html#config-appkeypad">Putty关于Application keypad mode的说明</a>:</p>
 
 <blockquote>
-  <p>在收了可观的小费以后，旅店老板悄悄地告诉你： 每个大学的软件工程专业都会教JAVA+SSH</p>
+  <p>Application Keypad mode is a way for the server to change the behaviour of the numeric keypad</p>
 </blockquote>
 
-<p>其实在LAMP之前，我曾经试过用课程里的Java+Servlet写过一个类微博的（个人？）网站</p>
+<p>唔，好吧，是服务器端决定的配置。</p>
 
-<p>大概长这样子:
-<img src="/assets/thatsMoonPage.jpg" alt="First site" /></p>
+<p>所以在Putty下简单的解决方案就是关掉这个模式了：</p>
 
-<p>一边写我就一边感慨网页设计真是艰难，而且其实这个主页也是模仿当时的网易微博的</p>
+<ul>
+  <li>打开Putty配置</li>
+  <li>选中左边的Terminal -&gt; Features</li>
+  <li>在”Disable application keypad mode”处打钩</li>
+  <li>选中左边的Session</li>
+  <li>保存Putty配置</li>
+</ul>
 
-<h2 id="lamp--wordpress">LAMP + WordPress</h2>
+<p><img src="/assets/putty_application_keypad_mode.jpg" alt="关闭application keypad mode" /></p>
 
-<p>在前台HTML CSS JS到后台JAVA SQL都写过一遍以后，我开始意识到全栈工程师虽然听起来很美好，但是写起来实在是心太累了</p>
+<h2 id="section-2">更多奇怪的答案</h2>
 
-<p>那个时候和ED聊天，刚好聊到<a href="http://edward-mj.com/">他的博客</a>是用WordPress搭的，于是我就在自己的电脑上搭了一个服务器</p>
+<p>在<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings#Comments">VIM wiki页面的讨论板块</a>，有人给出了一个看起来很蠢的解决方案：</p>
 
-<p>虽然文章开头说了这么搭建服务器的缺点，但是其实学校还是给我们提供了一个便利：<strong>固定IP</strong></p>
+<pre><code>:inoremap &lt;Esc&gt;Oq 1
+:inoremap &lt;Esc&gt;Or 2
+:inoremap &lt;Esc&gt;Os 3
+:inoremap &lt;Esc&gt;Ot 4
+:inoremap &lt;Esc&gt;Ou 5
+:inoremap &lt;Esc&gt;Ov 6
+:inoremap &lt;Esc&gt;Ow 7
+:inoremap &lt;Esc&gt;Ox 8
+:inoremap &lt;Esc&gt;Oy 9
+:inoremap &lt;Esc&gt;Op 0
+:inoremap &lt;Esc&gt;On .
+:inoremap &lt;Esc&gt;OQ /
+:inoremap &lt;Esc&gt;OR *
+:inoremap &lt;Esc&gt;Ol +
+:inoremap &lt;Esc&gt;OS -
+:inoremap &lt;Esc&gt;OM &lt;Enter&gt;
+</code></pre>
 
-<p>于是我就去万网买了个域名，CNAME一下到学校IP。</p>
+<p>刚开始看到这个答案我立刻想到了这张XKCD</p>
 
-<p>但是因为实在遭不住一直开机，还要断网，后来还是抛弃掉了这个方式。</p>
+<p><img src="http://imgs.xkcd.com/comics/workflow.png" alt="workflow" /></p>
 
-<h2 id="github-pages--jekyll">Github Pages + Jekyll</h2>
+<p>我认为mapping不应该是一个合适的解决方案，但是下面又有人讲了他自己苦逼的故事：</p>
 
-<p>现在的博客就是最简单的<a href="https://pages.github.com/">GitHub Pages</a> + <a href="http://jekyllrb.com/">Jekyll</a></p>
+<blockquote>
+  <p>After a while struggling with this very problem with vnc viewer 4.1.3 under XP with a Debian lenny vnc4server 4.1.1+X4.3.0-31, this vim remapping is the only solution which work.</p>
+</blockquote>
 
-<p>网页放在GitHub上可以享受版本控制这个得天独厚的优势，Jekyll用的是Ruby，简单易用好上手。</p>
+<p>好吧，至少他找到了解决方案。</p>
 
-<p>从无到有搭建博客基本上就这么几步：</p>
-
-<ol>
-  <li>注册Github账号，并创建 account.github.com 这个目录</li>
-  <li>跑<code>gem install jekyll</code>，然后<code>gem new my-site</code></li>
-  <li>修改<code>_config.yml</code>到自己的配置，然后在<code>_post</code>文件夹里面新增博客即可</li>
-</ol>
-
-<h2 id="comments">Comments</h2>
-
-<p>博客少了评论总感觉哪里不对，因为是GitHub上的静态页面，基本上解决方案有：用<a href="http://duoshuo.com/">多说评论</a>，<a href="https://disqus.com/">Disqus</a>，或者是用GitHub issue来定制化评论<br />
-（我一开始还以为disqus == disquz）</p>
-
-<p>综合各方面，我采用了Disqus，根据<a href="https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions">官方的说明文档</a></p>
-
-<p>直接在Page里面插入一段Comment Code就可以了。</p>
-
-<h2 id="enhancement">Enhancement</h2>
-
-<p>至此，基本主题的博客已全部搭建完毕</p>
-
-<p>但是还有几点不足的地方：</p>
-
-<ol>
-  <li>页面最下方的Twitter图标最好要改成Weibo的（但是我还没搞懂怎么画）</li>
-  <li>要补完About界面</li>
-  <li>使用Kramdown的GFM render方式感觉还是不够好，尤其是界面上，还是<a href="https://github.com/LKI/blogs/issues/3">GitHub Issue的Render方式</a>看起来比较舒服</li>
-</ol>
-
-<p>看来以后在写博客的同时，也要对网站持续进行优化才可以呀！</p>
+<p><img src="http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" alt="solution" /></p>
 
 
   </article>
