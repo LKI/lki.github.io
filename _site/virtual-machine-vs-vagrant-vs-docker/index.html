@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浮云计算</title>
+    <title>Virtual Machine, Vagrant, Docker的区别</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.cloudisdream.com/">
+    <link rel="canonical" href="http://www.cloudisdream.com/virtual-machine-vs-vagrant-vs-docker">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,118 +53,158 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Oct 12, 2015</span>
-        <a class="post-link" href="/virtual-machine-vs-vagrant-vs-docker">Virtual Machine, Vagrant, Docker的区别</a>
-        <p>Virtualization——虚拟化技术一直是计算机世界里面很重要的东西。<br />
+  <header class="post-header">
+    <h1>Virtual Machine, Vagrant, Docker的区别</h1>
+    <p class="meta">Oct 12, 2015</p>
+  </header>
+
+  <article class="post-content">
+  <p>Virtualization——虚拟化技术一直是计算机世界里面很重要的东西。<br />
 一般程序员听到这个词首先浮现出的就是Windows下面开着装着Linux系统的VMware。<br />
 而这个“装着Linux系统的VMware”就是我们口中的虚拟机（Virtual Machine）</p>
 
+<!--MORE-->
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 9, 2015</span>
-        <a class="post-link" href="/use-keypad-with-vim-and-putty">VIM中小键盘失灵的解决方案(Putty)</a>
-        <p>我目前的开发环境是用<a href="https://www.vagrantup.com/">Vagrant</a>起一个虚拟机，然后用<a href="http://www.putty.org/">Putty</a>连上去，用VIM做日常的开发工作。</p>
+<p>虚拟机的主要好处是可以创建一个与主机操作系统不同的开发环境<br />
+（比如说一般的办公室都是Windows系统电脑）</p>
 
-<p>但某一天更新了一些配置以后，我在VIM里用小键盘输入1的时候，VIM就会在前一行加了一个q字符，让我很是困惑。</p>
+<p>但是开发的便利也会导致初始化一个这样的环境比较麻烦<br />
+而且当项目进行到一定程度，对环境本身一些变化有依赖的时候<br />
+从零开始创建虚拟机的开发环境会很繁琐<br />
+Vagrant就是一种用来解决这种繁琐的工具</p>
 
-<p>后来<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings">谷歌了一下这个问题</a>，得知只要把Putty的Application keypad mode给关了就行了。</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 25, 2015</span>
-        <a class="post-link" href="/how-this-blog-was-built">这篇博客是怎么建成的</a>
-        <p>其实最开始的时候我是用<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a>在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：</p>
-
-<ul>
-  <li>晚上11点断网，早上6点才恢复网络，所以这个“个人博客”会断网</li>
-  <li>学校把对外的80端口给封了，而域名访问默认就是80，所以校外访问博客要变成 <code>http://cloudisdream:8080</code>这种奇怪的模式</li>
-  <li>由于是自己的电脑做服务器，还得保证一直开着，这样始终不太好</li>
-</ul>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 23, 2015</span>
-        <a class="post-link" href="/why-im-blogging">为什么我要写博客</a>
-        <p>我其实很喜欢看别人写的东西，<a href="http://coolshell.cn/articles/4758.html">技术类的</a>、<a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">非技术类的</a>，<a href="http://blog.csdn.net/redguardtoo/article/details/7222501">中文的</a>、<a href="http://blog.codinghorror.com/show-dont-tell/">英文的</a>。</p>
-
-<p>很多人写文章的时候总喜欢说一句</p>
+<h2 id="vagrant">Vagrant</h2>
+<p>根据<a href="https://docs.vagrantup.com/v2/why-vagrant/index.html">官方的说法</a></p>
 
 <blockquote>
-  <p>我先抛砖引玉</p>
+  <p>Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team</p>
 </blockquote>
 
-<p>但是往往<a href="http://coolshell.cn/articles/11312.html">他们写的都非常好</a></p>
+<p>Vagrant本身不做虚拟机的工作，而是允许用户用VMware|VirtualBox|AWS来启动虚拟机镜像，他们管这叫Provider<br />
+当然了，镜像在Vagrant这里叫Box，而且很多公司已经做好了初始化的Box<a href="https://atlas.hashicorp.com/boxes/search">在这里</a>可以直接用<br />
+Vagrant还提供了对Box的初始化脚本（Provisioning），这些初始化脚本可以用更多的脚本工具来完成对Box的配置</p>
 
-<p>这样的文章看的我特手痒，想也写博客，但是问题就来了</p>
+<p>所以其实相比于传统的虚拟机，Vagrant是站在巨人的肩膀上，完成了自动化。</p>
+
+<h2 id="docker">Docker</h2>
+<p>Docker项目的目标是实现轻量级的虚拟化方案，它和Virtual Machine最大的不同是Docker容器共享操作系统的内核
+<img src="http://dockerpool.com/static/books/docker_practice/_images/virtualization.png" alt="vm" />
+<img src="http://dockerpool.com/static/books/docker_practice/_images/docker.png" alt="docker" /></p>
+
+<p>所以Docker和传统虚拟机的对比是明显的：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>特性</th>
+      <th>Docker</th>
+      <th>Virtual Machine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>启动</td>
+      <td>秒级</td>
+      <td>分钟级</td>
+    </tr>
+    <tr>
+      <td>大小</td>
+      <td>一般为MB</td>
+      <td>一般为GB</td>
+    </tr>
+    <tr>
+      <td>性能</td>
+      <td>近原生</td>
+      <td>弱于原生</td>
+    </tr>
+    <tr>
+      <td>单机支持量</td>
+      <td>上千个</td>
+      <td>一般几十个</td>
+    </tr>
+    <tr>
+      <td>内核</td>
+      <td>共享</td>
+      <td>独立</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="vagrant-vs-docker">Vagrant vs Docker</h2>
+<p>讲道理的话，这两个不应该放在一起比较， 这两者的虚拟化级别并不是一个量级上的<br />
+而且这两者并不矛盾，假如你需要在Windows系统上搭载数个特定发行版的Linux系统，完全可以先用Vagrant + Virtual Machine再嵌数个Docker</p>
+
+<p>硬要比较的话，假如你需要运行跨平台的虚拟，那就用Vagrant，<em>否则</em>，用Docker</p>
+
+<p>最后再来张表对比一下吧：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>特性</th>
+      <th>Virtual Machine</th>
+      <th>Vagrant</th>
+      <th>Docker</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>虚拟化</td>
+      <td>完全虚拟化</td>
+      <td>无</td>
+      <td>系统虚拟化</td>
+    </tr>
+    <tr>
+      <td>镜像管理</td>
+      <td>无</td>
+      <td>有，一般为GB</td>
+      <td>有，一般为MB</td>
+    </tr>
+    <tr>
+      <td>性能</td>
+      <td>弱于原生系统</td>
+      <td>弱于原生系统</td>
+      <td>接近原生系统</td>
+    </tr>
+    <tr>
+      <td>内核</td>
+      <td>独立</td>
+      <td>独立</td>
+      <td>共享</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="section">参考资料</h2>
+<ol>
+  <li><a href="http://dockerpool.com/static/books/docker_practice/index.html">《Docker —— 从入门到实践》</a></li>
+  <li><a href="https://docs.vagrantup.com/v2/why-vagrant/index.html">Why Vagrant</a></li>
+  <li><a href="https://github.com/shell909090/slides/blob/master/md/docker.md">Docker不是虚拟机</a></li>
+  <li><a href="http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment">Shoud I use vagrant or docker</a></li>
+</ol>
 
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Jul 26, 2015</span>
-        <a class="post-link" href="/how-to-set-perl-constant-module">如何优雅地使用Perl的常量模块</a>
-        <p>最近的Perl Coding遇到了一个问题：需要对一系列常量进行合法性检测。</p>
-
-<p>在Research&amp;Develop后，有一些心得。</p>
-
-<p>本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-zh">Vagrant-up遇到mount no device的解决方案</a>
-        <p>今天跑<code>vagrant up</code>的时候遇到了这个问题：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-en">Solution for vagrant-up error: mount no device</a>
-        <p>Today I encounter a problem running <code>vagrant up</code>：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Aug 28, 2014</span>
-        <a class="post-link" href="/compare-excel-using-openpyxl/">用Openpyxl做两个Excel文件的比对</a>
-        <h2 id="section">起因</h2>
-
-<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。<br />
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。<br />
-这次写小工具的同时也是学习一下新的东西。</p>
-
-
-      </li>
-      <br>
-    
-  </ul>
+  </article>
 
 </div>
 
-
       
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'liriansu';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 
 
       </div>
