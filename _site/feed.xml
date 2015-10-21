@@ -5,8 +5,8 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.liriansu.com/</link>
     <atom:link href="http://www.liriansu.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Oct 2015 14:57:29 +0800</pubDate>
-    <lastBuildDate>Wed, 21 Oct 2015 14:57:29 +0800</lastBuildDate>
+    <pubDate>Wed, 21 Oct 2015 14:59:10 +0800</pubDate>
+    <lastBuildDate>Wed, 21 Oct 2015 14:59:10 +0800</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -441,13 +441,13 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
         <title>这篇博客是怎么建成的</title>
         <description>&lt;p&gt;其实最开始的时候我是用&lt;a href=&quot;https://en.wikipedia.org/wiki/LAMP_(software_bundle)&quot;&gt;LAMP&lt;/a&gt;在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：&lt;/p&gt;
 
+&lt;!--MORE--&gt;
+
 &lt;ul&gt;
   &lt;li&gt;晚上11点断网，早上6点才恢复网络，所以这个“个人博客”会断网&lt;/li&gt;
   &lt;li&gt;学校把对外的80端口给封了，而域名访问默认就是80，所以校外访问博客要变成 &lt;code&gt;http://cloudisdream:8080&lt;/code&gt;这种奇怪的模式&lt;/li&gt;
   &lt;li&gt;由于是自己的电脑做服务器，还得保证一直开着，这样始终不太好&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;!--MORE--&gt;
 
 &lt;h2 id=&quot;java--servlet--structs--spring--hibernate&quot;&gt;JAVA / Servlet / Structs + Spring + Hibernate&lt;/h2&gt;
 
