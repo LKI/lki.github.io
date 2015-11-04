@@ -1,0 +1,3 @@
+[submodule "teampicker"]
+	path = teampicker
+	url = https://github.com/LKI/teampicker.git
