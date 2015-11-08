@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浮云计算</title>
+    <title>石头剪刀布中的求输策略</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.liriansu.com/">
+    <link rel="canonical" href="http://www.liriansu.com/how-to-lose-in-rock-paper-scissors">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -53,143 +53,97 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Nov 9, 2015</span>
-        <a class="post-link" href="/how-to-lose-in-rock-paper-scissors">石头剪刀布中的求输策略</a>
-        <p>小时候七八岁，那时候还在看《读者》。<br />
+  <header class="post-header">
+    <h1>石头剪刀布中的求输策略</h1>
+    <p class="meta">Nov 9, 2015</p>
+  </header>
+
+  <article class="post-content">
+  <p>小时候七八岁，那时候还在看《读者》。<br />
 里面有篇文章讲了一下石头剪刀布中的求胜策略。</p>
 
+<!--MORE-->
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Nov 9, 2015</span>
-        <a class="post-link" href="/read-blog">读博客</a>
-        <p>前阵子把<a href="http://shell909090.org/blog/">Shell909090学长的博客</a>刷完了，感觉对世间万物的好奇心又被满足了一点。<br />
-之前看<a href="http://blog.codinghorror.com/because-reading-is-fundamental-2/">阅读是基础</a>的时候，自然地就想起在StackOverflow上有种人叫Rep-Monster：这种人会在所有的问题下留下答案，虽然活跃，但其实对社区质量没有太大的提高。<br />
-所以其实像微博这样的网站应该根据一个用户的微博阅读数量来判断活跃度和积分，而不应当根据发微博数来确定。</p>
+<h2 id="section">石头剪刀布</h2>
 
+<p>先讲一段有用的废话吧。<br />
+一般的博弈情况下，问题都会简化成一个容易判断的模型。<br />
+也就是说虽然反应快的人可以把<code>后手出招</code>当作必胜策略，<br />
+但是数学模型中一般都会摈弃掉这种可能性。</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 21, 2015</span>
-        <a class="post-link" href="/build-seperate-env-using-aufs-and-docker">利用AUFS和Docker搭建多个私有开发环境</a>
-        <p>文章的开头先提个问题：<br />
-我们平常的工作中，一般都是怎样让每个人都拿到独立开发环境的呢？</p>
+<p>（所以看起来数学家会不太喜欢社会学家？）</p>
 
+<p>在石头剪刀布这个模型里，规则基本上是三点：</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 12, 2015</span>
-        <a class="post-link" href="/virtual-machine-vs-vagrant-vs-docker">Virtual Machine, Vagrant, Docker的区别</a>
-        <p>Virtualization——虚拟化技术一直是计算机世界里面很重要的东西。<br />
-一般程序员听到这个词首先浮现出的就是Windows下面开着装着Linux系统的VMware。<br />
-而这个“装着Linux系统的VMware”就是我们口中的虚拟机（Virtual Machine）</p>
+<ul>
+  <li>双方同时出招，在石头、剪刀、布三个里面选一个。</li>
+  <li>石头赢剪刀，剪刀赢布，布赢石头。</li>
+  <li>假如平手就再战一局。</li>
+</ul>
 
+<p>这种三选一循环互克的游戏，国外也有，叫<a href="https://en.wikipedia.org/wiki/Rock-paper-scissors">Rock-Paper-Scissors</a></p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 9, 2015</span>
-        <a class="post-link" href="/use-keypad-with-vim-and-putty">VIM中小键盘失灵的解决方案(Putty)</a>
-        <p>我目前的开发环境是用<a href="https://www.vagrantup.com/">Vagrant</a>起一个虚拟机，然后用<a href="http://www.putty.org/">Putty</a>连上去，用VIM做日常的开发工作。</p>
+<h2 id="section-1">求胜策略</h2>
 
-<p>但某一天更新了一些配置以后，我在VIM里用小键盘输入1的时候，VIM就会在前一行加了一个q字符，让我很是困惑。</p>
+<p>数学模型往往会假定对局双方都是聪明人，<br />
+显然地，在石头剪刀布中聪明人的策略就是乱出，<br />
+这样双方获胜的概率都是50%。</p>
 
-<p>后来<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings">谷歌了一下这个问题</a>，得知只要把Putty的Application keypad mode给关了就行了。</p>
+<p>不过在真实情况中，两边都是普通人。<br />
+<em>(明明刚才说过要简化模型的=_=)</em><br />
+所以我们需要做一个假设：</p>
 
+<p><strong>一般人不会连续两下都做出相同的选择</strong></p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 25, 2015</span>
-        <a class="post-link" href="/how-this-blog-was-built">这篇博客是怎么建成的</a>
-        <p>其实最开始的时候我是用<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a>在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：</p>
+<p>也就是说当他这次出的是剪刀的话，下次较大可能不会出剪刀。<br />
+所以只要下局出布就可以不输。<br />
+同理，对方出石头，下局就出剪刀；对方出布，下局就出石头。</p>
 
+<p>概括地说，这样的假设条件下：<br />
+<strong>对手出什么，下局就出被它克制的</strong></p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 23, 2015</span>
-        <a class="post-link" href="/why-im-blogging">为什么我要写博客</a>
-        <p>我其实很喜欢看别人写的东西，<a href="http://coolshell.cn/articles/4758.html">技术类的</a>、<a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">非技术类的</a>，<a href="http://blog.csdn.net/redguardtoo/article/details/7222501">中文的</a>、<a href="http://blog.codinghorror.com/show-dont-tell/">英文的</a>。</p>
+<p>当然了，题设本身也是这个策略的弱点。<br />
+假如你的对手头很硬，一直不改变出招，<br />
+那么这个策略就会一败涂地。</p>
 
-<p>很多人写文章的时候总喜欢说一句</p>
+<h2 id="section-2">实战案例</h2>
 
-<blockquote>
-  <p>我先抛砖引玉</p>
-</blockquote>
+<p>和女朋友下楼梯的时候玩起了<code>谁猜拳赢了就走一步</code>的游戏，<br />
+玩之前火速地想了一下：</p>
 
-<p>但是往往<a href="http://coolshell.cn/articles/11312.html">他们写的都非常好</a></p>
+<ol>
+  <li>女朋友输了不开心，赢了才开心，而且她不开心我也不能开心。</li>
+  <li>女朋友在逻辑上不会跟我计较，所以应该不会头很硬地和我勾心斗角。</li>
+  <li>女朋友她第一下喜欢出布。</li>
+</ol>
 
-<p>这样的文章看的我特手痒，想也写博客，但是问题就来了</p>
+<p>嗯，于是我采取了<code>先出石头，再出被她克制的选项</code><br />
+成功连败了五六局。</p>
+
+<p>嗯，毕竟求胜策略这种东西，也可以<strong>反着来用</strong>嘛。</p>
 
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Jul 26, 2015</span>
-        <a class="post-link" href="/how-to-set-perl-constant-module">如何优雅地使用Perl的常量模块</a>
-        <p>最近的Perl Coding遇到了一个问题：需要对一系列常量进行合法性检测。</p>
-
-<p>在Research&amp;Develop后，有一些心得。</p>
-
-<p>本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-zh">Vagrant-up遇到mount no device的解决方案</a>
-        <p>今天跑<code>vagrant up</code>的时候遇到了这个问题：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-en">Solution for vagrant-up error: mount no device</a>
-        <p>Today I encounter a problem running <code>vagrant up</code>：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Aug 28, 2014</span>
-        <a class="post-link" href="/compare-excel-using-openpyxl/">用Openpyxl做两个Excel文件的比对</a>
-        <h2 id="section">起因</h2>
-
-<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。<br />
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。<br />
-这次写小工具的同时也是学习一下新的东西。</p>
-
-
-      </li>
-      <br>
-    
-  </ul>
+  </article>
 
 </div>
 
-
       
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'liriansu';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 
 
       </div>

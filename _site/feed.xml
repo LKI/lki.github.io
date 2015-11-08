@@ -5,9 +5,101 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.liriansu.com/</link>
     <atom:link href="http://www.liriansu.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 21 Oct 2015 14:59:10 +0800</pubDate>
-    <lastBuildDate>Wed, 21 Oct 2015 14:59:10 +0800</lastBuildDate>
-    <generator>Jekyll v2.2.0</generator>
+    <pubDate>Sun, 08 Nov 2015 22:49:27 +0800</pubDate>
+    <lastBuildDate>Sun, 08 Nov 2015 22:49:27 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>石头剪刀布中的求输策略</title>
+        <description>&lt;p&gt;小时候七八岁，那时候还在看《读者》。&lt;br /&gt;
+里面有篇文章讲了一下石头剪刀布中的求胜策略。&lt;/p&gt;
+
+&lt;!--MORE--&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;石头剪刀布&lt;/h2&gt;
+
+&lt;p&gt;先讲一段有用的废话吧。&lt;br /&gt;
+一般的博弈情况下，问题都会简化成一个容易判断的模型。&lt;br /&gt;
+也就是说虽然反应快的人可以把&lt;code&gt;后手出招&lt;/code&gt;当作必胜策略，&lt;br /&gt;
+但是数学模型中一般都会摈弃掉这种可能性。&lt;/p&gt;
+
+&lt;p&gt;（所以看起来数学家会不太喜欢社会学家？）&lt;/p&gt;
+
+&lt;p&gt;在石头剪刀布这个模型里，规则基本上是三点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;双方同时出招，在石头、剪刀、布三个里面选一个。&lt;/li&gt;
+  &lt;li&gt;石头赢剪刀，剪刀赢布，布赢石头。&lt;/li&gt;
+  &lt;li&gt;假如平手就再战一局。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这种三选一循环互克的游戏，国外也有，叫&lt;a href=&quot;https://en.wikipedia.org/wiki/Rock-paper-scissors&quot;&gt;Rock-Paper-Scissors&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;求胜策略&lt;/h2&gt;
+
+&lt;p&gt;数学模型往往会假定对局双方都是聪明人，&lt;br /&gt;
+显然地，在石头剪刀布中聪明人的策略就是乱出，&lt;br /&gt;
+这样双方获胜的概率都是50%。&lt;/p&gt;
+
+&lt;p&gt;不过在真实情况中，两边都是普通人。&lt;br /&gt;
+&lt;em&gt;(明明刚才说过要简化模型的=_=)&lt;/em&gt;&lt;br /&gt;
+所以我们需要做一个假设：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;一般人不会连续两下都做出相同的选择&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;也就是说当他这次出的是剪刀的话，下次较大可能不会出剪刀。&lt;br /&gt;
+所以只要下局出布就可以不输。&lt;br /&gt;
+同理，对方出石头，下局就出剪刀；对方出布，下局就出石头。&lt;/p&gt;
+
+&lt;p&gt;概括地说，这样的假设条件下：&lt;br /&gt;
+&lt;strong&gt;对手出什么，下局就出被它克制的&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;当然了，题设本身也是这个策略的弱点。&lt;br /&gt;
+假如你的对手头很硬，一直不改变出招，&lt;br /&gt;
+那么这个策略就会一败涂地。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;实战案例&lt;/h2&gt;
+
+&lt;p&gt;和女朋友下楼梯的时候玩起了&lt;code&gt;谁猜拳赢了就走一步&lt;/code&gt;的游戏，&lt;br /&gt;
+玩之前火速地想了一下：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;女朋友输了不开心，赢了才开心，而且她不开心我也不能开心。&lt;/li&gt;
+  &lt;li&gt;女朋友在逻辑上不会跟我计较，所以应该不会头很硬地和我勾心斗角。&lt;/li&gt;
+  &lt;li&gt;女朋友她第一下喜欢出布。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;嗯，于是我采取了&lt;code&gt;先出石头，再出被她克制的选项&lt;/code&gt;&lt;br /&gt;
+成功连败了五六局。&lt;/p&gt;
+
+&lt;p&gt;嗯，毕竟求胜策略这种东西，也可以&lt;strong&gt;反着来用&lt;/strong&gt;嘛。&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Nov 2015 05:01:28 +0800</pubDate>
+        <link>http://www.liriansu.com/how-to-lose-in-rock-paper-scissors</link>
+        <guid isPermaLink="true">http://www.liriansu.com/how-to-lose-in-rock-paper-scissors</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>读博客</title>
+        <description>&lt;p&gt;前阵子把&lt;a href=&quot;http://shell909090.org/blog/&quot;&gt;Shell909090学长的博客&lt;/a&gt;刷完了，感觉对世间万物的好奇心又被满足了一点。&lt;br /&gt;
+之前看&lt;a href=&quot;http://blog.codinghorror.com/because-reading-is-fundamental-2/&quot;&gt;阅读是基础&lt;/a&gt;的时候，自然地就想起在StackOverflow上有种人叫Rep-Monster：这种人会在所有的问题下留下答案，虽然活跃，但其实对社区质量没有太大的提高。&lt;br /&gt;
+所以其实像微博这样的网站应该根据一个用户的微博阅读数量来判断活跃度和积分，而不应当根据发微博数来确定。&lt;/p&gt;
+
+&lt;!--MORE--&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;信息的形式&lt;/h2&gt;
+&lt;p&gt;在我小的时候，我&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 09 Nov 2015 04:55:58 +0800</pubDate>
+        <link>http://www.liriansu.com/read-blog</link>
+        <guid isPermaLink="true">http://www.liriansu.com/read-blog</guid>
+        
+        
+      </item>
     
       <item>
         <title>利用AUFS和Docker搭建多个私有开发环境</title>
@@ -110,7 +202,7 @@ $ tree
 
 &lt;p&gt;可以看到我们在private环境中所做的所有改动都在change中发生了！&lt;/p&gt;
 
-&lt;p&gt;这就相当于图层（Layer）的叠加，我们往只读的public层上叠加了一层可写的change层。
+&lt;p&gt;这就相当于图层（Layer）的叠加，我们往只读的public层上叠加了一层可写的change层。&lt;br /&gt;
 &lt;em&gt;不过对于删除文件的情况要进行额外的检测&lt;/em&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;docker&quot;&gt;与Docker的叠加&lt;/h2&gt;
@@ -162,8 +254,8 @@ Vagrant还提供了对Box的初始化脚本（Provisioning），这些初始化�
 &lt;p&gt;所以其实相比于传统的虚拟机，Vagrant是站在巨人的肩膀上，完成了自动化。&lt;/p&gt;
 
 &lt;h2 id=&quot;docker&quot;&gt;Docker&lt;/h2&gt;
-&lt;p&gt;Docker项目的目标是实现轻量级的虚拟化方案，它和Virtual Machine最大的不同是Docker容器共享操作系统的内核
-&lt;img src=&quot;http://dockerpool.com/static/books/docker_practice/_images/virtualization.png&quot; alt=&quot;vm&quot; /&gt;
+&lt;p&gt;Docker项目的目标是实现轻量级的虚拟化方案，它和Virtual Machine最大的不同是Docker容器共享操作系统的内核&lt;br /&gt;
+&lt;img src=&quot;http://dockerpool.com/static/books/docker_practice/_images/virtualization.png&quot; alt=&quot;vm&quot; /&gt;&lt;br /&gt;
 &lt;img src=&quot;http://dockerpool.com/static/books/docker_practice/_images/docker.png&quot; alt=&quot;docker&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;所以Docker和传统虚拟机的对比是明显的：&lt;/p&gt;
@@ -283,7 +375,7 @@ Vagrant还提供了对Box的初始化脚本（Provisioning），这些初始化�
 &lt;p&gt;首先我在Bash里面小键盘一切正常，这说明我键盘没问题，应该是VIM哪里不对。&lt;/p&gt;
 
 &lt;p&gt;其次我按的是1，结果出来的是前一行的q，我再按一下2，出来的是前一行的r。&lt;br /&gt;
-假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：
+假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：&lt;br /&gt;
 &lt;code&gt;inoremap &amp;lt;Num1&amp;gt; &amp;lt;Esc&amp;gt;Oq&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;但是这也太奇怪了吧，VIM里面怎么可能把&lt;code&gt;&amp;lt;Num1&amp;gt;&lt;/code&gt;给替换成&lt;code&gt;&amp;lt;Esc&amp;gt;Oq&lt;/code&gt;这么奇怪的东西？&lt;/p&gt;
@@ -457,7 +549,7 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;其实在LAMP之前，我曾经试过用课程里的Java+Servlet写过一个类微博的（个人？）网站&lt;/p&gt;
 
-&lt;p&gt;大概长这样子:
+&lt;p&gt;大概长这样子:&lt;br /&gt;
 &lt;img src=&quot;/assets/thatsMoonPage.jpg&quot; alt=&quot;First site&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;一边写我就一边感慨网页设计真是艰难，而且其实这个主页也是模仿当时的网易微博的&lt;/p&gt;
@@ -603,11 +695,8 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;一般来说，Perl中的常量如下：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    use constant CONST_PI =&amp;gt; 3.1416;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    use constant CONST_PI =&amp;gt; 3.1416;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;在模块化的编码过程中，随着常量的增多，我们会需要把这些常量放到一个常量模块(Perl Module)里面：&lt;/p&gt;
 
@@ -615,46 +704,43 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;比如说在哼哧哼哧地写了一阵子以后，我们有下面这个常量模块。&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    package Lirian::Constants;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    use strict;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    use warnings;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    #Math Const
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    use constant CONST_PI =&amp;gt; 3.1416;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    use constant CONST_E  =&amp;gt; 2.718;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    #Default Config Parm Name
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    use constant PARM_DB_NAME  =&amp;gt; &#39;dbName&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    use constant PARM_DB_HOST  =&amp;gt; &#39;dbHost&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;    use constant PARM_GIT_USER =&amp;gt; &#39;gitUser&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;    require Exporter;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;    our @ISA = qw(Exporter);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;    our @EXPORT_OK = qw(
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;&lt;/span&gt;        CONST_PI
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;&lt;/span&gt;        CONST_E
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        PARM_DB_NAME
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;&lt;/span&gt;        PARM_DB_HOST
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;&lt;/span&gt;        PARM_GIT_USER
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;&lt;/span&gt;    );
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n24&quot; name=&quot;n24&quot;&gt;24&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n25&quot; name=&quot;n25&quot;&gt;25&lt;/a&gt;&lt;/span&gt;    our %EXPORT_TAGS = (
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n26&quot; name=&quot;n26&quot;&gt;26&lt;/a&gt;&lt;/span&gt;        all  =&amp;gt; \@EXPORT_OK,
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n27&quot; name=&quot;n27&quot;&gt;27&lt;/a&gt;&lt;/span&gt;        math =&amp;gt; [qw(
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n28&quot; name=&quot;n28&quot;&gt;28&lt;/a&gt;&lt;/span&gt;            CONST_PI
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n29&quot; name=&quot;n29&quot;&gt;29&lt;/a&gt;&lt;/span&gt;            CONST_E
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n30&quot; name=&quot;n30&quot;&gt;30&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        )],
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n31&quot; name=&quot;n31&quot;&gt;31&lt;/a&gt;&lt;/span&gt;        parm =&amp;gt; [qw(
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n32&quot; name=&quot;n32&quot;&gt;32&lt;/a&gt;&lt;/span&gt;            PARM_DB_NAME
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n33&quot; name=&quot;n33&quot;&gt;33&lt;/a&gt;&lt;/span&gt;            PARM_DB_HOST
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n34&quot; name=&quot;n34&quot;&gt;34&lt;/a&gt;&lt;/span&gt;            PARM_GIT_USER
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n35&quot; name=&quot;n35&quot;&gt;35&lt;/a&gt;&lt;/span&gt;        )],
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n36&quot; name=&quot;n36&quot;&gt;36&lt;/a&gt;&lt;/span&gt;    );
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    package Lirian::Constants;
+    use strict;
+    use warnings;
+
+    #Math Const
+    use constant CONST_PI =&amp;gt; 3.1416;
+    use constant CONST_E  =&amp;gt; 2.718;
+
+    #Default Config Parm Name
+    use constant PARM_DB_NAME  =&amp;gt; &#39;dbName&#39;;
+    use constant PARM_DB_HOST  =&amp;gt; &#39;dbHost&#39;;
+    use constant PARM_GIT_USER =&amp;gt; &#39;gitUser&#39;;
+
+    require Exporter;
+    our @ISA = qw(Exporter);
+
+    our @EXPORT_OK = qw(
+        CONST_PI
+        CONST_E
+        PARM_DB_NAME
+        PARM_DB_HOST
+        PARM_GIT_USER
+    );
+
+    our %EXPORT_TAGS = (
+        all  =&amp;gt; \@EXPORT_OK,
+        math =&amp;gt; [qw(
+            CONST_PI
+            CONST_E
+        )],
+        parm =&amp;gt; [qw(
+            PARM_DB_NAME
+            PARM_DB_HOST
+            PARM_GIT_USER
+        )],
+    );
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;上面这段代码简单粗暴地展示了Perl中的常量模块。&lt;/p&gt;
 
@@ -670,23 +756,20 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;而一般地，我们会这么使用：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    package Lirian::Math;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    use Lirian::Constants qw(:all);
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;    use strict;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    use warnings;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    sub get_circum {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;        my ($r) = @_;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        return 2 * CONST_PI * $r;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    }
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;    1;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    package Lirian::Math;
+
+    use Lirian::Constants qw(:all);
+    use strict;
+    use warnings;
+
+    sub get_circum {
+        my ($r) = @_;
+
+        return 2 * CONST_PI * $r;
+    }
+
+    1;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;在正常的情况下，常量的使用方法比较简单，但假如需求有些绕：&lt;/p&gt;
 
@@ -694,27 +777,21 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;比如说需求文件如下：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    dbName=github
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    dbHost=localhost
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    gitUser=LKI
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-config&quot;&gt;    dbName=github
+    dbHost=localhost
+    gitUser=LKI
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;显然地，一种简单但稍微蠢了点的方法是这么做：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    sub validate_config_dumb {
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        my ($conf) = @_;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_DB_NAME);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_DB_HOST);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_GIT_USER);
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    }
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    sub validate_config_dumb {
+        my ($conf) = @_;
+
+        validate_parm($conf, PARM_DB_NAME);
+        validate_parm($conf, PARM_DB_HOST);
+        validate_parm($conf, PARM_GIT_USER);
+    }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;这样做有几个问题：&lt;/p&gt;
 
@@ -729,39 +806,30 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;在Exporter中，定义在%EXPORT_TAGS中的文件可以直接引用：&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    my $math_tags = $tags-&amp;gt;{math}; # [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    my $parm_tags = $tags-&amp;gt;{parm}; # [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+    my $math_tags = $tags-&amp;gt;{math}; # [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];
+    my $parm_tags = $tags-&amp;gt;{parm}; # [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;这样就可以拿到常量的名字了，此时我们便需要&lt;a href=&quot;http://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable&quot;&gt;在Perl中根据变量名获取变量值&lt;/a&gt;&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    my $name  = &#39;CONST_PI&#39;;
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    my $value = Lirian::Constants-&amp;gt;$name; # 3.1416
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    my $name  = &#39;CONST_PI&#39;;
+    my $value = Lirian::Constants-&amp;gt;$name; # 3.1416
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;所以在上一小节的问题中，我们可以得出一个更优雅的解决方案啦~&lt;/p&gt;
 
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    sub validate_config {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        my ($conf) = @_;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;        my $parm_tags = $tags-&amp;gt;{parm};
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;        foreach my $parm_name (@$parm_tags) {
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;            my $parm_value = Lirian::Constants-&amp;gt;$parm_name;
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;            validate_parm($conf, $parm_value);
-&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;        }
-&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    }
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    sub validate_config {
+        my ($conf) = @_;
+
+        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+        my $parm_tags = $tags-&amp;gt;{parm};
+        foreach my $parm_name (@$parm_tags) {
+            my $parm_value = Lirian::Constants-&amp;gt;$parm_name;
+            validate_parm($conf, $parm_value);
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;大功告成！从此以后在加常量的同时，validate_config会自动地检验新增的配置选项啦~&lt;/p&gt;
 
@@ -864,7 +932,7 @@ The error output from the last command was:
 /sbin/mount.vboxsf: mounting failed with the error: No such device
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Refer to https://github.com/mitchellh/vagrant/issues/1657 &lt;/p&gt;
+&lt;p&gt;Refer to https://github.com/mitchellh/vagrant/issues/1657&lt;/p&gt;
 
 &lt;p&gt;_This is usually a result of the guest’s package manager upgrading the&lt;/p&gt;
 
@@ -893,66 +961,6 @@ we run:&lt;code&gt;yum install kernel-devel-2.6.18-404.el5&lt;/code&gt;&lt;/p&gt
         <pubDate>Fri, 15 May 2015 18:29:05 +0800</pubDate>
         <link>http://www.liriansu.com/vagrant-up-but-mount-no-device-en</link>
         <guid isPermaLink="true">http://www.liriansu.com/vagrant-up-but-mount-no-device-en</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>用Openpyxl做两个Excel文件的比对</title>
-        <description>&lt;h2 id=&quot;section&quot;&gt;起因&lt;/h2&gt;
-
-&lt;p&gt;最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。&lt;br /&gt;
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。&lt;br /&gt;
-这次写小工具的同时也是学习一下新的东西。&lt;/p&gt;
-
-&lt;!--MORE--&gt;
-
-&lt;h2 id=&quot;section-1&quot;&gt;准备工作&lt;/h2&gt;
-
-&lt;p&gt;由于本次要比对的报表是Office07的.xlsx文件，上网查了一下Python怎么做比较合适。&lt;br /&gt;
-看了几篇心得以后，敲定用Openpyxl（参考如下链接：）&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;http://www.gocalf.com/blog/python-read-write-excel.html&quot;&gt;Python处理Excel的四个工具&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;于是接下来是装Openpyxl，到官网上按照流程装了一发：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://pythonhosted.org/openpyxl/&quot;&gt;A Python Library: Openpyxl&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;由于源码是到BitBucket上拖下来的，所以顺便还装了SourceTree。&lt;br /&gt;
-据说SourceTree还有Git的相关功能，下次可以体验一下。&lt;/p&gt;
-
-&lt;h2 id=&quot;openpyxl&quot;&gt;使用Openpyxl&lt;/h2&gt;
-
-&lt;p&gt;Openpyxl装好以后直接import就能用啦：&lt;/p&gt;
-
-&lt;div&gt;&lt;div class=&quot;CodeRay&quot;&gt;
-  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;from&lt;/span&gt; &lt;span style=&quot;color:#B44;font-weight:bold&quot;&gt;openpyxl&lt;/span&gt; &lt;span style=&quot;color:#080;font-weight:bold&quot;&gt;import&lt;/span&gt; &lt;span style=&quot;color:#B44;font-weight:bold&quot;&gt;*&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Openpyxl还提供了一个非常棒的教程~~（有点过于简单~~&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://pythonhosted.org/openpyxl/tutorial.html&quot;&gt;Openpyxl Tutorial&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Openpyxl还有个弊端就是文档不怎么详细，只能去翻源码。&lt;/p&gt;
-
-&lt;h2 id=&quot;section-2&quot;&gt;最终代码&lt;/h2&gt;
-
-&lt;p&gt;可以到我写的PythonScripts里找到我写的版本：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/LKI/PythonScripts/tree/master/ExcelComparer&quot;&gt;PythonScripts - ExcelComparer&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 28 Aug 2014 18:31:08 +0800</pubDate>
-        <link>http://www.liriansu.com/compare-excel-using-openpyxl/</link>
-        <guid isPermaLink="true">http://www.liriansu.com/compare-excel-using-openpyxl/</guid>
         
         
       </item>
