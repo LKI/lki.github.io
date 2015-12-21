@@ -5,9 +5,62 @@
     <description>Lirian Su&#39;s Blog</description>
     <link>http://www.liriansu.com/</link>
     <atom:link href="http://www.liriansu.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 08 Nov 2015 22:49:27 +0800</pubDate>
-    <lastBuildDate>Sun, 08 Nov 2015 22:49:27 +0800</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Mon, 21 Dec 2015 17:47:43 +0800</pubDate>
+    <lastBuildDate>Mon, 21 Dec 2015 17:47:43 +0800</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Javascript之路</title>
+        <description>&lt;p&gt;上大学的时候，有一门课是教各种Java的。&lt;br /&gt;
+到了布置期末大作业的时候，老师大手一挥：“你们写个电商交易网站就可以了。”&lt;br /&gt;
+我们满怀期待地问：“只要写后端？”&lt;br /&gt;
+老师说道：“没有前端怎么叫网站？HTML, CSS, JS是每个程序员的基本素养。”&lt;/p&gt;
+
+&lt;!--MORE--&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;痛苦的自学之路&lt;/h2&gt;
+
+&lt;p&gt;相对于美术，大部分程序员都更擅长数学。&lt;br /&gt;
+我也一样。&lt;/p&gt;
+
+&lt;p&gt;老师布下作业以后，班里大部分人（包括我）都是看W3School自学的。&lt;br /&gt;
+于是我们在屏幕上数格子画&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;。&lt;/p&gt;
+
+&lt;p&gt;很快我们意识到，假如每个人都这么折腾的话，作业就完成不了了。&lt;br /&gt;
+于是我们组成了小团队，一部分人专门研究前端，一部分人先把逻辑给实现了。&lt;/p&gt;
+
+&lt;p&gt;最终在简陋的Ajax + jQuery下做完了&lt;a href=&quot;https://github.com/Water-Drop/iprs&quot;&gt;那个项目&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;bootstrap&quot;&gt;Bootstrap&lt;/h2&gt;
+
+&lt;p&gt;虽然一直是网页苦手，但是由于网页其实是最简单而且最方便的展示手段（比PPT要强）&lt;br /&gt;
+于是我默默地&lt;a href=&quot;/teampicker&quot;&gt;写些小东西练手&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;对于库的利用使我_暂时_脱离了画&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;的束缚，&lt;br /&gt;
+可以专注于内容了。&lt;br /&gt;
+（于是我又了解了&lt;a href=&quot;https://en.wikipedia.org/wiki/Lorem_ipsum&quot;&gt;Lorem ipsum&lt;/a&gt;）&lt;/p&gt;
+
+&lt;h2 id=&quot;free-code-camp&quot;&gt;Free Code Camp&lt;/h2&gt;
+
+&lt;p&gt;最近偶然发现了&lt;a href=&quot;http://www.freecodecamp.com/&quot;&gt;这个JS入门网站&lt;/a&gt;&lt;br /&gt;
+不禁感慨当时为什么遇上合适的入门指南。&lt;/p&gt;
+
+&lt;p&gt;不过男人四十尚少年嘛，&lt;br /&gt;
+就好像关谷说的&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;活到老 学到老&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;就是这么个道理。&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 22 Dec 2015 01:26:52 +0800</pubDate>
+        <link>http://www.liriansu.com/learning-javascript</link>
+        <guid isPermaLink="true">http://www.liriansu.com/learning-javascript</guid>
+        
+        
+      </item>
     
       <item>
         <title>石头剪刀布中的求输策略</title>
@@ -78,25 +131,6 @@
         <pubDate>Mon, 09 Nov 2015 05:01:28 +0800</pubDate>
         <link>http://www.liriansu.com/how-to-lose-in-rock-paper-scissors</link>
         <guid isPermaLink="true">http://www.liriansu.com/how-to-lose-in-rock-paper-scissors</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>读博客</title>
-        <description>&lt;p&gt;前阵子把&lt;a href=&quot;http://shell909090.org/blog/&quot;&gt;Shell909090学长的博客&lt;/a&gt;刷完了，感觉对世间万物的好奇心又被满足了一点。&lt;br /&gt;
-之前看&lt;a href=&quot;http://blog.codinghorror.com/because-reading-is-fundamental-2/&quot;&gt;阅读是基础&lt;/a&gt;的时候，自然地就想起在StackOverflow上有种人叫Rep-Monster：这种人会在所有的问题下留下答案，虽然活跃，但其实对社区质量没有太大的提高。&lt;br /&gt;
-所以其实像微博这样的网站应该根据一个用户的微博阅读数量来判断活跃度和积分，而不应当根据发微博数来确定。&lt;/p&gt;
-
-&lt;!--MORE--&gt;
-
-&lt;h2 id=&quot;section&quot;&gt;信息的形式&lt;/h2&gt;
-&lt;p&gt;在我小的时候，我&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 09 Nov 2015 04:55:58 +0800</pubDate>
-        <link>http://www.liriansu.com/read-blog</link>
-        <guid isPermaLink="true">http://www.liriansu.com/read-blog</guid>
         
         
       </item>
@@ -695,8 +729,11 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;一般来说，Perl中的常量如下：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    use constant CONST_PI =&amp;gt; 3.1416;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    use constant CONST_PI =&amp;gt; 3.1416;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;在模块化的编码过程中，随着常量的增多，我们会需要把这些常量放到一个常量模块(Perl Module)里面：&lt;/p&gt;
 
@@ -704,43 +741,46 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;比如说在哼哧哼哧地写了一阵子以后，我们有下面这个常量模块。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    package Lirian::Constants;
-    use strict;
-    use warnings;
-
-    #Math Const
-    use constant CONST_PI =&amp;gt; 3.1416;
-    use constant CONST_E  =&amp;gt; 2.718;
-
-    #Default Config Parm Name
-    use constant PARM_DB_NAME  =&amp;gt; &#39;dbName&#39;;
-    use constant PARM_DB_HOST  =&amp;gt; &#39;dbHost&#39;;
-    use constant PARM_GIT_USER =&amp;gt; &#39;gitUser&#39;;
-
-    require Exporter;
-    our @ISA = qw(Exporter);
-
-    our @EXPORT_OK = qw(
-        CONST_PI
-        CONST_E
-        PARM_DB_NAME
-        PARM_DB_HOST
-        PARM_GIT_USER
-    );
-
-    our %EXPORT_TAGS = (
-        all  =&amp;gt; \@EXPORT_OK,
-        math =&amp;gt; [qw(
-            CONST_PI
-            CONST_E
-        )],
-        parm =&amp;gt; [qw(
-            PARM_DB_NAME
-            PARM_DB_HOST
-            PARM_GIT_USER
-        )],
-    );
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    package Lirian::Constants;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    use strict;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    use warnings;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    #Math Const
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;    use constant CONST_PI =&amp;gt; 3.1416;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    use constant CONST_E  =&amp;gt; 2.718;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;    #Default Config Parm Name
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    use constant PARM_DB_NAME  =&amp;gt; &#39;dbName&#39;;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    use constant PARM_DB_HOST  =&amp;gt; &#39;dbHost&#39;;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;    use constant PARM_GIT_USER =&amp;gt; &#39;gitUser&#39;;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n14&quot; name=&quot;n14&quot;&gt;14&lt;/a&gt;&lt;/span&gt;    require Exporter;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n15&quot; name=&quot;n15&quot;&gt;15&lt;/a&gt;&lt;/span&gt;    our @ISA = qw(Exporter);
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n16&quot; name=&quot;n16&quot;&gt;16&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n17&quot; name=&quot;n17&quot;&gt;17&lt;/a&gt;&lt;/span&gt;    our @EXPORT_OK = qw(
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n18&quot; name=&quot;n18&quot;&gt;18&lt;/a&gt;&lt;/span&gt;        CONST_PI
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n19&quot; name=&quot;n19&quot;&gt;19&lt;/a&gt;&lt;/span&gt;        CONST_E
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n20&quot; name=&quot;n20&quot;&gt;20&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        PARM_DB_NAME
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n21&quot; name=&quot;n21&quot;&gt;21&lt;/a&gt;&lt;/span&gt;        PARM_DB_HOST
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n22&quot; name=&quot;n22&quot;&gt;22&lt;/a&gt;&lt;/span&gt;        PARM_GIT_USER
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n23&quot; name=&quot;n23&quot;&gt;23&lt;/a&gt;&lt;/span&gt;    );
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n24&quot; name=&quot;n24&quot;&gt;24&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n25&quot; name=&quot;n25&quot;&gt;25&lt;/a&gt;&lt;/span&gt;    our %EXPORT_TAGS = (
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n26&quot; name=&quot;n26&quot;&gt;26&lt;/a&gt;&lt;/span&gt;        all  =&amp;gt; \@EXPORT_OK,
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n27&quot; name=&quot;n27&quot;&gt;27&lt;/a&gt;&lt;/span&gt;        math =&amp;gt; [qw(
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n28&quot; name=&quot;n28&quot;&gt;28&lt;/a&gt;&lt;/span&gt;            CONST_PI
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n29&quot; name=&quot;n29&quot;&gt;29&lt;/a&gt;&lt;/span&gt;            CONST_E
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n30&quot; name=&quot;n30&quot;&gt;30&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        )],
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n31&quot; name=&quot;n31&quot;&gt;31&lt;/a&gt;&lt;/span&gt;        parm =&amp;gt; [qw(
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n32&quot; name=&quot;n32&quot;&gt;32&lt;/a&gt;&lt;/span&gt;            PARM_DB_NAME
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n33&quot; name=&quot;n33&quot;&gt;33&lt;/a&gt;&lt;/span&gt;            PARM_DB_HOST
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n34&quot; name=&quot;n34&quot;&gt;34&lt;/a&gt;&lt;/span&gt;            PARM_GIT_USER
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n35&quot; name=&quot;n35&quot;&gt;35&lt;/a&gt;&lt;/span&gt;        )],
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n36&quot; name=&quot;n36&quot;&gt;36&lt;/a&gt;&lt;/span&gt;    );
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;上面这段代码简单粗暴地展示了Perl中的常量模块。&lt;/p&gt;
 
@@ -756,20 +796,23 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;而一般地，我们会这么使用：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    package Lirian::Math;
-
-    use Lirian::Constants qw(:all);
-    use strict;
-    use warnings;
-
-    sub get_circum {
-        my ($r) = @_;
-
-        return 2 * CONST_PI * $r;
-    }
-
-    1;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    package Lirian::Math;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    use Lirian::Constants qw(:all);
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;    use strict;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;    use warnings;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    sub get_circum {
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;        my ($r) = @_;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;        return 2 * CONST_PI * $r;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n11&quot; name=&quot;n11&quot;&gt;11&lt;/a&gt;&lt;/span&gt;    }
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n12&quot; name=&quot;n12&quot;&gt;12&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n13&quot; name=&quot;n13&quot;&gt;13&lt;/a&gt;&lt;/span&gt;    1;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;在正常的情况下，常量的使用方法比较简单，但假如需求有些绕：&lt;/p&gt;
 
@@ -777,21 +820,27 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;比如说需求文件如下：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-config&quot;&gt;    dbName=github
-    dbHost=localhost
-    gitUser=LKI
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    dbName=github
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    dbHost=localhost
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    gitUser=LKI
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;显然地，一种简单但稍微蠢了点的方法是这么做：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    sub validate_config_dumb {
-        my ($conf) = @_;
-
-        validate_parm($conf, PARM_DB_NAME);
-        validate_parm($conf, PARM_DB_HOST);
-        validate_parm($conf, PARM_GIT_USER);
-    }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    sub validate_config_dumb {
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        my ($conf) = @_;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_DB_NAME);
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_DB_HOST);
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;        validate_parm($conf, PARM_GIT_USER);
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;    }
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;这样做有几个问题：&lt;/p&gt;
 
@@ -806,30 +855,39 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后&
 
 &lt;p&gt;在Exporter中，定义在%EXPORT_TAGS中的文件可以直接引用：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-    my $math_tags = $tags-&amp;gt;{math}; # [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];
-    my $parm_tags = $tags-&amp;gt;{parm}; # [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    my $math_tags = $tags-&amp;gt;{math}; # [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;    my $parm_tags = $tags-&amp;gt;{parm}; # [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;这样就可以拿到常量的名字了，此时我们便需要&lt;a href=&quot;http://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable&quot;&gt;在Perl中根据变量名获取变量值&lt;/a&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    my $name  = &#39;CONST_PI&#39;;
-    my $value = Lirian::Constants-&amp;gt;$name; # 3.1416
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    my $name  = &#39;CONST_PI&#39;;
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;    my $value = Lirian::Constants-&amp;gt;$name; # 3.1416
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;所以在上一小节的问题中，我们可以得出一个更优雅的解决方案啦~&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-perl&quot;&gt;    sub validate_config {
-        my ($conf) = @_;
-
-        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
-        my $parm_tags = $tags-&amp;gt;{parm};
-        foreach my $parm_name (@$parm_tags) {
-            my $parm_value = Lirian::Constants-&amp;gt;$parm_name;
-            validate_parm($conf, $parm_value);
-        }
-    }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n1&quot; name=&quot;n1&quot;&gt;1&lt;/a&gt;&lt;/span&gt;    sub validate_config {
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n2&quot; name=&quot;n2&quot;&gt;2&lt;/a&gt;&lt;/span&gt;        my ($conf) = @_;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n3&quot; name=&quot;n3&quot;&gt;3&lt;/a&gt;&lt;/span&gt;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n4&quot; name=&quot;n4&quot;&gt;4&lt;/a&gt;&lt;/span&gt;        my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n5&quot; name=&quot;n5&quot;&gt;5&lt;/a&gt;&lt;/span&gt;        my $parm_tags = $tags-&amp;gt;{parm};
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n6&quot; name=&quot;n6&quot;&gt;6&lt;/a&gt;&lt;/span&gt;        foreach my $parm_name (@$parm_tags) {
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n7&quot; name=&quot;n7&quot;&gt;7&lt;/a&gt;&lt;/span&gt;            my $parm_value = Lirian::Constants-&amp;gt;$parm_name;
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n8&quot; name=&quot;n8&quot;&gt;8&lt;/a&gt;&lt;/span&gt;            validate_parm($conf, $parm_value);
+&lt;span class=&quot;line-numbers&quot;&gt; &lt;a href=&quot;#n9&quot; name=&quot;n9&quot;&gt;9&lt;/a&gt;&lt;/span&gt;        }
+&lt;span class=&quot;line-numbers&quot;&gt;&lt;strong&gt;&lt;a href=&quot;#n10&quot; name=&quot;n10&quot;&gt;10&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;    }
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;大功告成！从此以后在加常量的同时，validate_config会自动地检验新增的配置选项啦~&lt;/p&gt;
 
