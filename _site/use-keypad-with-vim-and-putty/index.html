@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
@@ -41,8 +42,6 @@
         
           
         
-          
-        
       </div>
     </nav>
 
@@ -76,7 +75,7 @@
 <p>首先我在Bash里面小键盘一切正常，这说明我键盘没问题，应该是VIM哪里不对。</p>
 
 <p>其次我按的是1，结果出来的是前一行的q，我再按一下2，出来的是前一行的r。<br />
-假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：
+假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：<br />
 <code>inoremap &lt;Num1&gt; &lt;Esc&gt;Oq</code></p>
 
 <p>但是这也太奇怪了吧，VIM里面怎么可能把<code>&lt;Num1&gt;</code>给替换成<code>&lt;Esc&gt;Oq</code>这么奇怪的东西？</p>
