@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>浮云计算</title>
+    <title>Jekyll-assume demo</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.liriansu.com/">
+    <link rel="canonical" href="http://www.liriansu.com/jekyll-assume-demo">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -52,153 +52,48 @@
 
     <div class="page-content">
       <div class="wrap">
-      <div class="home">
+      <div class="post">
 
-  <ul class="posts">
-    
-      <li>
-        <span class="post-date">Jan 28, 2016</span>
-        <a class="post-link" href="/jekyll-assume-demo">Jekyll-assume demo</a>
-        <p>For own interest, I extend a markdown rule using Jekyll.</p>
+  <header class="post-header">
+    <h1>Jekyll-assume demo</h1>
+    <p class="meta">Jan 28, 2016</p>
+  </header>
 
+  <article class="post-content">
+  <script type='text/javascript'>function updateCalValue() {document.getElementById('c-c').innerHTML = Math.round(100 * (document.getElementById('c-r').value * 6.28)) / 100;document.getElementById('c-s').innerHTML = Math.round(100 * (document.getElementById('c-r').value * document.getElementById('c-r').value * 3.14)) / 100;};$().ready(function () {updateCalValue();});</script><p>For own interest, I extend a markdown rule using Jekyll.</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Dec 22, 2015</span>
-        <a class="post-link" href="/learning-javascript">Javascript之路</a>
-        <p>上大学的时候，有一门课是教各种Java的。<br />
-到了布置期末大作业的时候，老师大手一挥：“你们写个电商交易网站就可以了。”<br />
-我们满怀期待地问：“只要写后端？”<br />
-老师说道：“没有前端怎么叫网站？HTML, CSS, JS是每个程序员的基本素养。”</p>
+<!--MORE-->
 
+<h2 id="grammar">Grammar</h2>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Nov 9, 2015</span>
-        <a class="post-link" href="/how-to-lose-in-rock-paper-scissors">石头剪刀布中的求输策略</a>
-        <p>小时候七八岁，那时候还在看《读者》。<br />
-里面有篇文章讲了一下石头剪刀布中的求胜策略。</p>
+<p>If a circle has a radius of {c-r} (20)cm, its circumference would be {c-c} (#c-r * 6.28)cm and its area would be {c-s} (#c-r * #c-r * 3.14)cm².</p>
 
+<p>Note: For demostrating the grammer I have to add a space between ‘}’ and ‘(‘.<br />
+There should be no space between ‘}’ and ‘(‘.</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 21, 2015</span>
-        <a class="post-link" href="/build-seperate-env-using-aufs-and-docker">利用AUFS和Docker搭建多个私有开发环境</a>
-        <p>文章的开头先提个问题：<br />
-我们平常的工作中，一般都是怎样让每个人都拿到独立开发环境的呢？</p>
+<h2 id="quick-show">Quick Show</h2>
 
+<p>If a circle has a radius of <input id='c-r' value='20' size=1 onchange='updateCalValue()' onready='updateCalValue()'>cm, its circumference would be <b id='c-c'>c-c</b>cm and its area would be <b id='c-s'>c-s</b>cm².</p>
 
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 12, 2015</span>
-        <a class="post-link" href="/virtual-machine-vs-vagrant-vs-docker">Virtual Machine, Vagrant, Docker的区别</a>
-        <p>Virtualization——虚拟化技术一直是计算机世界里面很重要的东西。<br />
-一般程序员听到这个词首先浮现出的就是Windows下面开着装着Linux系统的VMware。<br />
-而这个“装着Linux系统的VMware”就是我们口中的虚拟机（Virtual Machine）</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Oct 9, 2015</span>
-        <a class="post-link" href="/use-keypad-with-vim-and-putty">VIM中小键盘失灵的解决方案(Putty)</a>
-        <p>我目前的开发环境是用<a href="https://www.vagrantup.com/">Vagrant</a>起一个虚拟机，然后用<a href="http://www.putty.org/">Putty</a>连上去，用VIM做日常的开发工作。</p>
-
-<p>但某一天更新了一些配置以后，我在VIM里用小键盘输入1的时候，VIM就会在前一行加了一个q字符，让我很是困惑。</p>
-
-<p>后来<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings">谷歌了一下这个问题</a>，得知只要把Putty的Application keypad mode给关了就行了。</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 25, 2015</span>
-        <a class="post-link" href="/how-this-blog-was-built">这篇博客是怎么建成的</a>
-        <p>其实最开始的时候我是用<a href="https://en.wikipedia.org/wiki/LAMP_(software_bundle)">LAMP</a>在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Sep 23, 2015</span>
-        <a class="post-link" href="/why-im-blogging">为什么我要写博客</a>
-        <p>我其实很喜欢看别人写的东西，<a href="http://coolshell.cn/articles/4758.html">技术类的</a>、<a href="http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html">非技术类的</a>，<a href="http://blog.csdn.net/redguardtoo/article/details/7222501">中文的</a>、<a href="http://blog.codinghorror.com/show-dont-tell/">英文的</a>。</p>
-
-<p>很多人写文章的时候总喜欢说一句</p>
-
-<blockquote>
-  <p>我先抛砖引玉</p>
-</blockquote>
-
-<p>但是往往<a href="http://coolshell.cn/articles/11312.html">他们写的都非常好</a></p>
-
-<p>这样的文章看的我特手痒，想也写博客，但是问题就来了</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Jul 26, 2015</span>
-        <a class="post-link" href="/how-to-set-perl-constant-module">如何优雅地使用Perl的常量模块</a>
-        <p>最近的Perl Coding遇到了一个问题：需要对一系列常量进行合法性检测。</p>
-
-<p>在Research&amp;Develop后，有一些心得。</p>
-
-<p>本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-zh">Vagrant-up遇到mount no device的解决方案</a>
-        <p>今天跑<code>vagrant up</code>的时候遇到了这个问题：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">May 15, 2015</span>
-        <a class="post-link" href="/vagrant-up-but-mount-no-device-en">Solution for vagrant-up error: mount no device</a>
-        <p>Today I encounter a problem running <code>vagrant up</code>：</p>
-
-
-      </li>
-      <br>
-    
-      <li>
-        <span class="post-date">Aug 28, 2014</span>
-        <a class="post-link" href="/compare-excel-using-openpyxl/">用Openpyxl做两个Excel文件的比对</a>
-        <h2 id="section">起因</h2>
-
-<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。<br />
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。<br />
-这次写小工具的同时也是学习一下新的东西。</p>
-
-
-      </li>
-      <br>
-    
-  </ul>
+  </article>
 
 </div>
 
-
       
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'liriansu';
+        
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 
 
       </div>
