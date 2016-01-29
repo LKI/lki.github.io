@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
@@ -52,6 +51,7 @@
 
     <div class="page-content">
       <div class="wrap">
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <div class="post">
 
   <header class="post-header">
@@ -62,15 +62,15 @@
   <article class="post-content">
   <h2 id="section">起因</h2>
 
-<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。<br />
-关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。<br />
+<p>最近老是要做比对Excel报表的工作，于是想写一个Python的小脚本来做这个工作。
+关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。
 这次写小工具的同时也是学习一下新的东西。</p>
 
 <!--MORE-->
 
 <h2 id="section-1">准备工作</h2>
 
-<p>由于本次要比对的报表是Office07的.xlsx文件，上网查了一下Python怎么做比较合适。<br />
+<p>由于本次要比对的报表是Office07的.xlsx文件，上网查了一下Python怎么做比较合适。
 看了几篇心得以后，敲定用Openpyxl（参考如下链接：）</p>
 
 <blockquote>
@@ -83,15 +83,16 @@
   <p><a href="https://pythonhosted.org/openpyxl/">A Python Library: Openpyxl</a></p>
 </blockquote>
 
-<p>由于源码是到BitBucket上拖下来的，所以顺便还装了SourceTree。<br />
+<p>由于源码是到BitBucket上拖下来的，所以顺便还装了SourceTree。
 据说SourceTree还有Git的相关功能，下次可以体验一下。</p>
 
 <h2 id="openpyxl">使用Openpyxl</h2>
 
 <p>Openpyxl装好以后直接import就能用啦：</p>
 
-<pre><code class="language-python">from openpyxl import *
-</code></pre>
+<p><code class="highlighter-rouge">python
+from openpyxl import *
+</code></p>
 
 <p>Openpyxl还提供了一个非常棒的教程~~（有点过于简单~~</p>
 

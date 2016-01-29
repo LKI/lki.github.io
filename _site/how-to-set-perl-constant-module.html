@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vagrant-up遇到mount no device的解决方案</title>
+    <title>如何优雅地使用Perl的常量模块</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.liriansu.com/vagrant-up-but-mount-no-device-zh">
+    <link rel="canonical" href="http://www.liriansu.com/how-to-set-perl-constant-module">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -52,68 +51,183 @@
 
     <div class="page-content">
       <div class="wrap">
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <div class="post">
 
   <header class="post-header">
-    <h1>Vagrant-up遇到mount no device的解决方案</h1>
-    <p class="meta">May 15, 2015</p>
+    <h1>如何优雅地使用Perl的常量模块</h1>
+    <p class="meta">Jul 26, 2015</p>
   </header>
 
   <article class="post-content">
-  <p>今天跑<code>vagrant up</code>的时候遇到了这个问题：</p>
+  <p>最近的Perl Coding遇到了一个问题：需要对一系列常量进行合法性检测。</p>
+
+<p>在Research&amp;Develop后，有一些心得。</p>
+
+<p>本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。</p>
 
 <!--MORE-->
 
-<pre><code>==&gt; cvc-tools: Machine booted and ready!
-==&gt; cvc-tools: Checking for guest additions in VM...
-==&gt; cvc-tools: Configuring and enabling network interfaces...
-==&gt; cvc-tools: Mounting shared folders...
-    cvc-tools: /work =&gt; D:/work/
-Failed to mount folders in Linux guest. This is usually because
-the "vboxsf" file system is not available. Please verify that
-the guest additions are properly installed in the guest and
-can work properly. The command attempted was:
+<h2 id="perl">Perl中一般的常量定义</h2>
 
-mount -t vboxsf -o uid=`id -u devel`,gid=`getent group devel | cut -d:
--f3` work /work
-mount -t vboxsf -o uid=`id -u devel`,gid=`id -g devel` work /work
+<p>在写项目的时候为了避免Magic Number的情况，我们经常需要定义常量。</p>
 
-The error output from the last command was:
+<p>当然了，根据<a href="http://coolshell.cn/articles/4758.html">如何写出无法维护的代码</a>的指导我们不应当定义常量，Number越Magic越好。</p>
 
-/sbin/mount.vboxsf: mounting failed with the error: No such device
+<p>一般来说，Perl中的常量如下：</p>
+
+<p><code class="highlighter-rouge">perl
+    use constant CONST_PI =&gt; 3.1416;
+</code></p>
+
+<p>在模块化的编码过程中，随着常量的增多，我们会需要把这些常量放到一个常量模块(Perl Module)里面：</p>
+
+<p>这样的做法也符合DRY(Don’t Repeat Yourself)的原则。#DRYBestPractice?</p>
+
+<p>比如说在哼哧哼哧地写了一阵子以后，我们有下面这个常量模块。</p>
+
+<p>```perl
+    package Lirian::Constants;
+    use strict;
+    use warnings;</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#Math Const
+use constant CONST_PI =&gt; 3.1416;
+use constant CONST_E  =&gt; 2.718;
+
+#Default Config Parm Name
+use constant PARM_DB_NAME  =&gt; 'dbName';
+use constant PARM_DB_HOST  =&gt; 'dbHost';
+use constant PARM_GIT_USER =&gt; 'gitUser';
+
+require Exporter;
+our @ISA = qw(Exporter);
+
+our @EXPORT_OK = qw(
+    CONST_PI
+    CONST_E
+    PARM_DB_NAME
+    PARM_DB_HOST
+    PARM_GIT_USER
+);
+
+our %EXPORT_TAGS = (
+    all  =&gt; \@EXPORT_OK,
+    math =&gt; [qw(
+        CONST_PI
+        CONST_E
+    )],
+    parm =&gt; [qw(
+        PARM_DB_NAME
+        PARM_DB_HOST
+        PARM_GIT_USER
+    )],
+); ```
 </code></pre>
+</div>
 
-<p>查看了 https://github.com/mitchellh/vagrant/issues/1657<br />
-以后，明白这是<code>yum update</code>更新了内核，但是没有更新VirtualBox的连接的问题。</p>
+<p>上面这段代码简单粗暴地展示了Perl中的常量模块。</p>
 
-<p>于是重新添加一下VBox：</p>
+<p>其中的<code class="highlighter-rouge">our @ISA = qw(Exporter);</code>是表示本模块继承了<a href="http://perldoc.perl.org/Exporter.html">Exporter</a>这个模块。</p>
 
-<pre><code>[lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
-Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
-Building the VirtualBox Guest Additions kernel modules
-The headers for the current running kernel were not found. If the
-following
-module compilation fails then this could be the reason.
-The missing package can be probably installed with
-yum install kernel-devel-2.6.18-404.el5
+<p>通过这样的定义，我们便有了一个常量的“中心仓库”了。</p>
 
-Building the main Guest Additions module                   [FAILED]
-(Look at /var/log/vboxadd-install.log to find out what went wrong)
-Doing non-kernel setup of the Guest Additions              [  OK  ]
+<p>至于怎么使用，我们就来看下一节。</p>
+
+<h2 id="section">使用常量模块</h2>
+
+<p>在上一节中，通过对Exporter的继承，我们有了一个Lirian::Constants模块。</p>
+
+<p>而一般地，我们会这么使用：</p>
+
+<p>```perl
+    package Lirian::Math;</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>use Lirian::Constants qw(:all);
+use strict;
+use warnings;
+
+sub get_circum {
+    my ($r) = @_;
+
+    return 2 * CONST_PI * $r;
+}
+
+1; ```
 </code></pre>
+</div>
 
-<p>根据以上信息，得知现在在跑的内核开发包缺失，于是再跑一下：</p>
+<p>在正常的情况下，常量的使用方法比较简单，但假如需求有些绕：</p>
 
-<p><code>yum install kernel-devel-2.6.18-404.el5</code></p>
+<p>在程序的开始时，我们需要检验用户的配置文件，确保每个条目用户都是有效的。</p>
 
-<p>之后再vagrant up或者手动mount就可以解决问题了。</p>
+<p>比如说需求文件如下：</p>
 
-<p>总结：vagrant up遇到mount error: no such device可以通过以下脚本解决：</p>
+<p><code class="highlighter-rouge">config
+    dbName=github
+    dbHost=localhost
+    gitUser=LKI
+</code></p>
 
-<pre><code>yum install kernel-devel-2.6.18-404.el5
-/etc/init.d/vboxadd setup
-mount -t vboxsf -o uid=`id -u devel`,gid=`id -g devel` work /work
+<p>显然地，一种简单但稍微蠢了点的方法是这么做：</p>
+
+<p>```perl
+    sub validate_config_dumb {
+        my ($conf) = @_;</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    validate_parm($conf, PARM_DB_NAME);
+    validate_parm($conf, PARM_DB_HOST);
+    validate_parm($conf, PARM_GIT_USER);
+} ```
 </code></pre>
+</div>
+
+<p>这样做有几个问题：</p>
+
+<p>1.config parameter一多，代码就很长，丑
+2.增加config constant时，不仅要改常量模块，这里也要加，累
+3.这样的代码提交上去感觉好丢脸，蠢
+4.以上三点在<a href="http://coolshell.cn/articles/2058.html">撞大运编程</a>里都不是问题</p>
+
+<p>那怎么样做才算是优雅的做法呢？</p>
+
+<h2 id="perlexport">利用Perl的Export机制</h2>
+
+<p>在Exporter中，定义在%EXPORT_TAGS中的文件可以直接引用：</p>
+
+<p><code class="highlighter-rouge">perl
+    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+    my $math_tags = $tags-&gt;{math}; # ['CONST_PI', 'CONST_E'];
+    my $parm_tags = $tags-&gt;{parm}; # ['PARM_DB_NAME', 'PARM_DB_HOST', 'PARM_GIT_USER'];
+</code></p>
+
+<p>这样就可以拿到常量的名字了，此时我们便需要<a href="http://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable">在Perl中根据变量名获取变量值</a></p>
+
+<p><code class="highlighter-rouge">perl
+    my $name  = 'CONST_PI';
+    my $value = Lirian::Constants-&gt;$name; # 3.1416
+</code></p>
+
+<p>所以在上一小节的问题中，我们可以得出一个更优雅的解决方案啦~</p>
+
+<p>```perl
+    sub validate_config {
+        my ($conf) = @_;</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    my $tags      = \$Lirian::Constants::EXPORT_TAGS;
+    my $parm_tags = $tags-&gt;{parm};
+    foreach my $parm_name (@$parm_tags) {
+        my $parm_value = Lirian::Constants-&gt;$parm_name;
+        validate_parm($conf, $parm_value);
+    }
+} ```
+</code></pre>
+</div>
+
+<p>大功告成！从此以后在加常量的同时，validate_config会自动地检验新增的配置选项啦~</p>
+
+<p>此时便可以使用<a href="http://whatthecommit.com/">一个酷炫的Git Commit Message</a>来提交工作啦！</p>
+
 
   </article>
 

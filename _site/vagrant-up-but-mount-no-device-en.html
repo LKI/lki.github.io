@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>石头剪刀布中的求输策略</title>
+    <title>Solution for vagrant-up error: mount no device</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.liriansu.com/how-to-lose-in-rock-paper-scissors">
+    <link rel="canonical" href="http://www.liriansu.com/vagrant-up-but-mount-no-device-en">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -52,77 +51,66 @@
 
     <div class="page-content">
       <div class="wrap">
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <div class="post">
 
   <header class="post-header">
-    <h1>石头剪刀布中的求输策略</h1>
-    <p class="meta">Nov 9, 2015</p>
+    <h1>Solution for vagrant-up error: mount no device</h1>
+    <p class="meta">May 15, 2015</p>
   </header>
 
   <article class="post-content">
-  <p>小时候七八岁，那时候还在看《读者》。<br />
-里面有篇文章讲了一下石头剪刀布中的求胜策略。</p>
+  <p>Today I encounter a problem running <code class="highlighter-rouge">vagrant up</code>：</p>
 
 <!--MORE-->
 
-<h2 id="section">石头剪刀布</h2>
+<p>```
+==&gt; cvc-tools: Machine booted and ready!
+==&gt; cvc-tools: Checking for guest additions in VM…
+==&gt; cvc-tools: Configuring and enabling network interfaces…
+==&gt; cvc-tools: Mounting shared folders…
+    cvc-tools: /work =&gt; D:/work/
+Failed to mount folders in Linux guest. This is usually because
+the “vboxsf” file system is not available. Please verify that
+the guest additions are properly installed in the guest and
+can work properly. The command attempted was:</p>
 
-<p>先讲一段有用的废话吧。<br />
-一般的博弈情况下，问题都会简化成一个容易判断的模型。<br />
-也就是说虽然反应快的人可以把<code>后手出招</code>当作必胜策略，<br />
-但是数学模型中一般都会摈弃掉这种可能性。</p>
+<p>mount -t vboxsf -o uid=<code class="highlighter-rouge">id -u devel</code>,gid=<code class="highlighter-rouge">getent group devel | cut -d:
+-f3</code> work /work
+mount -t vboxsf -o uid=<code class="highlighter-rouge">id -u devel</code>,gid=<code class="highlighter-rouge">id -g devel</code> work /work</p>
 
-<p>（所以看起来数学家会不太喜欢社会学家？）</p>
+<p>The error output from the last command was:</p>
 
-<p>在石头剪刀布这个模型里，规则基本上是三点：</p>
+<p>/sbin/mount.vboxsf: mounting failed with the error: No such device
+```</p>
 
-<ul>
-  <li>双方同时出招，在石头、剪刀、布三个里面选一个。</li>
-  <li>石头赢剪刀，剪刀赢布，布赢石头。</li>
-  <li>假如平手就再战一局。</li>
-</ul>
+<p>Refer to https://github.com/mitchellh/vagrant/issues/1657</p>
 
-<p>这种三选一循环互克的游戏，国外也有，叫<a href="https://en.wikipedia.org/wiki/Rock-paper-scissors">Rock-Paper-Scissors</a></p>
+<p>_This is usually a result of the guest’s package manager upgrading the</p>
 
-<h2 id="section-1">求胜策略</h2>
+<p>kernel without rebuilding the VirtualBox Guest Additions_ by lenciel. So
+we run vboxadd accordingly:</p>
 
-<p>数学模型往往会假定对局双方都是聪明人，<br />
-显然地，在石头剪刀布中聪明人的策略就是乱出，<br />
-这样双方获胜的概率都是50%。</p>
+<p>```
+    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
+    Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
+    Building the VirtualBox Guest Additions kernel modules
+    The headers for the current running kernel were not found. If the
+    following
+    module compilation fails then this could be the reason.
+    The missing package can be probably installed with
+    yum install kernel-devel-2.6.18-404.el5</p>
 
-<p>不过在真实情况中，两边都是普通人。<br />
-<em>(明明刚才说过要简化模型的=_=)</em><br />
-所以我们需要做一个假设：</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Building the main Guest Additions module                   [FAILED]
+(Look at /var/log/vboxadd-install.log to find out what went wrong)
+Doing non-kernel setup of the Guest Additions              [  OK  ] ```
+</code></pre>
+</div>
 
-<p><strong>一般人不会连续两下都做出相同的选择</strong></p>
+<p>From the message we can know current running kernel were not found. So
+we run:<code class="highlighter-rouge">yum install kernel-devel-2.6.18-404.el5</code></p>
 
-<p>也就是说当他这次出的是剪刀的话，下次较大可能不会出剪刀。<br />
-所以只要下局出布就可以不输。<br />
-同理，对方出石头，下局就出剪刀；对方出布，下局就出石头。</p>
-
-<p>概括地说，这样的假设条件下：<br />
-<strong>对手出什么，下局就出被它克制的</strong></p>
-
-<p>当然了，题设本身也是这个策略的弱点。<br />
-假如你的对手头很硬，一直不改变出招，<br />
-那么这个策略就会一败涂地。</p>
-
-<h2 id="section-2">实战案例</h2>
-
-<p>和女朋友下楼梯的时候玩起了<code>谁猜拳赢了就走一步</code>的游戏，<br />
-玩之前火速地想了一下：</p>
-
-<ol>
-  <li>女朋友输了不开心，赢了才开心，而且她不开心我也不能开心。</li>
-  <li>女朋友在逻辑上不会跟我计较，所以应该不会头很硬地和我勾心斗角。</li>
-  <li>女朋友她第一下喜欢出布。</li>
-</ol>
-
-<p>嗯，于是我采取了<code>先出石头，再出被她克制的选项</code><br />
-成功连败了五六局。</p>
-
-<p>嗯，毕竟求胜策略这种东西，也可以<strong>反着来用</strong>嘛。</p>
-
+<p>After all, we can run <code class="highlighter-rouge">vagrant up</code> or mount the directory manually.</p>
 
   </article>
 

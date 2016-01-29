@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
@@ -52,6 +51,7 @@
 
     <div class="page-content">
       <div class="wrap">
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <div class="post">
 
   <header class="post-header">
@@ -74,18 +74,18 @@
 
 <p>首先我在Bash里面小键盘一切正常，这说明我键盘没问题，应该是VIM哪里不对。</p>
 
-<p>其次我按的是1，结果出来的是前一行的q，我再按一下2，出来的是前一行的r。<br />
-假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：<br />
-<code>inoremap &lt;Num1&gt; &lt;Esc&gt;Oq</code></p>
+<p>其次我按的是1，结果出来的是前一行的q，我再按一下2，出来的是前一行的r。
+假如键盘没有问题，要自己在VIM里面实现一个这种“功能”，那也要加一行配置：
+<code class="highlighter-rouge">inoremap &lt;Num1&gt; &lt;Esc&gt;Oq</code></p>
 
-<p>但是这也太奇怪了吧，VIM里面怎么可能把<code>&lt;Num1&gt;</code>给替换成<code>&lt;Esc&gt;Oq</code>这么奇怪的东西？</p>
+<p>但是这也太奇怪了吧，VIM里面怎么可能把<code class="highlighter-rouge">&lt;Num1&gt;</code>给替换成<code class="highlighter-rouge">&lt;Esc&gt;Oq</code>这么奇怪的东西？</p>
 
 <h2 id="section-1">寻求答案</h2>
 
 <p>于是我找到了<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings">VIM wiki上的一篇解答</a></p>
 
-<p>根据这篇解答，问题是出在Putty上。<br />
-Putty会默认启用“Application Keypad Mode”，这个选项被启用以后<br />
+<p>根据这篇解答，问题是出在Putty上。
+Putty会默认启用“Application Keypad Mode”，这个选项被启用以后
 所有小键盘上的按键（包括<numlock>）都会输出一串按键序列：</numlock></p>
 
 <table>
@@ -97,73 +97,73 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后<
   </thead>
   <tbody>
     <tr>
-      <td><code>&lt;Num1&gt;</code></td>
-      <td><code>&lt;Esc&gt;Oq</code></td>
+      <td><code class="highlighter-rouge">&lt;Num1&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Oq</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num2&gt;</code></td>
-      <td><code>&lt;Esc&gt;Or</code></td>
+      <td><code class="highlighter-rouge">&lt;Num2&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Or</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num3&gt;</code></td>
-      <td><code>&lt;Esc&gt;Os</code></td>
+      <td><code class="highlighter-rouge">&lt;Num3&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Os</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num4&gt;</code></td>
-      <td><code>&lt;Esc&gt;Ot</code></td>
+      <td><code class="highlighter-rouge">&lt;Num4&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Ot</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num5&gt;</code></td>
-      <td><code>&lt;Esc&gt;Ou</code></td>
+      <td><code class="highlighter-rouge">&lt;Num5&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Ou</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num6&gt;</code></td>
-      <td><code>&lt;Esc&gt;Ov</code></td>
+      <td><code class="highlighter-rouge">&lt;Num6&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Ov</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num7&gt;</code></td>
-      <td><code>&lt;Esc&gt;Ow</code></td>
+      <td><code class="highlighter-rouge">&lt;Num7&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Ow</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num8&gt;</code></td>
-      <td><code>&lt;Esc&gt;Ox</code></td>
+      <td><code class="highlighter-rouge">&lt;Num8&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Ox</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num9&gt;</code></td>
-      <td><code>&lt;Esc&gt;Oy</code></td>
+      <td><code class="highlighter-rouge">&lt;Num9&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Oy</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Num0&gt;</code></td>
-      <td><code>&lt;Esc&gt;Op</code></td>
+      <td><code class="highlighter-rouge">&lt;Num0&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Op</code></td>
     </tr>
     <tr>
-      <td><code>.</code></td>
-      <td><code>&lt;Esc&gt;On</code></td>
+      <td><code class="highlighter-rouge">.</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;On</code></td>
     </tr>
     <tr>
-      <td><code>/</code></td>
-      <td><code>&lt;Esc&gt;OQ</code></td>
+      <td><code class="highlighter-rouge">/</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;OQ</code></td>
     </tr>
     <tr>
-      <td><code>*</code></td>
-      <td><code>&lt;Esc&gt;OR</code></td>
+      <td><code class="highlighter-rouge">*</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;OR</code></td>
     </tr>
     <tr>
-      <td><code>+</code></td>
-      <td><code>&lt;Esc&gt;Ol</code></td>
+      <td><code class="highlighter-rouge">+</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;Ol</code></td>
     </tr>
     <tr>
-      <td><code>-</code></td>
-      <td><code>&lt;Esc&gt;OS</code></td>
+      <td><code class="highlighter-rouge">-</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;OS</code></td>
     </tr>
     <tr>
-      <td><code>&lt;Enter&gt;</code></td>
-      <td><code>&lt;Esc&gt;OM</code></td>
+      <td><code class="highlighter-rouge">&lt;Enter&gt;</code></td>
+      <td><code class="highlighter-rouge">&lt;Esc&gt;OM</code></td>
     </tr>
   </tbody>
 </table>
 
-<p>居然<code>&lt;Num1&gt;</code>真的变成了<code>&lt;Esc&gt;Oq</code>！</p>
+<p>居然<code class="highlighter-rouge">&lt;Num1&gt;</code>真的变成了<code class="highlighter-rouge">&lt;Esc&gt;Oq</code>！</p>
 
 <p>再去翻<a href="http://the.earth.li/~sgtatham/putty/0.60/htmldoc/Chapter4.html#config-appkeypad">Putty关于Application keypad mode的说明</a>:</p>
 
@@ -189,7 +189,8 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后<
 
 <p>在<a href="http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings#Comments">VIM wiki页面的讨论板块</a>，有人给出了一个看起来很蠢的解决方案：</p>
 
-<pre><code>:inoremap &lt;Esc&gt;Oq 1
+<p><code class="highlighter-rouge">
+:inoremap &lt;Esc&gt;Oq 1
 :inoremap &lt;Esc&gt;Or 2
 :inoremap &lt;Esc&gt;Os 3
 :inoremap &lt;Esc&gt;Ot 4
@@ -205,7 +206,7 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后<
 :inoremap &lt;Esc&gt;Ol +
 :inoremap &lt;Esc&gt;OS -
 :inoremap &lt;Esc&gt;OM &lt;Enter&gt;
-</code></pre>
+</code></p>
 
 <p>刚开始看到这个答案我立刻想到了这张XKCD</p>
 

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
@@ -52,6 +51,7 @@
 
     <div class="page-content">
       <div class="wrap">
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <div class="post">
 
   <header class="post-header">
@@ -60,18 +60,18 @@
   </header>
 
   <article class="post-content">
-  <p>Virtualization——虚拟化技术一直是计算机世界里面很重要的东西。<br />
-一般程序员听到这个词首先浮现出的就是Windows下面开着装着Linux系统的VMware。<br />
+  <p>Virtualization——虚拟化技术一直是计算机世界里面很重要的东西。
+一般程序员听到这个词首先浮现出的就是Windows下面开着装着Linux系统的VMware。
 而这个“装着Linux系统的VMware”就是我们口中的虚拟机（Virtual Machine）</p>
 
 <!--MORE-->
 
-<p>虚拟机的主要好处是可以创建一个与主机操作系统不同的开发环境<br />
+<p>虚拟机的主要好处是可以创建一个与主机操作系统不同的开发环境
 （比如说一般的办公室都是Windows系统电脑）</p>
 
-<p>但是开发的便利也会导致初始化一个这样的环境比较麻烦<br />
-而且当项目进行到一定程度，对环境本身一些变化有依赖的时候<br />
-从零开始创建虚拟机的开发环境会很繁琐<br />
+<p>但是开发的便利也会导致初始化一个这样的环境比较麻烦
+而且当项目进行到一定程度，对环境本身一些变化有依赖的时候
+从零开始创建虚拟机的开发环境会很繁琐
 Vagrant就是一种用来解决这种繁琐的工具</p>
 
 <h2 id="vagrant">Vagrant</h2>
@@ -81,15 +81,15 @@ Vagrant就是一种用来解决这种繁琐的工具</p>
   <p>Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team</p>
 </blockquote>
 
-<p>Vagrant本身不做虚拟机的工作，而是允许用户用VMware|VirtualBox|AWS来启动虚拟机镜像，他们管这叫Provider<br />
-当然了，镜像在Vagrant这里叫Box，而且很多公司已经做好了初始化的Box<a href="https://atlas.hashicorp.com/boxes/search">在这里</a>可以直接用<br />
+<p>Vagrant本身不做虚拟机的工作，而是允许用户用VMware|VirtualBox|AWS来启动虚拟机镜像，他们管这叫Provider
+当然了，镜像在Vagrant这里叫Box，而且很多公司已经做好了初始化的Box<a href="https://atlas.hashicorp.com/boxes/search">在这里</a>可以直接用
 Vagrant还提供了对Box的初始化脚本（Provisioning），这些初始化脚本可以用更多的脚本工具来完成对Box的配置</p>
 
 <p>所以其实相比于传统的虚拟机，Vagrant是站在巨人的肩膀上，完成了自动化。</p>
 
 <h2 id="docker">Docker</h2>
-<p>Docker项目的目标是实现轻量级的虚拟化方案，它和Virtual Machine最大的不同是Docker容器共享操作系统的内核<br />
-<img src="http://dockerpool.com/static/books/docker_practice/_images/virtualization.png" alt="vm" /><br />
+<p>Docker项目的目标是实现轻量级的虚拟化方案，它和Virtual Machine最大的不同是Docker容器共享操作系统的内核
+<img src="http://dockerpool.com/static/books/docker_practice/_images/virtualization.png" alt="vm" />
 <img src="http://dockerpool.com/static/books/docker_practice/_images/docker.png" alt="docker" /></p>
 
 <p>所以Docker和传统虚拟机的对比是明显的：</p>
@@ -132,7 +132,7 @@ Vagrant还提供了对Box的初始化脚本（Provisioning），这些初始化�
 </table>
 
 <h2 id="vagrant-vs-docker">Vagrant vs Docker</h2>
-<p>讲道理的话，这两个不应该放在一起比较， 这两者的虚拟化级别并不是一个量级上的<br />
+<p>讲道理的话，这两个不应该放在一起比较， 这两者的虚拟化级别并不是一个量级上的
 而且这两者并不矛盾，假如你需要在Windows系统上搭载数个特定发行版的Linux系统，完全可以先用Vagrant + Virtual Machine再嵌数个Docker</p>
 
 <p>硬要比较的话，假如你需要运行跨平台的虚拟，那就用Vagrant，<em>否则</em>，用Docker</p>

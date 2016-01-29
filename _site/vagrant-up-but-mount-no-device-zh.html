@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <html>
 
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Solution for vagrant-up error: mount no device</title>
+    <title>Vagrant-up遇到mount no device的解决方案</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Lirian Su's Blog">
-    <link rel="canonical" href="http://www.liriansu.com/vagrant-up-but-mount-no-device-en">
+    <link rel="canonical" href="http://www.liriansu.com/vagrant-up-but-mount-no-device-zh">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -52,62 +51,72 @@
 
     <div class="page-content">
       <div class="wrap">
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <div class="post">
 
   <header class="post-header">
-    <h1>Solution for vagrant-up error: mount no device</h1>
+    <h1>Vagrant-up遇到mount no device的解决方案</h1>
     <p class="meta">May 15, 2015</p>
   </header>
 
   <article class="post-content">
-  <p>Today I encounter a problem running <code>vagrant up</code>：</p>
+  <p>今天跑<code class="highlighter-rouge">vagrant up</code>的时候遇到了这个问题：</p>
 
 <!--MORE-->
 
-<pre><code>==&gt; cvc-tools: Machine booted and ready!
-==&gt; cvc-tools: Checking for guest additions in VM...
-==&gt; cvc-tools: Configuring and enabling network interfaces...
-==&gt; cvc-tools: Mounting shared folders...
+<p>```
+==&gt; cvc-tools: Machine booted and ready!
+==&gt; cvc-tools: Checking for guest additions in VM…
+==&gt; cvc-tools: Configuring and enabling network interfaces…
+==&gt; cvc-tools: Mounting shared folders…
     cvc-tools: /work =&gt; D:/work/
 Failed to mount folders in Linux guest. This is usually because
-the "vboxsf" file system is not available. Please verify that
+the “vboxsf” file system is not available. Please verify that
 the guest additions are properly installed in the guest and
-can work properly. The command attempted was:
+can work properly. The command attempted was:</p>
 
-mount -t vboxsf -o uid=`id -u devel`,gid=`getent group devel | cut -d:
--f3` work /work
+<p>mount -t vboxsf -o uid=<code class="highlighter-rouge">id -u devel</code>,gid=<code class="highlighter-rouge">getent group devel | cut -d:
+-f3</code> work /work
+mount -t vboxsf -o uid=<code class="highlighter-rouge">id -u devel</code>,gid=<code class="highlighter-rouge">id -g devel</code> work /work</p>
+
+<p>The error output from the last command was:</p>
+
+<p>/sbin/mount.vboxsf: mounting failed with the error: No such device
+```</p>
+
+<p>查看了 https://github.com/mitchellh/vagrant/issues/1657
+以后，明白这是<code class="highlighter-rouge">yum update</code>更新了内核，但是没有更新VirtualBox的连接的问题。</p>
+
+<p>于是重新添加一下VBox：</p>
+
+<p>```
+[lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
+Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
+Building the VirtualBox Guest Additions kernel modules
+The headers for the current running kernel were not found. If the
+following
+module compilation fails then this could be the reason.
+The missing package can be probably installed with
+yum install kernel-devel-2.6.18-404.el5</p>
+
+<p>Building the main Guest Additions module                   [FAILED]
+(Look at /var/log/vboxadd-install.log to find out what went wrong)
+Doing non-kernel setup of the Guest Additions              [  OK  ]
+```</p>
+
+<p>根据以上信息，得知现在在跑的内核开发包缺失，于是再跑一下：</p>
+
+<p><code class="highlighter-rouge">yum install kernel-devel-2.6.18-404.el5</code></p>
+
+<p>之后再vagrant up或者手动mount就可以解决问题了。</p>
+
+<p>总结：vagrant up遇到mount error: no such device可以通过以下脚本解决：</p>
+
+<p><code class="highlighter-rouge">
+yum install kernel-devel-2.6.18-404.el5
+/etc/init.d/vboxadd setup
 mount -t vboxsf -o uid=`id -u devel`,gid=`id -g devel` work /work
-
-The error output from the last command was:
-
-/sbin/mount.vboxsf: mounting failed with the error: No such device
-</code></pre>
-
-<p>Refer to https://github.com/mitchellh/vagrant/issues/1657</p>
-
-<p>_This is usually a result of the guest’s package manager upgrading the</p>
-
-<p>kernel without rebuilding the VirtualBox Guest Additions_ by lenciel. So<br />
-we run vboxadd accordingly:</p>
-
-<pre><code>    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
-    Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
-    Building the VirtualBox Guest Additions kernel modules
-    The headers for the current running kernel were not found. If the
-    following
-    module compilation fails then this could be the reason.
-    The missing package can be probably installed with
-    yum install kernel-devel-2.6.18-404.el5
-
-    Building the main Guest Additions module                   [FAILED]
-    (Look at /var/log/vboxadd-install.log to find out what went wrong)
-    Doing non-kernel setup of the Guest Additions              [  OK  ]
-</code></pre>
-
-<p>From the message we can know current running kernel were not found. So<br />
-we run:<code>yum install kernel-devel-2.6.18-404.el5</code></p>
-
-<p>After all, we can run <code>vagrant up</code> or mount the directory manually.</p>
+</code></p>
 
   </article>
 
