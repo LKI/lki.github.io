@@ -1,7 +1,7 @@
 ---
 layout:    post
 title:     "Jekyll-assume demo"
-date:      2016-1-28 11:06:56
+date:      "2016-01-28 11:06:56"
 comments:  true
 permalink: /jekyll-assume-demo
 ---

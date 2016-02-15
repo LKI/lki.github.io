@@ -1,7 +1,7 @@
 ---
 layout:    post
 title:     "Jekyll build fail的解决办法"
-date:      2016-1-29 23:24:45
+date:      "2016-1-29 23:24:45"
 comments:  true
 permalink: /jekyll-build-fail-solution
 ---

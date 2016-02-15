@@ -35,7 +35,7 @@ permalink: /my-reading-list-2016
 我先整理了一个书单，
 打算按顺序这么读下来：
 
-* 1894
+* 1984
 * ANSI Common Lisp
 * 阿加莎克里斯蒂
 * 悲惨世界
