@@ -1,3 +1,6 @@
 [submodule "teampicker"]
 	path = teampicker
 	url = https://github.com/LKI/teampicker.git
+[submodule "story"]
+	path = story
+	url = https://github.com/LKI/storyeffect
