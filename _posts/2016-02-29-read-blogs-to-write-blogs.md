@@ -67,17 +67,17 @@ Jeff觉得“虽然每篇博客都不长，但是持之以恒就改变了写博�
 希望有一天我也能出现在别人的推荐链接里 :D
 
 
-[raychase]: http://www.raychase.net/category/recommended
-[raychase-about]: http://www.raychase.net/aboutme
-[raychase-life]: http://www.raychase.net/3196
+[raychase]:          http://www.raychase.net/category/recommended
+[raychase-about]:    http://www.raychase.net/aboutme
+[raychase-life]:     http://www.raychase.net/3196
 [about-shell909090]: http://shell909090.org/blog/%E7%AE%80%E5%8E%86
-[orcarina]: /assets/cest_tama_la_vie.jpg
-[jeff]: https://en.wikipedia.org/wiki/Jeff_Atwood
-[jeff-write-blog]: http://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/
-[me-on-web-comic]: http://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877707709970c-pi.png
-[codinghorror]: http://blog.codinghorror.com/
-[coolshell]: http://coolshell.cn/
-[shell909090]: http://shell909090.org/blog/
-[lucida]: http://lucida.me/
-[dashu]: http://www.qiukeke.com/
-[taosay]: http://taosay.net
+[orcarina]:          /assets/cest_tama_la_vie.jpg
+[jeff]:              https://en.wikipedia.org/wiki/Jeff_Atwood
+[jeff-write-blog]:   http://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/
+[me-on-web-comic]:   http://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877707709970c-pi.png
+[codinghorror]:      http://blog.codinghorror.com/
+[coolshell]:         http://coolshell.cn/
+[shell909090]:       http://shell909090.org/blog/
+[lucida]:            http://lucida.me/
+[dashu]:             http://www.qiukeke.com/
+[taosay]:            http://taosay.net
