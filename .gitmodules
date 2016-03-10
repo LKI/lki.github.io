@@ -1,6 +1,3 @@
-[submodule "randompick"]
-	path = randompick
-	url = https://github.com/LKI/randompick.git
 [submodule "story"]
 	path = story
 	url = https://github.com/LKI/galfect.git
