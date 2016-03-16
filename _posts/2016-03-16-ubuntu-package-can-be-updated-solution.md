@@ -52,14 +52,14 @@ permalink: /ubuntu-package-can-be-updated-solution
 
 ubuntu开机时显示的这个Message叫
 [MOTD(Message of the day)][motd]，
-很多公司会让系统管理员定制一下自己服务器的MOTD。
+很多公司会让系统管理员定制自己服务器的MOTD。
 
 Ubuntu系统里，MOTD的脚本默认放在`/etc/update-motd.d`下，
 我们所看到的`x packages can be updated`就是由
 `/etc/update-motd.d/90-updates-available`这个脚本提示的。
 
 所以我们想彻底去掉这个提示的话，
-可以把`/etc/update-motd.d/90-updates-available`这个文件去掉（不推荐）。
+可以把`/etc/update-motd.d/90-updates-available`这个文件删掉（不推荐）。
 
 同理，我们也可以定制一下自己的MOTD。
 
