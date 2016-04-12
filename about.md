@@ -16,8 +16,8 @@ permalink: /about/
 
 大四以后在[QAD][wiki-QAD]实习工作一直到现在。
 
-工作里主要写的是Perl，
-最近在学习Lisp（据说学Lisp就像学拉丁文）。
+工作里主要写的是Perl和Java，
+对Lisp, Python, Javascript都比较感兴趣。
 是一个重度的Vim用户和Git用户。
 
 ![xkcd 246][xkcd-246]
@@ -29,6 +29,7 @@ permalink: /about/
 
 不喜欢政治，比较怕生，
 自己越成长就会觉得厉害的人越多。
+梦想是世界和平，和成为一个很厉害的人。
 
 ## 关于本博客
 
