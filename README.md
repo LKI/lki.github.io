@@ -1,3 +1,5 @@
 # 我的博客
 
-使用Jekyll生成
+由Jekyll生成，挂在GitHub上。
+
+更多信息请直接访问 http://www.liriansu.com
