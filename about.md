@@ -12,24 +12,53 @@ permalink: /about/
 高中的时候参加NOIP得了省一等奖，
 保送到上海交通大学，读软件工程。
 
-现在住在上海。
-
-大四以后在[QAD][wiki-QAD]实习工作一直到现在。
+大四以后在[QAD China][wiki-QAD]实习工作一直到现在。
+我住在公司附近，平常都走路去公司。
 
 工作里主要写的是Perl和Java，
-对Lisp, Python, Javascript都比较感兴趣。
+对Lisp, Python, Javascript都比较感兴趣，接触过一点。
 是一个重度的Vim用户和Git用户。
 
 ![xkcd 246][xkcd-246]
 
 喜欢语言和逻辑，喜欢好玩的事情，
 [喜欢读博客][read-blog]，
-~~问题很多~~好奇心很旺盛，
+~~问题很多~~好奇心很旺盛。
+
+很喜欢[Python Zen][python-zen]里的一句
+`Now is better than never`。
+认为生命的意义在于现在，想做什么就不应该犹豫。
+
+相比于覆盖100%情况的复杂设计，
+更喜欢覆盖90%情况的简单设计。
+我相信大道会是简单而纯粹的
+（比如说我坚信存在[大一统理论][GUT]）
+
+相信人生而平等，
+也相信一部分人会活得更加平等。
+但不管怎么样，生活是由自己创造的。
+
+希望老了以后回顾自己的生命，
+能坦然地念出这句诗：
+苟利国家生死以，
+岂因祸福避趋之。
+
+不喜欢贴标签，认为每个人最重要的是独立自由的身份。
+
+不喜欢后悔，不喜欢争执，认为事实说明一切。
+
+不喜欢政治，因为我觉得政治是不透明且不会公平地。
+
+不会主动参加社交活动， 
 [平常空余时间基本在陪女朋友][my-gf]。
 
-不喜欢政治，比较怕生，
-自己越成长就会觉得厉害的人越多。
-梦想是世界和平，和成为一个很厉害的人。
+我的梦想是世界和平，好人都能幸福，
+以及要成为一个很厉害的人。
+
+很高兴认识你。
+（不过假如你读完了我的自我介绍，
+不跟我介绍一下你的话，
+我就没机会认识你了。）
 
 ## 关于本博客
 
@@ -39,10 +68,12 @@ permalink: /about/
 
 [sudoku]:         http://cojs.tk/cogs/problem/problem.php?pid=407
 [wiki-QAD]:       https://en.wikipedia.org/wiki/QAD_Inc
+[python-zen]:     https://www.python.org/dev/peps/pep-0020/
 [xkcd-246]:       http://imgs.xkcd.com/comics/labyrinth_puzzle.png
 [read-blog]:      http://www.liriansu.com/read-blogs-to-write-blogs
 [build-blog]:     /how-this-blog-was-built
 [why-blog]:       /why-im-blogging
 [jekyll.com]:     http://jekyllrb.com/
 [lki.github.com]: https://github.com/LKI/lki.github.com
+[GUT]:            https://en.wikipedia.org/wiki/Grand_Unified_Theory
 [my-gf]:          http://www.liriansu.com/how-to-lose-in-rock-paper-scissors
