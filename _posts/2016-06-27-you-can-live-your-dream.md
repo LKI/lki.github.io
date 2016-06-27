@@ -1,23 +1,20 @@
 ---
 layout:    post
 title:     "You can live your dream"
-date:      "2016-05-25 22:07:44"
+date:      "2016-06-27 23:06:13"
 comments:  true
-zhUrl:     /you-can-live-your-dream
-permalink: /you-can-live-your-dream-en
+enUrl:     /you-can-live-your-dream-en
+permalink: /you-can-live-your-dream
 ---
 
-Today I watched an inspiring video about **Dream**
+前阵子我偶然看到了一个非常棒的关于**梦想**的视频
 
 <!--MORE-->
 
-Video is [here on youtube][dream].
+视频地址在[Youtube][dream]上 （需翻墙）
 
-It's really inspiring. Especially on the long hot summer night :)
-
-Go watch it. You will get inspired up too.
-
-And the lines is as below:
+总之各种意义上都是很正能量的一个视频，
+台词如下：
 
 > I don’t know what that dream is that you have. I don’t care how disappointing it might have been, as you’ve been working toward that dream. But that dream your holding in your mind that it’s possible that some of you already know that it’s hard. It’s not easy. It’s hard changing your life. That in the process working on your dreams you are going to incur a lot of disappointment, a lot of failure, a lot of pain. At moments when you‘re going to doubt yourself and say God why is this happening to me. I’m just trying to take care of my children, and my mother. I’m not trying to steal or rob from anybody. How does this have to happen to me?
 For those of you all that have experienced some hardships don’t give up on your dream. The rough times are going to come, but they are not going to stay. They have come to pass.
