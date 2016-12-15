@@ -11,13 +11,16 @@ permalink: /about/
 出生在湖南，在广东求学长大。
 高中的时候参加NOIP得了省一等奖，
 保送到上海交通大学，读软件工程。
+大四以后在[QAD China][wiki-QAD]实习工作到2016年11月，
 
-大四以后在[QAD China][wiki-QAD]实习工作一直到现在。
-我住在公司附近，平常都走路去公司。
+然后被好友[周丞][zhoucheng]以一碗重庆小面拉到了现在的公司。
+现在的公司是[再惠][kezaihui]，
+技术团队不到20人，每个人都很强，
+我感觉自己是里面最菜的 :)
 
-工作里主要写的是Perl和Java，
-对Lisp, Python, Javascript都比较感兴趣，接触过一点。
-是一个重度的Vim用户和Git用户。
+工作里做的是web后端的活，使用各种工具来~~偷懒~~增加生产力。
+语言上主要写Python， 对Perl/Java有点了解， 对Lisp/Javascript也感兴趣。
+是一个重度的Vim用户和Git用户，是JetBrains大礼包的受害者。
 
 ![xkcd 246][xkcd-246]
 
@@ -77,3 +80,5 @@ permalink: /about/
 [lki.github.com]: https://github.com/LKI/lki.github.com
 [GUT]:            https://en.wikipedia.org/wiki/Grand_Unified_Theory
 [my-gf]:          http://www.liriansu.com/how-to-lose-in-rock-paper-scissors
+[zhoucheng]:      https://www.zhihu.com/people/ldsink/activities
+[kezaihui]:       http://www.kezaihui.com/
