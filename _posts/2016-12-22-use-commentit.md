@@ -34,6 +34,8 @@ disqus的便利之处在于构建简单，
 :) 所以是时候在本页面下面评论，
 以成为[本博客GitHub项目的Contributor啦~][contributors]
 
+**心好痛...好像这个用不了，我需要调试一下...**
+
 [disqus]:               https://disqus.com/
 [built-blog]:           http://www.liriansu.com/how-this-blog-was-built
 [disqus-template]:      https://github.com/LKI/lki.github.com/blob/b1c59b15a83fe0e0c9c2af55b15e1d3fa107c551/_includes/comments.html
