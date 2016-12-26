@@ -29,11 +29,10 @@ disqus的便利之处在于构建简单，
 感觉很爽！
 
 而且其实[它的template配置和disqus的一样简单][commentit-template]。
+补充：我们还要在[commentit的配置页面][commentit-config]配一下允许直接提交到master :)
 
 :) 所以是时候在本页面下面评论，
 以成为[本博客GitHub项目的Contributor啦~][contributors]
-
-**心好痛...好像这个用不了，我需要调试一下...**
 
 [disqus]:               https://disqus.com/
 [built-blog]:           http://www.liriansu.com/how-this-blog-was-built
@@ -41,4 +40,6 @@ disqus的便利之处在于构建简单，
 [duoshuo]:              http://duoshuo.com/
 [commentit]:            https://commentit.io/getting-started
 [commentit-template]:   https://github.com/LKI/lki.github.io/blob/eb8e55e54fafc4effeeed8ed24ddae142829372b/_includes/comments.html
+[commentit-config]:     https://commentit.io/settings?master=true&group=true
 [contributors]:         https://github.com/LKI/lki.github.io/graphs/contributors
+
