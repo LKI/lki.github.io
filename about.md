@@ -66,7 +66,7 @@ permalink: /about/
 ## 关于本博客
 
 [搭建博客很简单][build-blog]，[做个决定却不容易][why-blog]
-由[Jekyll][jekyll.com]生成, 挂在[GitHub][lki.github.com]上
+由[Jekyll][jekyll.com]生成, 挂在[GitHub][lki.github.io]上
 
 
 [sudoku]:         http://cojs.tk/cogs/problem/problem.php?pid=407
@@ -77,7 +77,7 @@ permalink: /about/
 [build-blog]:     /how-this-blog-was-built
 [why-blog]:       /why-im-blogging
 [jekyll.com]:     http://jekyllrb.com/
-[lki.github.com]: https://github.com/LKI/lki.github.com
+[lki.github.io]:  https://github.com/LKI/lki.github.io
 [GUT]:            https://en.wikipedia.org/wiki/Grand_Unified_Theory
 [my-gf]:          http://www.liriansu.com/how-to-lose-in-rock-paper-scissors
 [zhoucheng]:      https://www.zhihu.com/people/ldsink/activities

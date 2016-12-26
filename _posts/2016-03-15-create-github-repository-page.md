@@ -17,7 +17,7 @@ GitHub Pages是一个让用户很方便托管项目网页在GitHub的服务。
 比如[我这个博客就是GitHub Pages建成的][build-blog]。
 
 但是这样只能托管一个名为
-[GitHub用户名 + ".github.com"的项目(lki.github.com)][lki-github]
+[GitHub用户名 + ".github.com"的项目(lki.github.io)][lki-github]
 
 假如我还有一个项目也想用域名访问怎么办呢？
 
@@ -59,8 +59,8 @@ GitHub Pages是一个让用户很方便托管项目网页在GitHub的服务。
 3. 假如不是绝妙的hack就要追求best practice.
 
 [build-blog]: /how-this-blog-was-built
-[lki-github]: https://github.com/LKI/lki.github.com
-[git-submodule]: https://github.com/LKI/lki.github.com/commit/86d73353e4b8f93ea7e759fb0d2f47b5d9ad8904
+[lki-github]: https://github.com/LKI/lki.github.io
+[git-submodule]: https://github.com/LKI/lki.github.io/commit/86d73353e4b8f93ea7e759fb0d2f47b5d9ad8904
 [remove-submodule]: http://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
 [zhangwenli]: http://zhangwenli.com/
 [issue3]: https://github.com/Ovilia/cv/issues/3

@@ -38,8 +38,8 @@ disqus的便利之处在于构建简单，
 
 [disqus]:               https://disqus.com/
 [built-blog]:           http://www.liriansu.com/how-this-blog-was-built
-[disqus-template]:      https://github.com/LKI/lki.github.com/blob/b1c59b15a83fe0e0c9c2af55b15e1d3fa107c551/_includes/comments.html
+[disqus-template]:      https://github.com/LKI/lki.github.io/blob/b1c59b15a83fe0e0c9c2af55b15e1d3fa107c551/_includes/comments.html
 [duoshuo]:              http://duoshuo.com/
 [commentit]:            https://commentit.io/getting-started
-[commentit-template]:   https://github.com/LKI/lki.github.com/blob/eb8e55e54fafc4effeeed8ed24ddae142829372b/_includes/comments.html
-[contributors]:         https://github.com/LKI/lki.github.com/graphs/contributors
+[commentit-template]:   https://github.com/LKI/lki.github.io/blob/eb8e55e54fafc4effeeed8ed24ddae142829372b/_includes/comments.html
+[contributors]:         https://github.com/LKI/lki.github.io/graphs/contributors
