@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "如何在Mac OSX中用Finder打开特定Path"
-date:      "2016-12-26 17:01:38"
+layout: post
+title: 如何在Mac OSX中用Finder打开特定Path
+date: '2016-12-26 17:01:38'
 permalink: /go-to-path-in-osx
+comments:
+  - author:
+      type: github
+      displayName: hyjfine
+      url: 'https://github.com/hyjfine'
+      picture: 'https://avatars.githubusercontent.com/u/1013953?v=3&s=73'
+    content: '&#x5B66;&#x4E00;&#x624B;'
+    date: 2016-12-26T15:59:35.412Z
+
 ---
 
 今天终于学到了这个很有用的知识，
