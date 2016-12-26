@@ -2,6 +2,15 @@
 layout: page
 title: 关于我
 permalink: /about/
+comments:
+  - author:
+      type: full
+      displayName: LKI
+      url: 'https://github.com/LKI'
+      picture: 'https://avatars.githubusercontent.com/u/3286092?v=3&s=73'
+    content: '&#x5E05;&#x6C14;&#x7684;&#x8BC4;&#x8BBA;&#x3002;'
+    date: 2016-12-26T15:37:42.753Z
+
 ---
 
 ## 关于我
