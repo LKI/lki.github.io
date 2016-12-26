@@ -2,7 +2,6 @@
 layout:    post
 title:     "后端工程师技能树"
 date:      "2016-12-16 23:33:08"
-comments:  true
 permalink: /backend-skill-tree
 ---
 

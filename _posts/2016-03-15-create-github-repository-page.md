@@ -2,7 +2,6 @@
 layout:    post
 title:     "创建GitHub项目主页"
 date:      "2016-03-15 21:19:53"
-comments:  true
 permalink: /create-github-repository-page
 ---
 

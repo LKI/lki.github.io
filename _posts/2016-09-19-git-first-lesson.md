@@ -2,7 +2,6 @@
 layout:    post
 title:     "git新手教程"
 date:      "2016-09-19 16:04:00"
-comments:  true
 permalink: /git-first-lesson
 ---
 

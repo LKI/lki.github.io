@@ -2,7 +2,6 @@
 layout:    post
 title:     "You can live your dream"
 date:      "2016-05-25 22:07:44"
-comments:  true
 zhUrl:     /you-can-live-your-dream
 permalink: /you-can-live-your-dream-en
 ---

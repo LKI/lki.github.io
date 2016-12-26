@@ -2,7 +2,6 @@
 layout:    post
 title:     "在Windows上安装pip"
 date:      "2016-05-18 21:39:29"
-comments:  true
 permalink: /install-pip-on-windows
 ---
 

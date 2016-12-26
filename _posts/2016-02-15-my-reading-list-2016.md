@@ -2,7 +2,6 @@
 layout:    post
 title:     "我的2016书单"
 date:      "2016-02-15 11:07:57"
-comments:  true
 permalink: /my-reading-list-2016
 ---
 

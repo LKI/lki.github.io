@@ -2,7 +2,6 @@
 layout:    post
 title:     "用Openpyxl做两个Excel文件的比对"
 date:      2014-08-28 10:31:08
-comments:  true
 permalink: /compare-excel-using-openpyxl
 ---
 

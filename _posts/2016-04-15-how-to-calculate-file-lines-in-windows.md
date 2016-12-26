@@ -2,7 +2,6 @@
 layout:    post
 title:     "如何用Windows命令行统计文件行数"
 date:      "2016-04-15 22:13:15"
-comments:  true
 permalink: /how-to-calculate-file-lines-in-windows
 ---
 

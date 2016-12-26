@@ -2,7 +2,6 @@
 layout:    post
 title:     "disqus不稳定，于是我开始用commentit了"
 date:      "2016-12-22 20:20:07"
-comments:  true
 permalink: /use-commentit
 ---
 

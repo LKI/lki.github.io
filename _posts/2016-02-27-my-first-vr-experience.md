@@ -2,7 +2,6 @@
 layout:    post
 title:     "我的VR初体验"
 date:      "2016-02-27 21:08:19"
-comments:  true
 permalink: /my-first-vr-experience
 ---
 

@@ -2,7 +2,6 @@
 layout:    post
 title:     "Ubuntu系统X packages can be updated的解决方案"
 date:      "2016-03-16 16:14:19"
-comments:  true
 enUrl:     /ubuntu-package-can-be-updated-solution-en
 permalink: /ubuntu-package-can-be-updated-solution
 ---

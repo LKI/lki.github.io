@@ -2,7 +2,6 @@
 layout:    post
 title:     "利用AUFS和Docker搭建多个私有开发环境"
 date:      2015-10-21 14:55:24
-comments:  true
 permalink: /build-seperate-env-using-aufs-and-docker
 ---
 

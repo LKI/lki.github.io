@@ -2,7 +2,6 @@
 layout:    post
 title:     "读博客和写博客"
 date:      "2016-02-29 13:27:52"
-comments:  true
 permalink: /read-blogs-to-write-blogs
 ---
 

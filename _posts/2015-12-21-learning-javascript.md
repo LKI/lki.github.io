@@ -2,7 +2,6 @@
 layout:    post
 title:     "Javascript之路"
 date:      2015-12-21 17:26:52
-comments:  true
 permalink: /learning-javascript
 ---
 

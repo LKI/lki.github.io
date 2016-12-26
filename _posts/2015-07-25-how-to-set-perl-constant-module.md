@@ -2,7 +2,6 @@
 layout:    post
 title:     "如何优雅地使用Perl的常量模块"
 date:      2015-07-25 20:56:06
-comments:  true
 permalink: /how-to-set-perl-constant-module
 ---
 

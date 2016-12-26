@@ -2,7 +2,6 @@
 layout:    post
 title:     "这篇博客是怎么建成的"
 date:      2015-09-24 20:26:17
-comments:  true
 permalink: /how-this-blog-was-built
 ---
 

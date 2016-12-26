@@ -2,7 +2,6 @@
 layout:    post
 title:     "Virtual Machine, Vagrant, Docker的区别"
 date:      2015-10-12 12:49:55
-comments:  true
 permalink: /virtual-machine-vs-vagrant-vs-docker
 ---
 

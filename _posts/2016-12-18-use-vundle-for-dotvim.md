@@ -2,7 +2,6 @@
 layout:    post
 title:     "用vundle来管理vim插件"
 date:      "2016-12-18 02:22:16"
-comments:  true
 permalink: /use-vundle-for-dotvim
 ---
 

@@ -2,7 +2,6 @@
 layout:    post
 title:     "石头剪刀布中的求输策略"
 date:      2015-11-08 21:01:28
-comments:  true
 permalink: /how-to-lose-in-rock-paper-scissors
 ---
 

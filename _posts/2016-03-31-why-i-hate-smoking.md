@@ -2,7 +2,6 @@
 layout:    post
 title:     "为什么我讨厌吸烟"
 date:      "2016-03-31 16:27:34"
-comments:  true
 permalink: /why-i-hate-smoking
 ---
 

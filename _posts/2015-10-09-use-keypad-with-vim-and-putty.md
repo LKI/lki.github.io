@@ -2,7 +2,6 @@
 layout:    post
 title:     "VIM中小键盘失灵的解决方案(Putty)"
 date:      2015-10-9 15:34:16
-comments:  true
 permalink: /use-keypad-with-vim-and-putty
 ---
 

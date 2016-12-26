@@ -2,7 +2,6 @@
 layout:    post
 title:     "为什么我不招你当我的员工"
 date:      "2016-03-02 13:41:04"
-comments:  true
 permalink: /this-is-why-i-dont-give-you-a-job-zh-cn
 ---
 
