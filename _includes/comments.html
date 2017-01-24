@@ -16,6 +16,8 @@ var commentitPath = '{{ page.path }}';
 })();
 </script>
 
+<hr/>
+
 {%if page.comments %}
 {% assign sorted_comments = (page.comments | sort: 'date') %}
 {% endif %}
