@@ -1,8 +1,25 @@
 ---
-layout:    post
-title:     "后端工程师技能树"
-date:      "2016-12-16 23:33:08"
+layout: post
+title: 后端工程师技能树
+date: '2016-12-16 23:33:08'
 permalink: /backend-skill-tree
+comments:
+  - author:
+      type: github
+      displayName: daya0576
+      url: 'https://github.com/daya0576'
+      picture: 'https://avatars.githubusercontent.com/u/6239652?v=3&s=73'
+    content: >-
+      &#x54C8;&#x54C8; &#x52A0;&#x6CB9;~  
+
+      &#x660E;&#x5929;&#x6709;&#x518D;&#x60E0;Python&#x540E;&#x7AEF;&#x7684;&#x9762;&#x8BD5;,
+      &#x795D;&#x6211;&#x597D;&#x8FD0; XD  
+
+
+      ps.&#x8FD9;&#x4E2A;&#x88E4;&#x88E4;&#x7684;&#x8BC4;&#x8BBA;&#x6846;&#x8FD8;&#x662F;&#x7B2C;&#x4E00;&#x6B21;&#x89C1;&#x5230;,
+      &#x4F46;Facebook&#x767B;&#x5F55;&#x597D;&#x50CF;&#x6302;&#x4E86;. 
+    date: 2017-02-14T10:52:24.289Z
+
 ---
 
 我最近打算点专精天赋`后端工程师`，
