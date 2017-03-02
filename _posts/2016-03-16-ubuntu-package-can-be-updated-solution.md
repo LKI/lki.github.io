@@ -1,9 +1,19 @@
 ---
-layout:    post
-title:     "Ubuntu系统X packages can be updated的解决方案"
-date:      "2016-03-16 16:14:19"
-enUrl:     /ubuntu-package-can-be-updated-solution-en
+layout: post
+title: Ubuntu系统X packages can be updated的解决方案
+date: '2016-03-16 16:14:19'
+enUrl: /ubuntu-package-can-be-updated-solution-en
 permalink: /ubuntu-package-can-be-updated-solution
+comments:
+  - author:
+      type: twitter
+      displayName: Triace210
+      url: 'https://twitter.com/Triace210'
+      picture: >-
+        https://pbs.twimg.com/profile_images/715525829036355584/u__ldYW3_bigger.jpg
+    content: '&#x5341;&#x5206;&#x611F;&#x8C22;'
+    date: 2017-03-02T06:18:24.370Z
+
 ---
 
 一个关于Ubuntu系统的小技巧。
