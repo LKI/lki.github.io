@@ -10,6 +10,13 @@ comments:
       picture: 'https://avatars.githubusercontent.com/u/3286092?v=3&s=73'
     content: '&#x5E05;&#x6C14;&#x7684;&#x8BC4;&#x8BBA;&#x3002;'
     date: 2016-12-26T15:37:42.753Z
+  - author:
+      type: github
+      displayName: lewis617
+      url: 'https://github.com/lewis617'
+      picture: 'https://avatars3.githubusercontent.com/u/11524612?v=3&s=73'
+    content: '&#x4E0D;&#x9519;&#x7684;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;'
+    date: 2017-03-23T11:13:55.825Z
 
 ---
 
