@@ -36,7 +36,9 @@ comments:
 
 工作里做的是web后端的活，使用各种工具来~~偷懒~~增加生产力。
 语言上主要写Python， 对Perl/Java有点了解， 对Lisp/Javascript也感兴趣。
-是一个重度的Vim用户和Git用户，是JetBrains大礼包的受害者。
+[开发环境是Windows][win-env]，是一个重度的Vim用户和Git用户，是JetBrains大礼包的受害者。
+
+
 
 ![xkcd 246][xkcd-246]
 
@@ -82,7 +84,8 @@ comments:
 ## 关于本博客
 
 [搭建博客很简单][build-blog]，[做个决定却不容易][why-blog]
-由[Jekyll][jekyll.com]生成, 挂在[GitHub][lki.github.io]上
+由[Jekyll][jekyll.com]生成, 挂在[GitHub][lki.github.io]上,
+评论系统是用的[commentit][commentit]，PV和UV是用的busuanzi
 
 
 [sudoku]:         http://cojs.tk/cogs/problem/problem.php?pid=407
@@ -98,3 +101,6 @@ comments:
 [my-gf]:          http://www.liriansu.com/how-to-lose-in-rock-paper-scissors
 [zhoucheng]:      https://www.zhihu.com/people/ldsink/activities
 [kezaihui]:       http://www.kezaihui.com/
+[win-env]:        /windows-dev-env
+[commentit]:      /use-commentit
+
