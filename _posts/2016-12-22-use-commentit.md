@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "disqus不稳定，于是我开始用commentit了"
-date:      "2016-12-22 20:20:07"
+layout: post
+title: disqus不稳定，于是我开始用commentit了
+date: '2016-12-22 20:20:07'
 permalink: /use-commentit
+comments:
+  - author:
+      type: full
+      displayName: scarqin
+      url: 'https://github.com/scarqin'
+      picture: 'https://avatars0.githubusercontent.com/u/15225835?v=3&s=73'
+    content: '&#xFF01;try'
+    date: 2017-03-30T06:58:09.693Z
+
 ---
 
 挂在GitHub Pages上的静态博客的评论总是个蛋疼的问题，
