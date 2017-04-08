@@ -11,6 +11,19 @@ comments:
       picture: 'https://avatars0.githubusercontent.com/u/15225835?v=3&s=73'
     content: '&#xFF01;try'
     date: 2017-03-30T06:58:09.693Z
+  - author:
+      type: full
+      displayName: yanhaijing
+      url: 'https://github.com/yanhaijing'
+      picture: 'https://avatars0.githubusercontent.com/u/3192087?v=3&s=73'
+    content: >-
+      https://github.com/guilro/commentit/issues/9
+
+      Error: could not commit the comment to github (repository or file not
+      found)
+
+      &#x4F60;&#x9047;&#x5230;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E86;&#x5417;&#xFF1F;
+    date: 2017-04-08T13:19:48.855Z
 
 ---
 
