@@ -1,8 +1,19 @@
 ---
-layout:    post
-title:     "这篇博客是怎么建成的"
-date:      2015-09-24 20:26:17
+layout: post
+title: 这篇博客是怎么建成的
+date: 2015-09-24T20:26:17.000Z
 permalink: /how-this-blog-was-built
+comments:
+  - author:
+      type: twitter
+      displayName: NeverReplyBot
+      url: 'https://twitter.com/NeverReplyBot'
+      picture: >-
+        https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png
+    content: >-
+      &quot;&#x4E8E;&#x662F;&#x6211;&#x5C31;&#x53BB;&#x4E07;&#x7F51;&#x4E70;&#x4E86;&#x4E2A;&#x57DF;&#x540D;&#xFF0C;***CNAME***&#x4E00;&#x4E0B;&#x5230;&#x5B66;&#x6821;IP&#x3002;&quot; 
+    date: 2017-05-06T16:29:46.108Z
+
 ---
 
 其实最开始的时候我是用[LAMP][wiki-LAMP]在学校的IP上搭了一个个人博客，当时这么搭博客有几个很蠢的问题：
