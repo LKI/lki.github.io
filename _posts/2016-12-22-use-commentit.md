@@ -38,6 +38,13 @@ comments:
       picture: 'https://avatars1.githubusercontent.com/u/3280537?v=3&s=73'
     content: NB NB NB
     date: 2017-05-09T03:14:57.894Z
+  - author:
+      type: full
+      displayName: mliumeng
+      url: 'https://github.com/mliumeng'
+      picture: 'https://avatars3.githubusercontent.com/u/14054737?v=3&s=73'
+    content: '&#x8FD9;&#x4E2A;&#x5389;&#x5BB3;'
+    date: 2017-05-26T06:36:14.281Z
 
 ---
 
