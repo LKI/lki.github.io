@@ -45,6 +45,13 @@ comments:
       picture: 'https://avatars3.githubusercontent.com/u/14054737?v=3&s=73'
     content: '&#x8FD9;&#x4E2A;&#x5389;&#x5BB3;'
     date: 2017-05-26T06:36:14.281Z
+  - author:
+      type: full
+      displayName: hifor
+      url: 'https://github.com/hifor'
+      picture: 'https://avatars2.githubusercontent.com/u/12930071?v=3&s=73'
+    content: test
+    date: 2017-06-10T03:00:06.695Z
 
 ---
 
