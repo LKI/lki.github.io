@@ -1,8 +1,18 @@
 ---
-layout:    post
-title:     "HR就讨厌我们这样的技术，今年一个offer都没发"
-date:      "2017-03-08 20:44:40"
+layout: post
+title: HR就讨厌我们这样的技术，今年一个offer都没发
+date: '2017-03-08 20:44:40'
 permalink: /what-a-hard-backend-interview
+comments:
+  - author:
+      type: github
+      displayName: mylamour
+      url: 'https://github.com/mylamour'
+      picture: 'https://avatars0.githubusercontent.com/u/12653147?v=3&s=73'
+    content: >-
+      &#x6211;&#x6295;&#x4E86;&#x7B80;&#x5386;&#xFF0C;&#x7136;&#x540E;&#x6765;&#x7FFB;&#x4E1C;&#x897F;&#x3002;&#x7FFB;&#x5230;&#x4F60;&#x8FD9;&#x3002;&#x770B;&#x7684;&#x771F;&#x662F;&#x8D85;&#x7EA7;&#x5BF9;&#x80C3;&#x53E3;&#xFF0C;&#x770B;&#x7684;&#x597D;&#x723D;&#x3002;&#x4E0D;&#x8FC7;&#x4E5F;&#x89C9;&#x81EA;&#x5DF1;&#x83DC;&#x9E21;&#xFF0C;&#x4E0D;&#x77E5;&#x9053;&#x80FD;&#x4E0D;&#x80FD;&#x63A5;&#x5230;&#x9762;&#x8BD5;&#x901A;&#x77E5;&#x3002;
+    date: 2017-06-15T13:58:13.585Z
+
 ---
 
 还好我司HR人美心善，任劳任怨……
