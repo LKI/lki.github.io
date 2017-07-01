@@ -207,10 +207,13 @@ VIM更是从没用过，
 所以我压力山大地操作完了以后，
 又上网查了一遍我刚才做的操作是什么意思…
 这样来回几遍以后，
-我发现自己收获很大啊…
+我发现自己收获很大啊，
+之后git相关问的就越来越少了。
 
-:) 所以直到现在，
+所以直到现在，
 我还是很愿意当一个智障的好奇宝宝。
+先看，再问，后想，
+只要问到了，就是学到了。
 每个人都有自己独到的厉害之处，
 这个道理就跟老祖宗苏轼说的一样：
 
@@ -218,7 +221,8 @@ VIM更是从没用过，
 > 下可以陪卑田院乞儿，
 > 眼前见天下无一不好人。
 
-问到了就是学到了。
+苏轼写文章的能发这样的豪迈感慨，
+我写程序那也可以一样豪迈呀 :)
 
 [quora-lazy-active]: https://www.quora.com/Do-intelligent-lazy-people-achieve-more-in-life-than-intelligent-active-people
 [hacker-scripts]: https://github.com/NARKOZ/hacker-scripts
