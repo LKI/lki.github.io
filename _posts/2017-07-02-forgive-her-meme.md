@@ -1,6 +1,6 @@
 ---
 layout:    post
-title:     "那当然是原谅她是什么梗"
+title:     "那当然是选择原谅她是什么梗"
 date:      "2017-07-02 23:05:08"
 permalink: /forgive-her-meme
 ---
