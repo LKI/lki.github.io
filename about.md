@@ -99,15 +99,15 @@ comments:
 
 最近我花在写代码上的时间：
 
-<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/37832e6e-1750-417a-96be-0c54efbe71f9.svg"></embed></figure>
+<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/37832e6e-1750-417a-96be-0c54efbe71f9.svg" /></figure>
 
 最近我用的编辑器(果不其然，Chrome占比巨高)：
 
-<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/6d5b6087-b30c-4d0a-ae8c-d220f6726ce0.svg"></embed></figure>
+<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/6d5b6087-b30c-4d0a-ae8c-d220f6726ce0.svg" /></figure>
 
 最近我用的语言：
 
-<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/4c277bb8-b51b-4b37-a867-55332cbb02b1.svg"></embed></figure>
+<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/4c277bb8-b51b-4b37-a867-55332cbb02b1.svg" /></figure>
 
 
 [sudoku]:         http://cojs.tk/cogs/problem/problem.php?pid=407
