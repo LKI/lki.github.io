@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "石头剪刀布中的求输策略"
-date:      2015-11-08 21:01:28
+layout: post
+title: 石头剪刀布中的求输策略
+date: 2015-11-08T21:01:28.000Z
 permalink: /how-to-lose-in-rock-paper-scissors
+comments:
+  - author:
+      type: github
+      displayName: sjy
+      url: 'https://github.com/sjy'
+      picture: 'https://avatars0.githubusercontent.com/u/1523060?v=3&s=73'
+    content: '&#x725B;&#x903C;&#x554A;'
+    date: 2017-07-03T13:53:10.168Z
+
 ---
 
 小时候七八岁，那时候还在看《读者》。
