@@ -2,7 +2,7 @@
 layout:    post
 title:     "我和女权的我打起来了"
 date:      "2015-08-27 20:28:00"
-permalink: /fight-with-the-femailist-me
+permalink: /fight-with-the-feminist-me
 ---
 
 一直以来我都自以为是一个大男子主义的人，
