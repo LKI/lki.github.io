@@ -32,6 +32,13 @@ comments:
     content: |
       style,content(blog): 666;
     date: 2017-07-03T13:51:21.793Z
+  - author:
+      type: github
+      displayName: AverageJoeWang
+      url: 'https://github.com/AverageJoeWang'
+      picture: 'https://avatars2.githubusercontent.com/u/16034257?v=3&s=73'
+    content: nice
+    date: 2017-07-08T10:35:46.465Z
 
 ---
 
