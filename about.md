@@ -39,6 +39,15 @@ comments:
       picture: 'https://avatars2.githubusercontent.com/u/16034257?v=3&s=73'
     content: nice
     date: 2017-07-08T10:35:46.465Z
+  - author:
+      type: github
+      displayName: rachel26
+      url: 'https://github.com/rachel26'
+      picture: 'https://avatars1.githubusercontent.com/u/14327210?v=4&s=73'
+    content: >-
+      &#x4E00;&#x8DEF;&#x4ECE;&#x77E5;&#x4E4E;&#x770B;&#x5230;&#x8FD9;&#x91CC;&#x3002;&#x5F88;&#x559C;&#x6B22;&#x4F60;&#x7684;&#x535A;&#x5BA2;~
+      ps. &#x5F88;&#x9AD8;&#x5174;&#x8BA4;&#x8BC6;&#x4F60;
+    date: 2017-07-19T13:31:47.615Z
 
 ---
 
