@@ -52,6 +52,16 @@ comments:
       picture: 'https://avatars2.githubusercontent.com/u/12930071?v=3&s=73'
     content: test
     date: 2017-06-10T03:00:06.695Z
+  - author:
+      type: full
+      displayName: jJayyyyyyy
+      url: 'https://github.com/jJayyyyyyy'
+      picture: 'https://avatars0.githubusercontent.com/u/8694379?v=4&s=73'
+    content: >-
+      &#x4F3C;&#x4E4E;&#x5E76;&#x4E0D;&#x80FD;&#x6210;&#x4E3A;contributor...&#x56E0;&#x4E3A;commit
+      by
+      &#x8FD8;&#x662F;&#x4F60;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;author&#x53D8;&#x6210;&#x4E86;&#x5403;&#x74DC;&#x7FA4;&#x4F17;&#xFF08;
+    date: 2017-07-21T12:40:10.811Z
 
 ---
 
