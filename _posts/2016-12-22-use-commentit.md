@@ -62,6 +62,13 @@ comments:
       by
       &#x8FD8;&#x662F;&#x4F60;&#x7684;&#xFF0C;&#x4E0D;&#x8FC7;author&#x53D8;&#x6210;&#x4E86;&#x5403;&#x74DC;&#x7FA4;&#x4F17;&#xFF08;
     date: 2017-07-21T12:40:10.811Z
+  - author:
+      type: full
+      displayName: cgstudios
+      url: 'https://github.com/cgstudios'
+      picture: 'https://avatars0.githubusercontent.com/u/22955150?v=4&s=73'
+    content: dd
+    date: 2017-07-28T13:29:29.631Z
 
 ---
 
