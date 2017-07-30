@@ -21,14 +21,13 @@ var commentitPath = '{{ page.path }}';
 {% assign sorted_comments = (page.comments | sort: 'date') %}
 {% endif %}
 {% for c in sorted_comments %}
-<div class="media" style="display: inline-block; width: 100%;">
-  <div class="media-left" style="float: left;">
+<div class="media">
+  <div class="media-left">
     <img src="{{ c.author.picture }}" alt="{{ c.author.displayName}}" height="73" width="73">
   </div>
-  <div class="media-body" style="float: left;">
+  <div class="media-body">
     <p class="text-muted">
-    <a href="{{ c.author.url }}">{{ c.author.displayName }}</a>
-    on {{ c.date | date_to_string }}
+      {{ c.date | date: "%Y-%m-%d" }} <a href="{{ c.author.url }}">{{ c.author.displayName }}</a>
     </p>
     <p>{{ c.content | newline_to_br }}</p>
   </div>

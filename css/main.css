@@ -40,6 +40,22 @@ img {
 
 
 /* Layout Styles */
+.media {
+  display: inline-block;
+  width: 100%;
+  margin: 2px;
+}
+
+.media .media-left {
+  float: left;
+  margin: 5px;
+}
+
+.media .media-body {
+  float: left;
+  margin: 5px;
+}
+
 /* ----------------------------------------------------------*/
 
 /* Site header */
