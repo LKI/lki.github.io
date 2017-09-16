@@ -3,6 +3,23 @@ layout: post
 title: 最精简的程序语言：Iota
 date: '2017-01-24 13:07:50'
 permalink: /iota-language
+comments:
+  - author:
+      type: github
+      displayName: LKI
+      url: 'https://github.com/LKI'
+      picture: 'https://avatars0.githubusercontent.com/u/3286092?v=4&s=73'
+    content: >-
+      &#x6211;&#x53D1;&#x73B0;&#x8FD9;&#x91CC;&#x7684;&#x8BBA;&#x8BC1;&#x5C11;&#x4E86;&#x5173;&#x952E;&#x7684;&#x4E00;&#x6B65;&#xFF1A;
+
+      &grave;SKI&grave;&#x7B97;&#x5B50;&#x7684;&#x56FE;&#x7075;&#x5B8C;&#x5907;&#x6027;&#x3002;
+
+
+      &#x611F;&#x89C9;&#x5C31;&#x662F;&#x4E00;&#x5F00;&#x59CB;&#x8BB2;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x7136;&#x540E;&#x5C31;&ldquo;&#x6613;&#x8BC1;&rdquo;&#xFF0C;PIA&#x5730;&#x4E22;&#x4E2A;&#x7ED3;&#x679C;&#x51FA;&#x6765;&#x3002;
+
+      &#x8FD8;&#x662F;&#x4E0D;&#x591F;&#x76F4;&#x767D;&#x5440;&#x3002;
+    date: 2017-09-16T12:36:26.588Z
+
 ---
 
 这门语言，只有两个保留字[(reserved keyword)][wiki-reserved-keyword]
