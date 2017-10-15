@@ -69,6 +69,13 @@ comments:
       picture: 'https://avatars0.githubusercontent.com/u/22955150?v=4&s=73'
     content: dd
     date: 2017-07-28T13:29:29.631Z
+  - author:
+      type: full
+      displayName: wendyltan
+      url: 'https://github.com/wendyltan'
+      picture: 'https://avatars0.githubusercontent.com/u/17764067?v=4&s=73'
+    content: '&#x54C8;&#x54C8;&#x54C8;'
+    date: 2017-10-15T13:35:22.005Z
 
 ---
 
