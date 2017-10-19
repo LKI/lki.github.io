@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "我眼中的大佬们"
-date:      "2017-09-16 16:07:46"
+layout: post
+title: 我眼中的大佬们
+date: '2017-09-16 16:07:46'
 permalink: /interesting-humans
+comments:
+  - author:
+      type: github
+      displayName: ice1000
+      url: 'https://github.com/ice1000'
+      picture: 'https://avatars3.githubusercontent.com/u/16398479?v=4&s=73'
+    content: '&#x5367;&#x69FD;&#x4F60;&#x8FD9;&#x6CE2;&#x9ED1;&#x67AA;'
+    date: 2017-10-19T19:01:19.225Z
+
 ---
 
 近期有一个表情“给大佬递茶”用的蛮多的，
