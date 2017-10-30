@@ -11,6 +11,13 @@ comments:
       picture: 'https://avatars3.githubusercontent.com/u/12076762?v=4&s=73'
     content: 'good :D'
     date: 2017-10-30T11:58:31.013Z
+  - author:
+      type: github
+      displayName: Mobscure
+      url: 'https://github.com/Mobscure'
+      picture: 'https://avatars3.githubusercontent.com/u/12076762?v=4&s=73'
+    content: 'good :D'
+    date: 2017-10-30T11:58:50.243Z
 
 ---
 
