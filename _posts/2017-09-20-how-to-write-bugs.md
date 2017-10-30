@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "怎么写Bug"
-date:      "2017-09-20 19:49:38"
+layout: post
+title: 怎么写Bug
+date: '2017-09-20 19:49:38'
 permalink: /how-to-write-bugs
+comments:
+  - author:
+      type: github
+      displayName: Mobscure
+      url: 'https://github.com/Mobscure'
+      picture: 'https://avatars3.githubusercontent.com/u/12076762?v=4&s=73'
+    content: 'good :D'
+    date: 2017-10-30T11:58:31.013Z
+
 ---
 
 时至今日，
