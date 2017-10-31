@@ -163,10 +163,10 @@ permalink: /programmers-logic
 虽然我心里已经有一个大概率确定的答案，
 但我也一样会问出来：
 
-[“丝袜，裤袜，打底裤有什么区别？”][stockings]
-[“现金牛是什么梗？”][cashcow]
-[“Vim, Tmux, Zsh怎么读？”][pronunciations]
-[“为什么烟不算毒品？”][smoking]
+* [“丝袜，裤袜，打底裤有什么区别？”][stockings]
+* [“现金牛是什么梗？”][cashcow]
+* [“Vim, Tmux, Zsh怎么读？”][pronunciations]
+* [“为什么烟不算毒品？”][smoking]
 
 所谓*活到老，学到老*嘛（关谷语气）
 
