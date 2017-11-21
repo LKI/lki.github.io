@@ -48,6 +48,14 @@ comments:
       &#x4E00;&#x8DEF;&#x4ECE;&#x77E5;&#x4E4E;&#x770B;&#x5230;&#x8FD9;&#x91CC;&#x3002;&#x5F88;&#x559C;&#x6B22;&#x4F60;&#x7684;&#x535A;&#x5BA2;~
       ps. &#x5F88;&#x9AD8;&#x5174;&#x8BA4;&#x8BC6;&#x4F60;
     date: 2017-07-19T13:31:47.615Z
+  - author:
+      type: github
+      displayName: Huangtuzhi
+      url: 'https://github.com/Huangtuzhi'
+      picture: 'https://avatars1.githubusercontent.com/u/7981111?v=4&s=73'
+    content: >-
+      &#x6587;&#x7AE0;&#x5199;&#x7684;&#x597D;...&#x4F46;&#x6D3B;&#x7740;&#x4E5F;&#x5F88;&#x597D;
+    date: 2017-11-21T09:04:06.788Z
 
 ---
 
