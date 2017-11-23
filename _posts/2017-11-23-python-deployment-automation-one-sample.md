@@ -1,8 +1,41 @@
 ---
-layout:    post
-title:     "Python项目自动化部署之一：举个栗子"
-date:      "2017-11-23 16:49:57"
+layout: post
+title: Python项目自动化部署之一：举个栗子
+date: '2017-11-23 16:49:57'
 permalink: /python-deployment-automation-one-sample
+comments:
+  - author:
+      type: github
+      displayName: messense
+      url: 'https://github.com/messense'
+      picture: 'https://avatars0.githubusercontent.com/u/1556054?v=4&s=73'
+    content: >-
+      &#x89E6;&#x53D1; build
+      &#x8FD8;&#x662F;&#x624B;&#x52A8;&#x7684;&#x5440;&#xFF0C;&#x6211;&#x53F8;&#x7684;
+      in-house &#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;
+
+
+      CI &amp; CD: https://github.com/bosondata/badwolf
+
+
+      push
+      &#x4EE3;&#x7801;&#x5230;&#x4F1A;&#x90E8;&#x7F72;&#x7684;&#x5206;&#x652F;/tag
+      &#x89E6;&#x53D1; CI
+      &#x6D4B;&#x8BD5;&#xFF0C;&#x6D4B;&#x8BD5;&#x6210;&#x529F;&#x53EF;&#x80FD;&#x4F1A;&#x5728;
+      CI
+      &#x4E2D;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x4E00;&#x90E8;&#x5206;&#x6784;&#x5EFA;&#xFF08;&#x6BD4;&#x5982;&#x6253;&#x5305;
+      Python package&#x3001;webpack
+      &#x6784;&#x5EFA;&#x524D;&#x7AEF;&#x4EE3;&#x7801;&#x7B49;&#xFF09;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#x90E8;&#x7F72;&#xFF0C;&#x6BD4;&#x5982;
+      upload package &#x5230; pypi&#x3001;&#x89E6;&#x53D1; saltstack
+      &#x90E8;&#x7F72;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x5E76;
+      reload &#x670D;&#x52A1;&#x3002;
+
+
+      supervisord
+      &#x611F;&#x89C9;&#x5F88;&#x96BE;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x7684;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x7528;
+      systemd &#x6765;&#x7BA1;&#x7406;&#x3002;
+    date: 2017-11-23T09:40:50.948Z
+
 ---
 
 本文主要讲述一下我司
