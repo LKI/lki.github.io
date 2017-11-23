@@ -35,6 +35,26 @@ comments:
       &#x611F;&#x89C9;&#x5F88;&#x96BE;&#x7528;&#xFF0C;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x7684;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x7528;
       systemd &#x6765;&#x7BA1;&#x7406;&#x3002;
     date: 2017-11-23T09:40:50.948Z
+  - author:
+      type: github
+      displayName: LKI
+      url: 'https://github.com/LKI'
+      picture: 'https://avatars0.githubusercontent.com/u/3286092?v=4&s=73'
+    content: >-
+      @messense
+      &#x624B;&#x52A8;&#x7684;&#xFF0C;&#x89E6;&#x53D1;&#x7684;CI&#x53EA;&#x4F1A;&#x8DD1;&#x4EE3;&#x7801;&#x98CE;&#x683C;/UT&#x4E00;&#x7CFB;&#x5217;
+
+
+      badwolf&#x5B66;&#x4E60;&#x4E86;&#xFF0C;&#x4E4B;&#x540E;&#x53BB;&#x7814;&#x7A76;&#x4E00;&#x4E0B;&#x3002;
+
+
+      supervisord
+      &#x6211;&#x4EEC;&#x4E5F;&#x662F;&#x540E;&#x7AEF;&#x8FDB;&#x7A0B;&#x7528;&#x7684;&#x591A;&#xFF0C;&#x524D;&#x7AEF;&#x670D;&#x52A1;&#x5668;&#x7528;&#x7684;&#x662F;pm2~&#x5E94;&#x8BE5;&#x90FD;&#x5927;&#x540C;&#x5C0F;&#x5F02;~
+
+
+      &#xFF08;&#x53E6;&#xFF1A;&#x6211;&#x53D1;&#x73B0;&#x6211;&#x7528;&#x7684;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#x5BF9;&#x8BA8;&#x8BBA;&#x7684;&#x652F;&#x6301;&#x5F88;&#x5DEE;&#xFF0C;&#x8003;&#x8651;&#x4EE5;&#x540E;&#x6362;&#x7528;GitHub
+      Issues&#x6765;&#x505A;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#xFF09;
+    date: 2017-11-23T09:56:43.983Z
 
 ---
 
