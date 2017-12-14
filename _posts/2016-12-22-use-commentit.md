@@ -83,6 +83,18 @@ comments:
       picture: 'https://avatars1.githubusercontent.com/u/4208263?v=4&s=73'
     content: test
     date: 2017-12-14T06:26:42.954Z
+  - author:
+      type: full
+      displayName: liminany
+      url: 'https://github.com/liminany'
+      picture: 'https://avatars1.githubusercontent.com/u/4208263?v=4&s=73'
+    content: >-
+      https://liminany.github.io/m/&#xFF0C;&#x6211;&#x7684;&#x8FD9;&#x4E2A;&#x52A0;&#x4E0A;&#x53BB;&#x4E0D;&#x884C;&#xFF0C;&#x62A5; 
+      https://github.com/guilro/commentit/issues/9  
+      &#x8FD9;&#x4E2A;&#x9519;&#xFF0C;could not commit the comment to github
+      (repository or file not found)
+      &#xFF0C;&#xFF0C;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#x5462;&#xFF1F;
+    date: 2017-12-14T07:10:34.473Z
 
 ---
 
