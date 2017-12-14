@@ -76,6 +76,13 @@ comments:
       picture: 'https://avatars0.githubusercontent.com/u/17764067?v=4&s=73'
     content: '&#x54C8;&#x54C8;&#x54C8;'
     date: 2017-10-15T13:35:22.005Z
+  - author:
+      type: full
+      displayName: liminany
+      url: 'https://github.com/liminany'
+      picture: 'https://avatars1.githubusercontent.com/u/4208263?v=4&s=73'
+    content: test
+    date: 2017-12-14T06:26:42.954Z
 
 ---
 
