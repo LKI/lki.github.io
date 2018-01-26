@@ -1,8 +1,24 @@
 ---
-layout:    post
-title:     "消逝的此刻"
-date:      "2017-10-26 17:48:42"
+layout: post
+title: 消逝的此刻
+date: '2017-10-26 17:48:42'
 permalink: /carpe-diem
+comments:
+  - author:
+      type: github
+      displayName: shidenggui
+      url: 'https://github.com/shidenggui'
+      picture: 'https://avatars0.githubusercontent.com/u/5035364?v=4&s=73'
+    content: >-
+      &#x4EBA;&#x7C7B;&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6D3B;&#x7740;&#xFF1F;
+      &#x56E0;&#x4E3A;&#x4E0D;&#x60F3;&#x6D3B;&#x7684;&#x4EBA;&#x7684;&#x57FA;&#x56E0;&#x65E9;&#x5C31;&#x6D88;&#x5931;&#x5728;&#x5386;&#x53F2;&#x957F;&#x6CB3;&#x4E2D;
+
+      &#x4E16;&#x754C;&#x7EC8;&#x7A76;&#x4F1A;&#x6BC1;&#x706D;&#x7684;&#x8BDD;&#xFF0C;&#x4EBA;&#x7C7B;&#x6709;&#x610F;&#x4E49;&#x5417;&#xFF1F;
+      &#x4E0D;&#x7BA1;&#x6BC1;&#x4E0D;&#x6BC1;&#x706D;&#xFF0C;&#x90FD;&#x6CA1;&#x4EC0;&#x4E48;&#x610F;&#x4E49;
+
+      &#x5373;&#x4F7F;&#x6211;&#x662F;&#x7279;&#x6B8A;&#x7684;&#x4EBA;&#x7C7B;&#xFF0C;&#x6211;&#x80FD;&#x505A;&#x51FA;&#x4EC0;&#x4E48;&#x4E0D;&#x540C;&#x7684;&#x4E8B;&#x60C5;&#x5417;&#xFF1F;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x662F;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#xFF0C;&#x4E5F;&#x90FD;&#x5728;&#x505A;&#x7740;&#x72EC;&#x4E00;&#x65E0;&#x4E8C;&#x7684;&#x4E8B;&#x60C5;
+    date: 2018-01-26T01:16:35.671Z
+
 ---
 
 前几天 Reddit 上有个赞的很多的
