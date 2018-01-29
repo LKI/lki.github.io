@@ -12,6 +12,14 @@ comments:
     content: >-
       &#x5199;&#x5F97;&#x5F88;&#x6709;&#x8DA3;&#xFF08;&#x5DF2;&#x7ECF;&#x8BCD;&#x7A77;&#xFF09;&#xFF0C;&#x8D5E;&#x4E00;&#x4E2A;
     date: 2018-01-29T15:38:54.762Z
+  - author:
+      type: github
+      displayName: GaoHengdong
+      url: 'https://github.com/GaoHengdong'
+      picture: 'https://avatars2.githubusercontent.com/u/30036217?v=4&s=73'
+    content: >-
+      &#x535A;&#x5BA2;&#x7684;&#x4E00;&#x5927;&#x7528;&#x9014;&#x5C31;&#x662F;&#x79C0;&#x6069;&#x7231;&#x3002;&#x3002;&#x3002;&#x3002;
+    date: 2018-01-29T16:25:49.118Z
 
 ---
 
