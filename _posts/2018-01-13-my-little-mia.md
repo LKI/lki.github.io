@@ -1,8 +1,18 @@
 ---
-layout:    post
-title:     "我的女友小米娅"
-date:      "2018-01-13 08:06:16"
+layout: post
+title: 我的女友小米娅
+date: '2018-01-13 08:06:16'
 permalink: /my-little-mia
+comments:
+  - author:
+      type: github
+      displayName: animebing
+      url: 'https://github.com/animebing'
+      picture: 'https://avatars1.githubusercontent.com/u/19849456?v=4&s=73'
+    content: >-
+      &#x5199;&#x5F97;&#x5F88;&#x6709;&#x8DA3;&#xFF08;&#x5DF2;&#x7ECF;&#x8BCD;&#x7A77;&#xFF09;&#xFF0C;&#x8D5E;&#x4E00;&#x4E2A;
+    date: 2018-01-29T15:38:54.762Z
+
 ---
 
 小米娅本名叫吴莹莹，
