@@ -1,8 +1,18 @@
 ---
-layout:    post
-title:     "我的好友柳宁宁"
-date:      "2018-03-03 20:39:48"
+layout: post
+title: 我的好友柳宁宁
+date: '2018-03-03 20:39:48'
 permalink: /my-friend-ldsink
+comments:
+  - author:
+      type: github
+      displayName: shidenggui
+      url: 'https://github.com/shidenggui'
+      picture: 'https://avatars0.githubusercontent.com/u/5035364?v=4&s=73'
+    content: >-
+      &#x5E73;&#x6DE1;&#x8D28;&#x6734;&#x3002;&#x4EBA;&#x4E16;&#x95F4;&#xFF0C;&#x9152;&#x6613;&#x5F97;&#xFF0C;&#x77E5;&#x5DF1;&#x96BE;&#x5BFB;&#x3002;
+    date: 2018-03-05T15:32:45.902Z
+
 ---
 
 柳宁宁真名其实不叫柳宁宁，
