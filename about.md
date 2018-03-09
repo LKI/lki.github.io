@@ -63,29 +63,43 @@ comments:
 出生在湖南，在广东求学长大。
 高中的时候参加NOIP得了省一等奖，
 保送到上海交通大学，读软件工程。
-大四以后(2014年7月)在[QAD China][wiki-QAD]实习工作到2016年11月，
-在这个跨国小公司学到了教科书般标准的软件开发流程。
 
-然后被好友[周丞][zhoucheng]以一碗重庆小面拉到了现在的公司。
-现在的公司是[再惠][kezaihui]，
-技术团队不到20人，每个人都很强，
+大四以后(2014年7月)在[QAD China][wiki-QAD]实习工作，
+在这个跨国小公司学到了教科书般标准的软件开发流程。
+当时主语言是[Perl][perl]，做的是基于Git的定制化代码版本控制工具，
+[后来我把整个项目用Java重写了一遍][CVC]。
+
+2016年10月的时候，被百姓网HR邀请去面试，
+因为[好友周丞][ldsink]以前实习工作也在百姓，于是就约了一顿饭。
+结果被[他][zhoucheng]以一碗重庆小面拉到了现在的公司。
+现在的公司叫[再惠][kezaihui]，
+刚来的时候整个公司的技术加在一起只有12个人，每个人都很强，
 我感觉自己是里面最菜的 :)
 
-工作里做的是web后端的活，使用各种工具来~~偷懒~~增加生产力。
-语言上主要写Python， 对Perl/Java有点了解， 对Lisp/Javascript也感兴趣。
-[开发环境是Windows][win-env]，是一个重度的Vim用户和Git用户，是JetBrains大礼包的受害者。
+工作上我主要做的是Web后端的活，
+主要工作分了三个部分：
+实现业务逻辑、设计管理数据库、搭建服务器部署环境。
+这里每一块都有很多东西可以讲，
+所以我就不讲了 :)
 
+平常喜欢使用各种工具来~~偷懒~~增加生产力。
+语言上主要写Python，曾经对Perl/Java/Lisp有点了解（排名分先后），
+现在也会写写工具页面。
+[开发环境是Windows][win-env]，是一个重度的[Vim用户][vim]和[Git用户][git]，
+是JetBrains大礼包的受害者。
 
 
 ![xkcd 246][xkcd-246]
 
-喜欢语言和逻辑，喜欢好玩的事情，
+
+[喜欢语言和逻辑][logic]，
+[喜欢好玩的事情][play]，
 [喜欢读博客][read-blog]，
-~~问题很多~~好奇心很旺盛。
+~~[问题很多][hunter2]~~[好奇心很旺盛][cash-cow]。
 
 很喜欢[Python Zen][python-zen]里的一句
 `Now is better than never`。
-认为生命的意义在于现在，想做什么就不应该犹豫。
+认为[生命的意义在于现在，想做什么就不应该犹豫][work]。
 
 相比于覆盖100%情况的复杂设计，
 更喜欢覆盖90%情况的简单设计。
@@ -135,24 +149,29 @@ comments:
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/6d5b6087-b30c-4d0a-ae8c-d220f6726ce0.svg" /></figure>
 
-最近我用的语言：
-
-<figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/4c277bb8-b51b-4b37-a867-55332cbb02b1.svg" /></figure>
-
-
-[sudoku]:         http://cojs.tk/cogs/problem/problem.php?pid=407
-[wiki-QAD]:       https://en.wikipedia.org/wiki/QAD_Inc
-[python-zen]:     https://www.python.org/dev/peps/pep-0020/
-[xkcd-246]:       http://imgs.xkcd.com/comics/labyrinth_puzzle.png
-[read-blog]:      http://www.liriansu.com/read-blogs-to-write-blogs
-[build-blog]:     /how-this-blog-was-built
-[why-blog]:       /why-im-blogging
-[jekyll.com]:     http://jekyllrb.com/
-[lki.github.io]:  https://github.com/LKI/lki.github.io
-[GUT]:            https://en.wikipedia.org/wiki/Grand_Unified_Theory
-[my-gf]:          http://www.liriansu.com/how-to-lose-in-rock-paper-scissors
-[zhoucheng]:      https://www.zhihu.com/people/ldsink/activities
-[kezaihui]:       http://www.kezaihui.com/
-[win-env]:        /windows-dev-env
-[commentit]:      /use-commentit
+[CVC]: /lazy-coding-thinking
+[GUT]: https://en.wikipedia.org/wiki/Grand_Unified_Theory
+[build-blog]: /how-this-blog-was-built
+[commentit]: /use-commentit
+[git]: /philosophy-of-git
+[jekyll.com]: http://jekyllrb.com/
+[kezaihui]: http://www.kezaihui.com/
+[ldsink]: /my-friend-ldsink
+[lki.github.io]: https://github.com/LKI/lki.github.io
+[logic]: /programmers-logic
+[play]: /play-gba-with-danmaku
+[my-gf]: /how-to-lose-in-rock-paper-scissors
+[cash-cow]: /what-is-cash-cow
+[hunter2]: /hunter2-meme
+[perl]: https://learnxinyminutes.com/docs/perl/
+[python-zen]: https://www.python.org/dev/peps/pep-0020/
+[work]: /my-work
+[read-blog]: /read-blogs-to-write-blogs
+[sudoku]: http://cojs.tk/cogs/problem/problem.php?pid=407
+[vim]: /use-vundle-for-dotvim
+[why-blog]: /why-im-blogging
+[wiki-QAD]: https://en.wikipedia.org/wiki/QAD_Inc
+[win-env]: /windows-dev-env
+[xkcd-246]: http://imgs.xkcd.com/comics/labyrinth_puzzle.png
+[zhoucheng]: https://www.zhihu.com/people/ldsink/activities
 
