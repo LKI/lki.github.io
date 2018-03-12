@@ -56,6 +56,13 @@ comments:
     content: >-
       &#x6587;&#x7AE0;&#x5199;&#x7684;&#x597D;...&#x4F46;&#x6D3B;&#x7740;&#x4E5F;&#x5F88;&#x597D;
     date: 2017-11-21T09:04:06.788Z
+  - author:
+      type: github
+      displayName: lietoumai
+      url: 'https://github.com/lietoumai'
+      picture: 'https://avatars2.githubusercontent.com/u/13960647?v=4&s=73'
+    content: '&#x7ED9;&#x60A8;&#x53D1;&#x4E86;&#x4E2A;&#x90AE;&#x4EF6;&#xFF0C;gmail'
+    date: 2018-03-12T08:50:01.595Z
 
 ---
 
