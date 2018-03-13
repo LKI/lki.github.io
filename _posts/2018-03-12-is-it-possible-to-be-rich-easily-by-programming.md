@@ -1,8 +1,22 @@
 ---
-layout:    post
-title:     "链家小哥问我：听说搞IT的培训三个月就可以月入上万，是真的吗？"
-date:      "2018-03-12 23:22:10"
+layout: post
+title: 链家小哥问我：听说搞IT的培训三个月就可以月入上万，是真的吗？
+date: '2018-03-12 23:22:10'
 permalink: /is-it-possible-to-be-rich-easily-by-programming
+comments:
+  - author:
+      type: github
+      displayName: shidenggui
+      url: 'https://github.com/shidenggui'
+      picture: 'https://avatars0.githubusercontent.com/u/5035364?v=4&s=73'
+    content: >-
+      &#x60F3;&#x5230;&#x6211;&#x5F53;&#x521D;&#x5FEB;&#x6BD5;&#x4E1A;&#x65F6;&#x5728;&#x4E00;&#x5BB6;&#x4F20;&#x7EDF;&#x7684;&#x8F6F;&#x4EF6;&#x516C;&#x53F8;&#x5B9E;&#x4E60;&#xFF0C;&#x8D1F;&#x8D23;&#x7EF4;&#x62A4;
+      C++ &#x7684; MFC
+      &#x8F6F;&#x4EF6;&#xFF0C;&#x540E;&#x9762;&#x5411;&#x5F80;&#x4E92;&#x8054;&#x7F51;&#x884C;&#x4E1A;&#xFF0C;&#x81EA;&#x5B66;&#x4E86;
+      Python
+      &#x8DF3;&#x69FD;&#x3002;&#x7F16;&#x7A0B;&#x4F5C;&#x4E3A;&#x804C;&#x4E1A;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x5E78;&#x8FD0;&#x7684;&#xFF0C;&#x6BD5;&#x7ADF;&#x6709;&#x591A;&#x5C11;&#x5DE5;&#x4F5C;&#x80FD;&#x8BA9;&#x4EBA;&#x4EAB;&#x53D7;&#x5230;&#x601D;&#x8003;&#x7684;&#x4E50;&#x8DA3;&#x5462;
+    date: 2018-03-13T15:04:30.237Z
+
 ---
 
 我想了想，
