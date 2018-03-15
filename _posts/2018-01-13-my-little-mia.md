@@ -20,6 +20,16 @@ comments:
     content: >-
       &#x535A;&#x5BA2;&#x7684;&#x4E00;&#x5927;&#x7528;&#x9014;&#x5C31;&#x662F;&#x79C0;&#x6069;&#x7231;&#x3002;&#x3002;&#x3002;&#x3002;
     date: 2018-01-29T16:25:49.118Z
+  - author:
+      type: twitter
+      displayName: ving_j
+      url: 'https://twitter.com/ving_j'
+      picture: >-
+        https://pbs.twimg.com/profile_images/484770056325185536/5d40fQ-i_bigger.jpeg
+    content: >-
+      &#x54C8;&#x54C8;&#x54C8;&#x54C8;
+      &#x4F60;&#x4EEC;&#x7684;&#x65E5;&#x5E38;&#x5F88;&#x6709;&#x8DA3;&#x5662;
+    date: 2018-03-15T15:00:58.583Z
 
 ---
 
