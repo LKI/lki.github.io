@@ -1,8 +1,19 @@
 ---
-layout:    post
-title:     "破案·Sentry迷云"
-date:      "2018-03-22 20:14:08"
+layout: post
+title: 破案·Sentry迷云
+date: '2018-03-22 20:14:08'
 permalink: /solve-a-sentry-case
+comments:
+  - author:
+      type: github
+      displayName: shidenggui
+      url: 'https://github.com/shidenggui'
+      picture: 'https://avatars0.githubusercontent.com/u/5035364?v=4&s=73'
+    content: >-
+      &#x770B;&#x4E86;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;&#x5728;&#x6211;&#x4EEC;&#x516C;&#x53F8;&#x4E5F;&#x63A8;&#x5E7F;&#x4F7F;&#x7528;
+      sentry &#x4E86;
+    date: 2018-04-04T10:19:26.264Z
+
 ---
 
 作为程序员，
