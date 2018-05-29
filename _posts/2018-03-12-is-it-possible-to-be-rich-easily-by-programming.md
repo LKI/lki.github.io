@@ -16,6 +16,16 @@ comments:
       Python
       &#x8DF3;&#x69FD;&#x3002;&#x7F16;&#x7A0B;&#x4F5C;&#x4E3A;&#x804C;&#x4E1A;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x5E78;&#x8FD0;&#x7684;&#xFF0C;&#x6BD5;&#x7ADF;&#x6709;&#x591A;&#x5C11;&#x5DE5;&#x4F5C;&#x80FD;&#x8BA9;&#x4EBA;&#x4EAB;&#x53D7;&#x5230;&#x601D;&#x8003;&#x7684;&#x4E50;&#x8DA3;&#x5462;
     date: 2018-03-13T15:04:30.237Z
+  - author:
+      type: github
+      displayName: SmirkCao
+      url: 'https://github.com/SmirkCao'
+      picture: 'https://avatars3.githubusercontent.com/u/35244986?v=4&s=73'
+    content: >
+      &#x4E4B;&#x524D;&#x53EA;&#x77E5;&#x9053;chinesecalendar&#xFF0C;&#x4ECA;&#x5929;&#x53D1;&#x73B0;&#x65B0;&#x5927;&#x9646;
+
+      &#x6700;&#x540E;&#x4E24;&#x53E5;&#x68D2;
+    date: 2018-05-29T11:47:09.682Z
 
 ---
 
