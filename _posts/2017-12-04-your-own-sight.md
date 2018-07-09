@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "视差"
-date:      "2017-12-04 22:29:14"
+layout: post
+title: 视差
+date: '2017-12-04 22:29:14'
 permalink: /your-own-sight
+comments:
+  - author:
+      type: github
+      displayName: shidenggui
+      url: 'https://github.com/shidenggui'
+      picture: 'https://avatars0.githubusercontent.com/u/5035364?v=4&s=73'
+    content: '&#x6709;&#x610F;&#x601D;&#x3002;'
+    date: 2018-07-09T06:40:53.088Z
+
 ---
 
 蚍蜉和大树是很好的朋友，
