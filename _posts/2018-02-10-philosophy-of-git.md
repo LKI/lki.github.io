@@ -1,8 +1,33 @@
 ---
-layout:    post
-title:     "Git的理念"
-date:      "2018-02-10 16:01:31"
+layout: post
+title: Git的理念
+date: '2018-02-10 16:01:31'
 permalink: /philosophy-of-git
+comments:
+  - author:
+      type: github
+      displayName: LinJinghua
+      url: 'https://github.com/LinJinghua'
+      picture: 'https://avatars0.githubusercontent.com/u/30121146?v=4&s=73'
+    content: >-
+      &#x5BF9;&grave;git&grave;&#x53EA;&#x662F;&#x6A21;&#x7CCA;&#x4E86;&#x89E3;&#xFF0C;&#x5982;&#x6709;&#x4E0D;&#x5BF9;&#x8BF7;&#x6307;&#x6B63;:P&#x3002;
+       - &#x5173;&#x4E8E;Line Diff: &#x5B58;&#x5728;50%&#x4EE5;&#x4E0A;(&#x5305;&#x62EC;50%)&#x884C;&#x76F8;&#x4F3C;
+       - &#x5173;&#x4E8E;Commit: &#x5229;&#x7528;&grave;filter-branch&grave;&#x4FEE;&#x6539;&grave;GIT_AUTHOR_NAME&grave;&#xFF0C;GitHub&#x4E0A;&#x80FD;&#x770B;&#x51FA;&#x6765;Committer(Committer&#x4E0E;Author&#x4E0D;&#x540C;&#x65F6;github&#x7684;commit&#x5386;&#x53F2;&#x4F1A;&#x663E;&#x793A;&#x4E24;&#x8005;)&#xFF0C;git&#x5B58;&#x50A8;&#x7740;&grave;GIT_COMMITTER_NAME&grave;&#x548C;&grave;GIT_COMMITTER_EMAIL&grave;&#x4FE1;&#x606F;&#x3002;
+      - &#x5173;&#x4E8E;Branch:
+      &#x5220;&#x9664;&#x8FDC;&#x7A0B;&#x5206;&#x652F;&#x5229;&#x7528;&grave;git
+      push origin-name
+      :branch-name&grave;&#xFF0C;&#x53EF;&#x4EE5;(&#x4E0D;&#x662F;&#x5F88;&#x4E86;&#x89E3;stash&#x673A;&#x5236;&#xFF0C;&#x4F46;&#x731C;&#x60F3;branch,commit,
+      stash&#x5E94;&#x8BE5;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;)&#x3002;
+
+      - &#x5173;&#x4E8E;Repository:
+      &#x4F1A;&#x3002;&#x4F46;&#x53EA;&#x662F;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6807;&#x8BB0;&#x5206;&#x652F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5177;&#x4F53;&#x5BF9;&#x8C61;&#x5220;&#x9664;&#x5E94;&#x8BE5;&#x662F;&grave;git-gc&grave;&#x56DE;&#x6536;?
+
+      - &#x5173;&#x4E8E;Remote:
+      &#x4E0D;&#x653E;&#x7F6E;&#x7BA1;&#x7406;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x6CA1;&#x6709;&grave;work
+      tree&grave;&#x3002;&#x4E00;&#x822C;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90E8;&#x7F72;
+      Git &#x4ED3;&#x5E93;&#x65F6;&#x4F7F;&#x7528;&#x3002;
+    date: 2018-08-08T15:18:57.977Z
+
 ---
 
 本文尝试介绍一下Git的过人之处。
