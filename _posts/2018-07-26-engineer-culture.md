@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "为什么我喜欢工程师文化"
-date:      "2018-07-26 22:38:44"
+layout: post
+title: 为什么我喜欢工程师文化
+date: '2018-07-26 22:38:44'
 permalink: /engineer-culture
+comments:
+  - author:
+      type: github
+      displayName: nilsonlinux
+      url: 'https://github.com/nilsonlinux'
+      picture: 'https://avatars3.githubusercontent.com/u/22534130?v=4&s=73'
+    content: '&#x4E5F;&#x5341;&#x6B22;&#x5440;&#x3002;'
+    date: 2018-08-08T16:23:07.330Z
+
 ---
 
 <!--MORE-->
