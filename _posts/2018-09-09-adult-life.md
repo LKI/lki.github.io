@@ -1,8 +1,19 @@
 ---
-layout:    post
-title:     "毕业三年的报告"
-date:      "2018-09-09 19:46:37"
+layout: post
+title: 毕业三年的报告
+date: '2018-09-09 19:46:37'
 permalink: /adult-life
+comments:
+  - author:
+      type: github
+      displayName: daya0576
+      url: 'https://github.com/daya0576'
+      picture: 'https://avatars2.githubusercontent.com/u/6239652?v=4&s=73'
+    content: >-
+      &#x7ADF;&#x7136;&#x5168;&#x90E8;&#x770B;&#x5B8C;&#x4E86;&#xFF0C;&#x597D;&#x8D5E;
+      &#x1F44D;&#x1F3FB;
+    date: 2018-09-10T01:51:09.437Z
+
 ---
 
 前阵子在知乎上看到一个问题，
