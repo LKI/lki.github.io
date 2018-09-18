@@ -72,6 +72,13 @@ comments:
       &#x660E;&#x5929;&#x53BB;&#x8001;&#x54E5;&#x7684;&#x516C;&#x53F8;&#x9762;&#x8BD5;&#x5B9E;&#x4E60;&#xFF0C;&#x4ECE;&#x77E5;&#x4E4E;&#x8FC7;&#x6765;&#xFF0C;&#x89C9;&#x5F97;&#x8001;&#x54E5;&#x975E;&#x5E38;&#x6709;&#x610F;&#x601D;&#xFF0C;&#x5E0C;&#x671B;&#x660E;&#x5929;&#x987A;&#x5229;&#xFF0C;&#x6765;&#x5438;&#x70B9;&#x8FD0;&#x6C14;&#x3002;(&#x3065;&#xFFE3;
       3&#xFFE3;)&#x3065;
     date: 2018-04-24T07:29:29.145Z
+  - author:
+      type: full
+      displayName: achuanya
+      url: 'https://github.com/achuanya'
+      picture: 'https://avatars3.githubusercontent.com/u/42119505?v=4&s=73'
+    content: '&#x53EF;&#x4EE5;'
+    date: 2018-09-18T11:37:35.110Z
 
 ---
 
