@@ -26,6 +26,13 @@ comments:
 
       &#x6700;&#x540E;&#x4E24;&#x53E5;&#x68D2;
     date: 2018-05-29T11:47:09.682Z
+  - author:
+      type: github
+      displayName: achuanya
+      url: 'https://github.com/achuanya'
+      picture: 'https://avatars3.githubusercontent.com/u/42119505?v=4&s=73'
+    content: '&#x8FD9;&#x662F;&#x4EC0;&#x4E48;&#x8BC4;&#x8BBA;'
+    date: 2018-10-17T07:08:29.540Z
 
 ---
 
