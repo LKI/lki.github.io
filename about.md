@@ -79,6 +79,15 @@ comments:
       picture: 'https://avatars3.githubusercontent.com/u/42119505?v=4&s=73'
     content: '&#x53EF;&#x4EE5;'
     date: 2018-09-18T11:37:35.110Z
+  - author:
+      type: github
+      displayName: shengbinxu
+      url: 'https://github.com/shengbinxu'
+      picture: 'https://avatars2.githubusercontent.com/u/3232275?v=4&s=73'
+    content: >-
+      &#x4E0D;&#x9519;&#x3002;https://github.com/LKI/chinese-calendar
+      &#x4F60;&#x7684;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x7ED9;&#x6211;&#x7684;&#x5DE5;&#x4F5C;&#x5E26;&#x6765;&#x4E86;&#x633A;&#x5927;&#x7684;&#x5E2E;&#x52A9;
+    date: 2018-10-30T03:54:12.723Z
 
 ---
 
