@@ -12,6 +12,8 @@ permalink: /developer-team
 
 <!--MORE-->
 
+![pic][as_leader]
+
 ## 引子
 
 上一篇[《积极面思考》][thinking]中提到了，
@@ -549,6 +551,7 @@ Mia 去年升职为 Manager 以后，
 
 
 
+[as_leader]: /assets/pics/weibo/as_leader.png
 [thinking]: /about-active-thinking
 [pareto]: /pareto-rule-of-programmers
 [give-a-job]: /this-is-why-i-dont-give-you-a-job-zh-cn
