@@ -51,7 +51,7 @@ $ git push -u origin gh-pages     # 推到GitHub服务器上
 
 [build-a-blog]:   /how-this-blog-was-built
 [lki-static]:     https://github.com/LKI/static
-[html-static]:    http://www.liriansu.com/static/
+[html-static]:    /static/
 [pages]:          https://pages.github.com/
 [create-repo]:    https://github.com/new
 

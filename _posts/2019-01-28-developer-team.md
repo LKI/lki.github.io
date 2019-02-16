@@ -561,7 +561,7 @@ Mia 去年升职为 Manager 以后，
 [dilemma]: http://daily.zhihu.com/story/9362305
 [adult-life]: /adult-life
 [tonegawa]: https://www.bilibili.com/bangumi/media/md102632/
-[culture]: http://www.liriansu.com/engineer-culture
+[culture]: /engineer-culture
 [habits]: /my-programmer-habits
 [interview]: /what-a-hard-backend-interview
 [chat]: /a-chat-with-roommates

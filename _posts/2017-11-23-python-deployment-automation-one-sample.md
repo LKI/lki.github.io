@@ -191,5 +191,5 @@ nginx    STARTING    pid 1020, uptime 0:00:00
 [invoker]: https://dota2.gamepedia.com/Invoker
 [supervisor]: http://supervisord.org/
 [self]: /python-deployment-automation-one-sample
-[about-me]: http://www.liriansu.com/about/
+[about-me]: /about/
 

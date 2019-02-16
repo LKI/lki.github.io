@@ -149,7 +149,7 @@ disqus的便利之处在于构建简单，
 以成为[本博客GitHub项目的Contributor啦~][contributors]
 
 [disqus]:               https://disqus.com/
-[built-blog]:           http://www.liriansu.com/how-this-blog-was-built
+[built-blog]:           /how-this-blog-was-built
 [disqus-template]:      https://github.com/LKI/lki.github.io/blob/b1c59b15a83fe0e0c9c2af55b15e1d3fa107c551/_includes/comments.html
 [duoshuo]:              http://duoshuo.com/
 [commentit]:            https://commentit.io/getting-started
