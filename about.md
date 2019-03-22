@@ -88,6 +88,13 @@ comments:
       &#x4E0D;&#x9519;&#x3002;https://github.com/LKI/chinese-calendar
       &#x4F60;&#x7684;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x7ED9;&#x6211;&#x7684;&#x5DE5;&#x4F5C;&#x5E26;&#x6765;&#x4E86;&#x633A;&#x5927;&#x7684;&#x5E2E;&#x52A9;
     date: 2018-10-30T03:54:12.723Z
+  - author:
+      type: github
+      displayName: CharleyWang1124
+      url: 'https://github.com/CharleyWang1124'
+      picture: 'https://avatars3.githubusercontent.com/u/40312064?v=4&s=73'
+    content: '&#x52A0;&#x6CB9;&#xFF01;'
+    date: 2019-03-22T12:20:25.301Z
 
 ---
 
