@@ -9,9 +9,9 @@ permalink: /software-engineering-django
 会着重讲述实际的工程项目中是如何协作开发软件的。
 本文主要介绍了 django/python 系列的工具链。
 
-<!--more-->
+<!--MORE-->
 
-# outline
+## outline
 
 本文包括以下内容：
 
@@ -28,7 +28,7 @@ permalink: /software-engineering-django
 - conclusion
 
 
-# django
+## django
 
 [django][django] 是一个大名鼎鼎的后端开发框架，
 它自己的口号是 `the web framework for perfectionists with deadlines.`
@@ -37,7 +37,7 @@ permalink: /software-engineering-django
 我觉得它是一个逻辑上自洽，
 并且为了逻辑自洽甚至舍弃了一部分功能的框架。
 
-## framework
+### framework
 
 ![django-vs][django-vs]
 > search google for `django vs`
@@ -62,7 +62,7 @@ django 最大的特点就是 **`Model` 是一等公民**。
 鉴于本文的标题是 django,
 所以我们只讲 django。
 
-## restful
+### restful
 
 我参与的项目基本都是前后端分离的项目，
 后端提供的接口都是用 `djangorestframework` 写的。
@@ -102,7 +102,7 @@ class WeChatVS(BaseVS):
 这样的十行代码包含了文档、外链、错误检查、写库，
 让写业务代码本身也有种施法的快感。
 
-## worker
+### worker
 
 最开始服务器上我们跑的是 django+uwsgi 的普通模式，
 用 `wrk` 去压一个小接口，
@@ -123,7 +123,7 @@ channels 项目会逐渐弃坑……
 但毕竟 `perfectionists with deadlines.`
 不能说人家功能不完美，我们就不干活了嘛...
 
-## database
+### database
 
 我们用到的数据库也是 mysql/mongo/redis 这御三家，
 所以就是每个选取对应的连接库就是了。
@@ -139,7 +139,7 @@ sqlite 里缺失了 mysql 的函数的问题，
 从结果上来说我们做到的是**利用 Django Migration 做到数据库结构变更全兼容**。
 
 
-# python
+## python
 
 上面一小节中，我们基本上是走马观花地过完了 django 相关的三方库。
 到了真正用 python 开发的时候，
@@ -160,7 +160,7 @@ python 是能完美表达开发者心中所想的。
 ![stay-awake][stay-awake]
 > 强制清醒.jpg
 
-## quality
+### quality
 
 ![hax-principles][hax-principles]
 > [贺师俊在《如何引导程序员新人按正确的流程开发？》下面一段我很欣赏的回答][zhihu-dev-process]
@@ -198,7 +198,7 @@ def test_create_account(self):
 ![gitlab-ci-sample][gitlab-ci-sample]
 > 所有这些限制都在 CI 中检查了，不通过的话是不让 merge into master 的
 
-## developing
+### developing
 
 我们的合作方式是用 gitlab 作为代码托管平台。
 为了团队的开发效率，
@@ -217,7 +217,7 @@ gitlab ci 不仅被用来做开发阶段的质量保证，
 也因为我们线上用的是 docker,
 所以不想装依赖的也可以直接用 docker 的环境开发。
 
-## deploy
+### deploy
 
 部署这一块我们暂时还没上 k8s,
 目前走的是 gitlab ci 中调用 fabric + aws(boto3) 直接操作裸 docker 的方式。
@@ -228,7 +228,7 @@ aws 的负载均衡器提供了基础的流量切换服务，
 > 用 GitLab CI 部署的步骤图
 
 
-# conclusion
+## conclusion
 
 至此，本文介绍了一遍我们在 Python 业务后端的实践。
 
