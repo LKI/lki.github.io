@@ -1,8 +1,21 @@
 ---
-layout:    post
-title:     "GitHub 要怎么玩"
-date:      "2017-07-18 23:15:49"
+layout: post
+title: GitHub 要怎么玩
+date: '2017-07-18 23:15:49'
 permalink: /how-i-use-github
+comments:
+  - author:
+      type: github
+      displayName: royaso
+      url: 'https://github.com/royaso'
+      picture: 'https://avatars1.githubusercontent.com/u/2331406?v=4&s=73'
+    content: >-
+      &#x6709;&#x610F;&#x601D;&#xFF01;
+
+      &#x518D;&#x4E00;&#x770B;&#xFF0C;&#x5C45;&#x7136;&#x662F;&#x7528;comment,
+      &#x597D;&#x50CF;&#x6211;&#x4E5F;&#x662F;&#x7528;&#x8FD9;&#x4E2A;&#x3002;
+    date: 2019-05-08T03:32:02.011Z
+
 ---
 
 经常会听到其它程序员说：
