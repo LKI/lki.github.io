@@ -1,8 +1,19 @@
 ---
-layout:    post
-title:     "软件工程实践之 django/python"
-date:      "2019-04-10 22:09:55"
+layout: post
+title: 软件工程实践之 django/python
+date: '2019-04-10 22:09:55'
 permalink: /software-engineering-django
+comments:
+  - author:
+      type: github
+      displayName: hanyce
+      url: 'https://github.com/hanyce'
+      picture: 'https://avatars3.githubusercontent.com/u/37854396?v=4&s=73'
+    content: >-
+      &#x5B50;&#x5CB3;&#x53D4;&#xFF0C;&#x7EBF;&#x6027;&#x7684; Commit
+      &#x5386;&#x53F2;&#x662F;&#x6307;git&#x4E2D;rebase&#x8FD9;&#x4E2A;&#x9B54;&#x6CD5;&#x5417;
+    date: 2019-06-05T06:47:07.116Z
+
 ---
 
 软件工程实践系列文章，
