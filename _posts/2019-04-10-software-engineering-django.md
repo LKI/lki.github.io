@@ -13,6 +13,16 @@ comments:
       &#x5B50;&#x5CB3;&#x53D4;&#xFF0C;&#x7EBF;&#x6027;&#x7684; Commit
       &#x5386;&#x53F2;&#x662F;&#x6307;git&#x4E2D;rebase&#x8FD9;&#x4E2A;&#x9B54;&#x6CD5;&#x5417;
     date: 2019-06-05T06:47:07.116Z
+  - author:
+      type: github
+      displayName: LKI
+      url: 'https://github.com/LKI'
+      picture: 'https://avatars0.githubusercontent.com/u/3286092?v=4&s=73'
+    content: >-
+      @hanyce &#x6CA1;&#x9519;&#xFF01;&#x7EBF;&#x6027;&#x7684; commit
+      &#x5386;&#x53F2;&#x5C31;&#x662F;&#x7531; git rebase
+      &#x64CD;&#x4F5C;&#x51FA;&#x6765;&#x7684;~
+    date: 2019-06-09T14:49:34.533Z
 
 ---
 
