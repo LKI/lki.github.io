@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "密度不高地生活了一下子"
-date:      "2019-06-11 22:50:03"
+layout: post
+title: 密度不高地生活了一下子
+date: '2019-06-11 22:50:03'
 permalink: /fuzzy-days
+comments:
+  - author:
+      type: github
+      displayName: YemingLakeForest
+      url: 'https://github.com/YemingLakeForest'
+      picture: 'https://avatars2.githubusercontent.com/u/6832909?v=4&s=73'
+    content: '&#x559C;&#x4E0D;&#x559C;&#x6B22;hedgehog&#xFF1F;'
+    date: 2019-06-26T08:14:42.254Z
+
 ---
 
 好久没记录思考了。
