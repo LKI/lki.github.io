@@ -1,8 +1,17 @@
 ---
-layout:    post
-title:     "我的一点强迫症"
-date:      "2018-05-07 22:07:44"
+layout: post
+title: 我的一点强迫症
+date: '2018-05-07 22:07:44'
 permalink: /my-coding-ocd
+comments:
+  - author:
+      type: github
+      displayName: YemingLakeForest
+      url: 'https://github.com/YemingLakeForest'
+      picture: 'https://avatars2.githubusercontent.com/u/6832909?v=4&s=73'
+    content: '&#x8FD8;&#x662F;&#x5FCD;&#x4E0D;&#x4F4F;&#x87C6;&#x4E86;&#x5440;'
+    date: 2019-06-26T13:31:04.408Z
+
 ---
 
 每个程序员都有他自己的强迫症。
