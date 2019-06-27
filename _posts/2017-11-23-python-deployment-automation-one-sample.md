@@ -55,6 +55,16 @@ comments:
       &#xFF08;&#x53E6;&#xFF1A;&#x6211;&#x53D1;&#x73B0;&#x6211;&#x7528;&#x7684;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#x5BF9;&#x8BA8;&#x8BBA;&#x7684;&#x652F;&#x6301;&#x5F88;&#x5DEE;&#xFF0C;&#x8003;&#x8651;&#x4EE5;&#x540E;&#x6362;&#x7528;GitHub
       Issues&#x6765;&#x505A;&#x8BC4;&#x8BBA;&#x7CFB;&#x7EDF;&#xFF09;
     date: 2017-11-23T09:56:43.983Z
+  - author:
+      type: github
+      displayName: YemingLakeForest
+      url: 'https://github.com/YemingLakeForest'
+      picture: 'https://avatars2.githubusercontent.com/u/6832909?v=4&s=73'
+    content: >-
+      &#x50CF;java&#x7684;ant&#x548C;gradle&#xFF0C;maven&#x60E8;&#x88AB;&#x5FFD;&#x7565;&#x54C8;&#x54C8;&#x54C8;&#x3002;
+
+      &#x5B57;&#x95F4;&#x6CA1;&#x7559;&#x7A7A;&#x683C;&#xFF0C;&#x51D1;&#x5408;&#x770B;&#x5427;
+    date: 2019-06-27T09:51:54.033Z
 
 ---
 
