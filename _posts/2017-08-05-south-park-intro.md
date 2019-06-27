@@ -1,8 +1,21 @@
 ---
-layout:    post
-title:     "人类真愚蠢——《南方公园》"
-date:      "2017-08-05 19:29:14"
+layout: post
+title: 人类真愚蠢——《南方公园》
+date: '2017-08-05 19:29:14'
 permalink: /south-park-intro
+comments:
+  - author:
+      type: github
+      displayName: YemingLakeForest
+      url: 'https://github.com/YemingLakeForest'
+      picture: 'https://avatars2.githubusercontent.com/u/6832909?v=4&s=73'
+    content: >-
+      &#x6211;&#x6700;&#x559C;&#x6B22;&#x7684;&#x662F;Whale
+      Whores&#x90A3;&#x96C6;&#x548C;Britney&apos;s New
+      Look&#x90A3;&#x96C6;&#x3002;Britney&apos;s New
+      Look&#x7F55;&#x6709;&#x5730;&#x5C55;&#x793A;&#x4E86;SP&#x5267;&#x7EC4;&#x7684;&#x4EBA;&#x6587;&#x5173;&#x6000;&#x3002;
+    date: 2019-06-27T15:36:54.284Z
+
 ---
 
 给你们介绍一个美漫。
