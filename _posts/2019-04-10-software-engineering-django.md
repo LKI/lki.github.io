@@ -23,6 +23,16 @@ comments:
       &#x5386;&#x53F2;&#x5C31;&#x662F;&#x7531; git rebase
       &#x64CD;&#x4F5C;&#x51FA;&#x6765;&#x7684;~
     date: 2019-06-09T14:49:34.533Z
+  - author:
+      type: github
+      displayName: ou-bing
+      url: 'https://github.com/ou-bing'
+      picture: 'https://avatars3.githubusercontent.com/u/32380374?v=4&s=73'
+    content: >-
+      &#x679C;&#x7136;&#x662F;&#x9700;&#x8981;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x624D;&#x80FD;&#x642D;&#x5EFA;&#x597D;&#x4E00;&#x4E2A;&#x56E2;&#x961F;&#x554A;&#xFF0C;&#x53E6;&#x5916;&#x95EE;&#x4E00;&#x4E0B;&#xFF0C;&#x4F60;&#x4EEC;&#x5728;
+      docker &#x4E2D;&#x4E5F;&#x4F7F;&#x7528; pipenv
+      &#x5B89;&#x88C5;&#x4F9D;&#x8D56;&#x4E48;&#xFF1F;
+    date: 2019-07-08T07:42:37.972Z
 
 ---
 
