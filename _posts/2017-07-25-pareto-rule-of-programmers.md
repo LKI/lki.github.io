@@ -1,8 +1,18 @@
 ---
-layout:    post
-title:     "程序员的二八定律"
-date:      "2017-07-25 23:15:51"
+layout: post
+title: 程序员的二八定律
+date: '2017-07-25 23:15:51'
 permalink: /pareto-rule-of-programmers
+comments:
+  - author:
+      type: twitter
+      displayName: timbotetsu
+      url: 'https://twitter.com/timbotetsu'
+      picture: >-
+        https://pbs.twimg.com/profile_images/485627899794714626/kgzK2Qsm_bigger.jpeg
+    content: '-&#x3002;-|||| Fort Minor&#x7684;&#x6B4C;&mldr;'
+    date: 2019-07-17T07:39:27.525Z
+
 ---
 
 二八定律 (Pareto Principle),
