@@ -106,38 +106,62 @@ comments:
 
 ---
 
-我叫苏子岳，英文名字是Lirian Su.
+你好。
+
+我叫苏子岳，出生在湖南岳阳。
+名字的由来也跟出生地相关，
+父母希望我像诸子百家一样才华横溢，
+像山岳一样坚实可靠。
+
+Lirian Su 是我的英文名。
+Lirian 是我高中写的小说的主角之一，
+他的人设就像我期望的那样：
+文可静心作解，武能以一敌百。
+
 出生在湖南，在广东求学长大。
-高中的时候参加NOIP得了省一等奖，
+高中的时候参加 NOIP 得了省一等奖，
 保送到上海交通大学，读软件工程。
 
-大四以后(2014年7月)在[QAD China][wiki-QAD]实习工作，
-在这个跨国小公司学到了教科书般标准的软件开发流程。
-当时主语言是[Perl][perl]，做的是基于Git的定制化代码版本控制工具，
+2014 年 7 月大四以后，
+我在[QAD China][wiki-QAD]实习工作，
+在一个跨国团队里学到了教科书般标准的软件开发流程。
+当时主语言是[Perl][perl]，做的是基于 Git 的定制化代码版本控制工具，
 [后来我把整个项目用Java重写了一遍][CVC]。
 
-2016年10月的时候，被百姓网HR邀请去面试，
+2016 年 10 月的时候，
+被百姓网HR邀请去面试，
 因为[好友周丞][ldsink]以前实习工作也在百姓，于是就约了一顿饭。
 结果被[他][zhoucheng]以一碗重庆小面拉到了现在的公司。
 现在的公司叫[再惠][kezaihui]，
 刚来的时候整个公司的技术加在一起只有12个人，每个人都很强，
 我感觉自己是里面最菜的 :)
 
-工作上我主要做的是Web后端的活，
-主要工作分了三个部分：
+工作上我主要做的是 Web 后端的活，
+主要工作包括了大后端会涉及的三个部分：
 实现业务逻辑、设计管理数据库、搭建服务器部署环境。
 这里每一块都有很多东西可以讲，
 所以我就不讲了 :)
 
-平常喜欢使用各种工具来~~偷懒~~增加生产力。
-语言上主要写Python，曾经对Perl/Java/Lisp有点了解（排名分先后），
-现在也会写写工具页面。
-[开发环境是Windows][win-env]，是一个重度的[Vim用户][vim]和[Git用户][git]，
-是JetBrains大礼包的受害者。
+2018 年 1 月开始，
+我作为部门的技术负责人开始带着团队向前冲，
+不少人直接跟我说过：
+“你是我最喜欢的 Leader.”
+这样的话也勉励着我，
+不仅要让努力的同事获得事业上的奖赏，
+还会想尽办法让大家一起走在技术的最前线。
 
+工程上，我平常喜欢使用各种工具来~~偷懒~~增加生产力。
+语言上，我主要写 Python, 对 Go/JavaScript/Perl/Java/Lisp 有点了解（排名分先后）。
+
+在 GitHub 上主要的项目主要分为两部分：
+一部分是我自己的生活项目，比如[我的个人主页][lki.github.io]或者是[我的环境配置][myconf]；
+另一部分是各种工具项目，比如[这个节假日判定的库][chinese-calendar]就挺受欢迎的。
+
+[开发环境是Windows][win-env]，
+是一个重度的[Vim用户][vim]和[Git用户][git]，
+也是JetBrains大礼包的受害者。
 
 ![xkcd 246][xkcd-246]
-
 
 [喜欢语言和逻辑][logic]，
 [喜欢好玩的事情][play]，
@@ -179,6 +203,7 @@ comments:
 不跟我介绍一下你的话，
 我就没机会认识你了。）
 
+
 ## 关于本博客
 
 [搭建博客很简单][build-blog]，[做个决定却不容易][why-blog]
@@ -192,7 +217,7 @@ comments:
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/37832e6e-1750-417a-96be-0c54efbe71f9.svg" /></figure>
 
-最近我用的编辑器(果不其然，Chrome占比巨高)：
+最近我用的编辑器(我好像只装了 PyCharm 的 wakatime 插件 Orz)：
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/6d5b6087-b30c-4d0a-ae8c-d220f6726ce0.svg" /></figure>
 
@@ -221,4 +246,5 @@ comments:
 [win-env]: /windows-dev-env
 [xkcd-246]: http://imgs.xkcd.com/comics/labyrinth_puzzle.png
 [zhoucheng]: https://www.zhihu.com/people/ldsink/activities
-
+[myconf]: https://github.com/LKI/LKI
+[chinese-calendar]: https://github.com/LKI/chinese-calendar
