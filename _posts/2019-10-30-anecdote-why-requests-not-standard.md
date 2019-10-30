@@ -116,7 +116,9 @@ python 3.5 以后也增加了标准库 `urllib.request` 支持一部分核心功
 [why-jdk-6]: https://www.zhihu.com/question/30137699/answer/476916096
 [xkcd-979]: https://xkcd.com/979/
 [wisdom-of-the-ancients]: https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png
-[psf-requests-2424]: [https://github.com/psf/requests/issues/2424]
+[psf-requests-2424]: https://github.com/psf/requests/issues/2424
 [kenneth]: https://github.com/kennethreitz
 [kenneth-story]: https://zhuanlan.zhihu.com/p/20346580
-[psf-requests-5057]: [https://github.com/psf/requests/issues/5057]
+[psf-requests-5057]: https://github.com/psf/requests/issues/5057
+[python-requests]: https://github.com/psf/requests
+[httpbin]: https://github.com/postmanlabs/httpbin
