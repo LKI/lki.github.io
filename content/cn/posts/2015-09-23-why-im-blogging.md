@@ -60,12 +60,12 @@ XKCD的自我描述是
 
 >Pick whatever schedule works for you. And be realistic. I think starting with one post a month, like Catto, is a fine goal. Try to slowly ramp it up a bit over time as you get into the groove, and you're on your way.
 
-[howToWriteBadCode]:    http://coolshell.cn/articles/4758.html
+[howToWriteBadCode]:    https://coolshell.cn/articles/4758.html
 [pixelMoon]:            http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html
 [emacsGeniusInOneYear]: http://blog.csdn.net/redguardtoo/article/details/7222501
 [showDontTell]:         http://blog.codinghorror.com/show-dont-tell/
-[nakedVimTip]:          http://coolshell.cn/articles/11312.html
-[haoel]:                http://coolshell.cn/haoel
+[nakedVimTip]:          https://coolshell.cn/articles/11312.html
+[haoel]:                https://coolshell.cn/haoel
 [Jeff Atwood]:          http://blog.codinghorror.com/about-me/
 [standards]:            http://imgs.xkcd.com/comics/standards.png
 [times-report]:         http://time.com/money/3896219/internet-users-worldwide/

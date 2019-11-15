@@ -133,7 +133,7 @@ choco install -y 7zip everything git jdk8 nodejs npm python2 putty vagrant virtu
 [jetbrains]: https://www.jetbrains.com/
 [mingw]: http://www.mingw.org/
 [myconf]: https://github.com/LKI/myconf
-[no-baidu]: http://coolshell.cn/articles/9308.html
+[no-baidu]: https://coolshell.cn/articles/9308.html
 [putty]: http://www.putty.org/
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/wiki/VirtualBox

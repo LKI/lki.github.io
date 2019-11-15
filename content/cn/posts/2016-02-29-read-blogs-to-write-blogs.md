@@ -76,7 +76,7 @@ Jeff觉得“虽然每篇博客都不长，但是持之以恒就改变了写博�
 [jeff-write-blog]:   http://blog.codinghorror.com/how-to-achieve-ultimate-blog-success-in-one-easy-step/
 [me-on-web-comic]:   http://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877707709970c-pi.png
 [codinghorror]:      http://blog.codinghorror.com/
-[coolshell]:         http://coolshell.cn/
+[coolshell]:         https://coolshell.cn/
 [shell909090]:       http://shell909090.org/blog/
 [lucida]:            http://lucida.me/
 [dashu]:             http://www.qiukeke.com/

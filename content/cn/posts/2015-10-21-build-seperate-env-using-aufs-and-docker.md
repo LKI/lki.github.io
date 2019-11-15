@@ -123,7 +123,7 @@ docker run -ti -v /tmp/docker/private:/work ubuntu /bin/bash
 这样就可以把private目录作为volume映射到docker container里面的/work目录了。
 剩下的就是[Get good use of docker images][docker-images]了~
 
-[aufs]:            http://coolshell.cn/articles/17061.html
+[aufs]:            https://coolshell.cn/articles/17061.html
 [docker-images]:   https://docs.docker.com/userguide/dockerimages/
 [docker-intro]:    /virtual-machine-vs-vagrant-vs-docker
 [docker-volume]:   https://docs.docker.com/userguide/dockervolumes/
