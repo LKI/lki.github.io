@@ -2,11 +2,13 @@
 
 set -e
 
-hugo
+echo "Checking if need to rebuild site."
+
+hugo --quiet
 cp public/index.xml public/feed.xml
 
 if [[ -d public/.git ]]; then
-  git -C public fetch
+  git -C public fetch --quiet
   git -C public reset --soft origin/master
 else
   git clone -n -b master --single-branch git@github.com:LKI/lki.github.io.git .deploy
