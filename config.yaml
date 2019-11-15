@@ -1,0 +1,25 @@
+author:
+  name: Lirian Su
+baseURL: https://liriansu.com/
+defaultContentLanguage: cn
+languageCode: en-us
+languages:
+  cn:
+    contentDir: content/cn
+    languageName: 中文
+    weight: 1
+  en:
+    contentDir: content/en
+    languageName: English
+    weight: 2
+params:
+  headTitle: Lirian Su
+  socials:
+    - name: about
+      link: /about
+    - name: github
+      link: https://github.com/LKI/LKI
+    - name: rss
+      link: /index.xml
+theme: yinyang
+title: 浮云计算

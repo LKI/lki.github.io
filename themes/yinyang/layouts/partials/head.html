@@ -1,0 +1,46 @@
+<head>
+  <meta charset="utf-8" />
+  {{ hugo.Generator }}
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="{{ .Site.Author.name }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{- if .Site.Params.favicon -}}
+  <link rel="shortcut icon" href="{{ .Site.Params.favicon }}" type="image/x-png" />
+  {{- end -}}
+
+  {{ partial "seo" . }}
+  {{- if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="{{ .Site.Params.description }}" />
+  {{- else -}}
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}" />
+  <meta property="og:type" content="article" />
+  <meta name="description" content="{{ default .Summary .Description }}" />
+  {{- end }}
+
+  <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/flexboxgrid-6.3.1.min.css" | relURL }}" />
+  {{ if not .IsHome -}}
+  <link rel="stylesheet"
+    href="{{ .Site.Params.staticPrefix }}{{ "css/github-markdown.min.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/highlight/tomorrow.min.css" | relURL }}" />
+  {{- end }}
+  <link rel="stylesheet" href="{{ .Site.Params.staticPrefix }}{{ "css/index.css" | relURL }}">
+  <link href="{{ .Site.Params.staticPrefix }}{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker" rel="stylesheet">
+  <!-- quicklink require -->
+  <!-- <script>
+    /* Disable minification (remove `.min` from URL path) for more info
+    https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver
+    */
+    (function (undefined) { }).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
+  </script> -->
+
+  {{ .Site.Params.extraHead | safeHTML }}
+</head>
