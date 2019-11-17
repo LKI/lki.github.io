@@ -16,7 +16,7 @@
             <div class="col-xs-6">
               {{ if .Date }}
               <time class="post-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">
-                {{ .Date.Format "02 Jan 2006" }}
+                {{ .Date.Format "2006-01-02" }}
               </time>
               {{ end }}
             </div>
@@ -43,12 +43,17 @@
         {{ end }}
         <!-- split -->
         <div style="height: 50px;"></div>
-        {{ if .Site.Params.disqus }}
+        {{ end }}
         <div class="post-comments">
-          {{ partial "disqus.html" . }}
+          <script src="https://utteranc.es/client.js"
+                  repo="LKI/lki.github.io"
+                  issue-term="title"
+                  label="comment"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async>
+          </script>
         </div>
-        {{ end }}
-        {{ end }}
 
         {{ partial "footer.html" . }}
       </div>

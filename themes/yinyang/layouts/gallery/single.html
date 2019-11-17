@@ -24,11 +24,16 @@
           </div>
         </div>
 
-        {{ if .Site.Params.disqus }}
         <div class="post-comments">
-          {{ partial "disqus.html" . }}
+          <script src="https://utteranc.es/client.js"
+                  repo="LKI/lki.github.io"
+                  issue-term="title"
+                  label="comment"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async>
+          </script>
         </div>
-        {{ end }}
 
         {{ partial "footer.html" . }}
       </div>
