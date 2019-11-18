@@ -38,11 +38,8 @@
 
         {{ partial "related.html" . }}
 
-        {{ if .Site.Params.postAds }}
-        <div class="post-ads">{{ .Site.Params.postAds | safeHTML }}</div>
-        {{ end }}
         <!-- split -->
-        <div style="height: 50px;"></div>
+        <div style="height: 20px;"></div>
         {{ end }}
         <div class="post-comments">
           <script src="https://utteranc.es/client.js"
