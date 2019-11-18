@@ -1,12 +1,11 @@
 ---
-layout:    post
 title:     "我的好友陈伟杰"
 date:      "2014-07-20 22:55:00"
 aliases:
   - /my-friend-edward
 ---
 
-<!--MORE-->
+<!--more-->
 
 ## (1)
 

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "如何用Windows命令行统计文件行数"
 date:      "2016-04-15 22:13:15"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 今天要统计文件行数，可是手边恰好没有Linux环境。
 
-<!--MORE-->
+<!--more-->
 
 ## Linux 统计代码行数
 

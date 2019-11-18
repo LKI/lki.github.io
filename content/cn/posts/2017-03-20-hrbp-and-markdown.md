@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "HR与程序员的日常（一）： HRBP与Markdown"
 date:      "2017-03-20 01:49:00"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 HRBP是一种角色，
 Markdown是一种语法。
 
-<!--MORE-->
+<!--more-->
 
 > Lirian是男程序员，
 > Mia是女HR。

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "[轶事] 为什么 requests 不是 python 标准库？"
 date:      "2019-10-30 22:32:20"
 aliases:
@@ -11,7 +10,7 @@ aliases:
 进化到从 github issue 里找 bugfix.”
 一语成谶。
 
-<!--MORE-->
+<!--more-->
 
 ## 头部注释
 

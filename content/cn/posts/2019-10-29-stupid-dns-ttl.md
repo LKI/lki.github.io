@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "没错，DNS TTL 字段就是骗你的"
 date:      "2019-10-29 21:49:42"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 > the Internet core is stupid,
 > and the edge is smart.
 
-<!--MORE-->
+<!--more-->
 
 ## 引子
 

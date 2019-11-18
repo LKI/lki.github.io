@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "VIM中小键盘失灵的解决方案(Putty)"
 date:      2015-10-09 15:34:16
 aliases:
@@ -12,7 +11,7 @@ aliases:
 
 后来[谷歌了一下这个问题][vim-wiki-keypad]，得知只要把Putty的Application keypad mode给关了就行了。
 
-<!--MORE-->
+<!--more-->
 
 
 ## 奇怪的错误

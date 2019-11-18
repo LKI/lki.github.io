@@ -1,12 +1,11 @@
 ---
-layout:    post
 title:     "Pythonista 的 Go 之旅"
 date:      "2019-06-13 01:10:49"
 aliases:
   - /go-experience-as-a-pythonista
 ---
 
-<!--MORE-->
+<!--more-->
 
 # 背景
 

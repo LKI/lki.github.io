@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "写代码怎么偷懒？我想想"
 date:      "2017-08-30 23:10:52"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 我真的不是因为写了`Python`，就在黑`Perl`。
 
-<!--MORE-->
+<!--more-->
 
 ## 起
 

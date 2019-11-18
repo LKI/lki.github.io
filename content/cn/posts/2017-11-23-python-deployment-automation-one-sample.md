@@ -74,7 +74,7 @@ comments:
 目前的代码发布流程用到了哪些工具。
 
 
-<!--MORE-->
+<!--more-->
 
 
 ## 发布工具：[Jenkins][jenkins]

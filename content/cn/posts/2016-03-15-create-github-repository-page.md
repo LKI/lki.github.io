@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "创建GitHub项目主页"
 date:      "2016-03-15 21:19:53"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 最近终于偶然了解了怎么给GitHub项目建主页。
 
-<!--MORE-->
+<!--more-->
 
 
 ## GitHub Pages

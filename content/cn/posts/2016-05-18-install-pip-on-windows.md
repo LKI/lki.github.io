@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "在Windows上安装pip"
 date:      "2016-05-18 21:39:29"
 aliases:
@@ -9,7 +8,7 @@ aliases:
 pip是python的包管理工具，在Linux上安装比较简单，
 但是在Windows上安装就稍微麻烦些。
 
-<!--MORE-->
+<!--more-->
 
 ## 安装Python
 

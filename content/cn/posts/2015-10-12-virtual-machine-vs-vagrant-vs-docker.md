@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Virtual Machine, Vagrant, Docker的区别"
 date:      2015-10-12 12:49:55
 aliases:
@@ -10,7 +9,7 @@ Virtualization——虚拟化技术一直是计算机世界里面很重要的东
 一般程序员听到这个词首先浮现出的就是Windows下面开着装着Linux系统的VMware。
 而这个“装着Linux系统的VMware”就是我们口中的虚拟机（Virtual Machine）
 
-<!--MORE-->
+<!--more-->
 
 虚拟机的主要好处是可以创建一个与主机操作系统不同的开发环境
 （比如说一般的办公室都是Windows系统电脑）

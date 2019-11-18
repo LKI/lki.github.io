@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "hunter2是什么梗"
 date:      "2017-03-26 23:58:26"
 aliases:
@@ -9,7 +8,7 @@ aliases:
 简单来说：
 这是一个弱密码。
 
-<!--MORE-->
+<!--more-->
 
 ## hunter2
 

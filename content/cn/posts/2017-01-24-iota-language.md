@@ -25,7 +25,7 @@ comments:
 
 这门语言，只有两个保留字[(reserved keyword)][wiki-reserved-keyword]
 
-<!--MORE-->
+<!--more-->
 
 
 ## 各种语言的reserved keyword

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "优雅的 Python 接口设计"
 date:      "2018-09-21 20:57:46"
 aliases:
@@ -11,7 +10,7 @@ aliases:
 “我其实发现我现在选库不太 care 他源码是怎么实现的，
 但是我非常喜欢那些 api 设计得巨科学的库。”
 
-<!--MORE-->
+<!--more-->
 
 
 ## 科学的 API

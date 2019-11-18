@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "搭建舒适的 Windows 开发环境"
 date:      "2017-03-24 02:00:55"
 aliases:
@@ -9,7 +8,7 @@ aliases:
 假如你也不介意身处[鄙视链][we-are-the-same]的最底端，
 那来交流一下`怎么样搭建Windows的开发环境`吧
 
-<!--MORE-->
+<!--more-->
 
 
 ## [鄙视链][we-are-the-same]的最底端：Windows

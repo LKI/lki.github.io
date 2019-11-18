@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "记一次有意义的吹B"
 date:      "2015-06-12 22:06:00"
 aliases:
@@ -14,7 +13,7 @@ aliases:
 
 （可能内含各种广告）
 
-<!--MORE-->
+<!--more-->
 
 （二）
 

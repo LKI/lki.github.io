@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "git新手教程"
 date:      "2016-09-19 16:04:00"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 本文主要介绍版本控制工具Git的基本概念，
 以及init,status,add,commit,reset,log几个基本命令。
 
-<!--MORE-->
+<!--more-->
 
 ## 什么是Git
 

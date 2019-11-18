@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "如何优雅地使用Perl的常量模块"
 date:      2015-07-25 20:56:06
 aliases:
@@ -12,7 +11,7 @@ aliases:
 
 本文从Perl的常量定义上，给出一个_自认为_优雅的解决方案。
 
-<!--MORE-->
+<!--more-->
 
 ## Perl中一般的常量定义
 

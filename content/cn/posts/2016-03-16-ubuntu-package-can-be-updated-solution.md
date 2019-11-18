@@ -19,7 +19,7 @@ comments:
 
 一个关于Ubuntu系统的小技巧。
 
-<!--MORE-->
+<!--more-->
 
 
 ## x package can be updated

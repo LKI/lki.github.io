@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Vagrant-up遇到mount no device的解决方案"
 date:      2015-05-15 10:29:05
 enUrl:     /vagrant-up-but-mount-no-device-en
@@ -9,7 +8,7 @@ aliases:
 
 今天跑```vagrant up```的时候遇到了这个问题：
 
-<!--MORE-->
+<!--more-->
 
 ```
 ==> cvc-tools: Machine booted and ready!

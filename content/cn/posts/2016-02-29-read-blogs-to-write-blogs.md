@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "读博客和写博客"
 date:      "2016-02-29 13:27:52"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 我最近把[四火的唠叨][raychase]里的推荐文章都看完了。
 
-<!--MORE-->
+<!--more-->
 
 
 ## 读博客

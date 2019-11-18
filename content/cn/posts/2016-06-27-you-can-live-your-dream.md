@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "You can live your dream"
 date:      "2016-06-27 23:06:13"
 enUrl:     /you-can-live-your-dream-en
@@ -9,7 +8,7 @@ aliases:
 
 前阵子我偶然看到了一个非常棒的关于**梦想**的视频
 
-<!--MORE-->
+<!--more-->
 
 视频地址在[Youtube][dream]上 （需翻墙）
 

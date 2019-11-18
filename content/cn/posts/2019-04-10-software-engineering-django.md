@@ -41,7 +41,7 @@ comments:
 会着重讲述实际的工程项目中是如何协作开发软件的。
 本文主要介绍了 django/python 系列的工具链。
 
-<!--MORE-->
+<!--more-->
 
 ## outline
 

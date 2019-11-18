@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Jekyll build fail的解决办法"
 date:      "2016-01-29 23:24:45"
 aliases:
@@ -11,7 +10,7 @@ aliases:
 结果后来`gem update`以后，
 反而`jekyll build`还失败了…
 
-<!--MORE-->
+<!--more-->
 
 ## Jekyll build
 

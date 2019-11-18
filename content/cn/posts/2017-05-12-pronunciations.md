@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Vim, Tmux, Zsh怎么读"
 date:      "2017-05-12 22:41:02"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 > 孔乙己显出极高兴的样子，将两个指头的长指甲敲着柜台，点头说，“对呀对呀！……回字有四样写法，你知道么？
 
-<!--MORE-->
+<!--more-->
 
 前阵子 GitHub 上有一个很好玩的 Repo ：
 [shimohq/chinese-programmer-wrong-pronunciation][chinese]

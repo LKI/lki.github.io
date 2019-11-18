@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "You can live your dream"
 date:      "2016-05-25 22:07:44"
 zhUrl:     /you-can-live-your-dream
@@ -9,7 +8,7 @@ aliases:
 
 Today I watched an inspiring video about **Dream**
 
-<!--MORE-->
+<!--more-->
 
 Video is [here on youtube][dream].
 

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "我是怎么实现《用弹幕玩GBA游戏》的"
 date:      "2018-01-06 18:58:33"
 aliases:
@@ -9,7 +8,7 @@ aliases:
 大概是大二的时候，
 我在TwitchTV上看到了一个极其精彩的Idea。
 
-<!--MORE-->
+<!--more-->
 
 ## 背景
 

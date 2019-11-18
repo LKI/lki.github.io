@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "写代码怎么偷懒？多练练"
 date:      "2017-08-31 20:25:12"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 “一门程序语言”更多时候是“一门规范”。
 （当然，“语言”本身就是“规范”。）
 
-<!--MORE-->
+<!--more-->
 
 ![standards][xkcd-standards]
 

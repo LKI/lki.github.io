@@ -9,7 +9,7 @@ aliases:
 这是一篇入门级的技术文章，
 教你怎么在GitHub上托管静态的HTML页面。
 
-<!--MORE-->
+<!--more-->
 
 
 ## GitHub项目主页

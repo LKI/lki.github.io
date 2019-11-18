@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "GitHub上的小标签有什么好玩的"
 date:      "2017-08-08 23:10:01"
 aliases:
@@ -9,7 +8,7 @@ aliases:
 GitHub很多项目主页都会放上好玩的小标签（GitHub Badges），
 这次我们也来玩点表面功夫。
 
-<!--MORE-->
+<!--more-->
 
 ## 首先，我们要有一个项目
 

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "XYZ问题"
 date:      "2017-02-22 22:22:16"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 但是我们却纠结于Y问题，
 最后却陷入了Z问题的陷阱里。
 
-<!--MORE-->
+<!--more-->
 
 ## 简单的XYZ问题
 

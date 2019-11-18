@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Javascript之路"
 date:      2015-12-21 17:26:52
 aliases:
@@ -11,7 +10,7 @@ aliases:
 我们满怀期待地问：“只要写后端？”
 老师说道：“没有前端怎么叫网站？HTML, CSS, JS是每个程序员的基本素养。”
 
-<!--MORE-->
+<!--more-->
 
 ## 痛苦的自学之路
 

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "URL中参数编码不正确的解决方案"
 date:      "2016-06-07 21:29:39"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 说是说解决方案，其实并没有解决这个问题 :wink:
 
-<!--MORE-->
+<!--more-->
 
 ## URL中参数编码不正确
 

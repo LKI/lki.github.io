@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "什么是连字 (ligature)"
 date:      "2017-09-13 22:45:39"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 “为什么有些字体里fi可以连在一起”，
 “Fira Code是怎么做到连体符号的”
 
-<!--MORE-->
+<!--more-->
 
 ## ligature
 

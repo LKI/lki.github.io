@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Solution for vagrant-up error: mount no device"
 date:      2015-05-15 10:29:05
 zhUrl:     /vagrant-up-but-mount-no-device-zh
@@ -9,7 +8,7 @@ aliases:
 
 Today I encounter a problem running ```vagrant up```：
 
-<!--MORE-->
+<!--more-->
 
 ```
 ==> cvc-tools: Machine booted and ready!

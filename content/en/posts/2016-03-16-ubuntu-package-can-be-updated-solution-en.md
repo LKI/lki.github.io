@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "Solution to X packages can be updated in Ubuntu"
 date:      "2016-03-16 16:40:11"
 zhUrl:     /ubuntu-package-can-be-updated-solution
@@ -9,7 +8,7 @@ aliases:
 
 A trick in Ubuntu.
 
-<!--MORE-->
+<!--more-->
 
 
 ## x package can be updated

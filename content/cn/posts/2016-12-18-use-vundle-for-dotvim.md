@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "用vundle来管理vim插件"
 date:      "2016-12-18 02:22:16"
 aliases:
@@ -9,7 +8,7 @@ aliases:
 今天把vim插件管理器换成了[Vundle][vundle]，
 之前我一直用的是[pathogen][pathogen]。
 
-<!--MORE-->
+<!--more-->
 
 
 ## Vim配置

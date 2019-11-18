@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "用Openpyxl做两个Excel文件的比对"
 date:      2014-08-28 10:31:08
 aliases:
@@ -12,7 +11,7 @@ aliases:
 关于Python的Excel处理，以前只用过xlrd库，处理的是Office03的.xls文件。
 这次写小工具的同时也是学习一下新的东西。
 
-<!--MORE-->
+<!--more-->
 
 ## 准备工作
 

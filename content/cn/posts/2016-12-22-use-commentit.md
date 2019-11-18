@@ -124,7 +124,7 @@ comments:
 我以前一直都是用[disqus][disqus]的，
 但是它总是处于墙于被墙的边缘…
 
-<!--MORE-->
+<!--more-->
 
 
 [因为~~自己感觉没那个必要从头搭建博客服务器~~懒，于是我直接采用了GitHub Pages。][built-blog]

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "如何带节奏"
 date:      "2018-04-13 22:44:45"
 aliases:
@@ -15,7 +14,7 @@ aliases:
 本文语气更贴近 presentation,
 文学性会欠缺一些。
 
-<!--MORE-->
+<!--more-->
 
 ## 背景
 

@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "我的VR初体验"
 date:      "2016-02-27 21:08:19"
 aliases:
@@ -10,7 +9,7 @@ aliases:
 我照常到Gplay上看看有什么新App，
 于是看到了一个Google Cardboard。
 
-<!--MORE-->
+<!--more-->
 
 
 ## VR

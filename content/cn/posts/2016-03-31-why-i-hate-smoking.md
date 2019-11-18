@@ -1,5 +1,4 @@
 ---
-layout:    post
 title:     "为什么我讨厌吸烟"
 date:      "2016-03-31 16:27:34"
 aliases:
@@ -8,7 +7,7 @@ aliases:
 
 这两周读完了[《中国烟草的政治版图》][chinese-cigarette]
 
-<!--MORE-->
+<!--more-->
 
 ## 烟和毒品
 
