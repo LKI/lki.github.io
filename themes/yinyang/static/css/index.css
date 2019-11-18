@@ -1,7 +1,7 @@
 /* global */
 
 body {
-  font-family: "Arvo", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-family: xkcd-script, "Arvo", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   margin: 0 20px;
 }
 
@@ -31,10 +31,18 @@ a:hover {
   line-height: 200%;
 }
 
+/* fonts */
+
+@font-face {
+	font-family: xkcd-script;
+	src: url('fonts/xkcd-script.woff') format('woff');
+}
+
 /* header */
 
 .site-title {
   font-size: 3rem;
+  font-weight: bold;
   margin-top: 32px;
 }
 
@@ -43,7 +51,7 @@ a:hover {
 }
 
 .signatures {
-  font-family: "Permanent Marker", Impact, Charcoal, sans-serif;
+  font-family: xkcd-script, Impact, Charcoal, sans-serif;
 }
 
 .signatures a {
@@ -80,11 +88,20 @@ a:hover {
   margin-top: 50px;
   margin-bottom: 80px;
   display: flex;
-  justify-content: flex-end;
   padding: 12px 0;
   border-width: 3px;
   border-style: solid none;
   border-color: #000;
+
+}
+
+.site-footer-left {
+  display: flex;
+}
+
+.site-footer-right {
+  display: flex;
+  margin-left: auto;
 }
 
 .site-footer-item {
@@ -113,23 +130,23 @@ a:hover {
   margin-top: 12px;
 }
 
-.post-date {
-  font-weight: 800;
-  font-style: italic;
-}
-
-.post-author {
-  float: right;
-  font-weight: 600;
+.post-desc {
+  display: flex;
 }
 
 .post-header {
   margin-bottom: 50px;
 }
 
+.post-header-item {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
 .post-title {
   font-size: 2.5rem;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .post-content {

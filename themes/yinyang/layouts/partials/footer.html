@@ -1,13 +1,18 @@
 <div class="site-footer">
-  {{ range .Site.Params.socials }}
-  <div class="site-footer-item">
-    <a href="{{ .link }}" target="_blank">{{ .name }}</a>
+  <div class="site-footer-left">
+    <div class="site-footer-item">
+      <span id="busuanzi_container_site_pv" style="display:none"> PV: <span id="busuanzi_value_site_pv"/> </span>
+    </div>
+    <div class="site-footer-item">
+      <span id="busuanzi_container_site_uv" style="display:none"> UV: <span id="busuanzi_value_site_uv"/> </span>
+    </div>
   </div>
-  {{ end }}
-  <div class="site-footer-item">
-    <span id="busuanzi_container_site_pv"> PV: <span id="busuanzi_value_site_pv"> </span> </span>
-  </div>
-  <div class="site-footer-item">
-    <span id="busuanzi_container_site_uv"> UV: <span id="busuanzi_value_site_uv"/> </span> </span>
+
+  <div class="site-footer-right">
+    {{ range .Site.Params.socials }}
+    <div class="site-footer-item">
+      <a href="{{ .link }}" target="_blank">{{ .name }}</a>
+    </div>
+    {{ end }}
   </div>
 </div>
