@@ -193,7 +193,7 @@ Lirian 是我高中写的小说的主角之一，
 
 不喜欢政治，因为我觉得政治是不透明且不会公平地。
 
-不会主动参加社交活动， 
+不会主动参加社交活动，
 [平常空余时间基本在陪女朋友][my-gf]。
 
 我的梦想是世界和平，好人都能幸福，
@@ -218,7 +218,8 @@ Lirian 是我高中写的小说的主角之一，
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/37832e6e-1750-417a-96be-0c54efbe71f9.svg" /></figure>
 
-最近我用的编辑器(我好像只装了 PyCharm 的 wakatime 插件 Orz)：
+最近我用的编辑器：
+(最近在认真调教我的 Vim)
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/6d5b6087-b30c-4d0a-ae8c-d220f6726ce0.svg" /></figure>
 
