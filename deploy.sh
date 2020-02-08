@@ -11,6 +11,7 @@ if [[ -d public/.git ]]; then
   git -C public fetch --quiet
   git -C public reset --soft origin/master
 else
+  rm -rf .deploy
   git clone -n -b master --single-branch git@github.com:LKI/lki.github.io.git .deploy
   mv .deploy/.git public
 fi
