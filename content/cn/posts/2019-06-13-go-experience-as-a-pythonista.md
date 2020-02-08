@@ -40,15 +40,15 @@ Go 的特别之处是它的关键字非常少，
 ```go
 // 直接 for 就可以写死循环
 for {
-    fmt.Println("while true...")     
+    fmt.Println("while true...")
 }
 
 // range 这个关键词用起来很舒服
 data := map[string]string{
     "key": "value",
 }
-for key, value := range data {       
-    fmt.Println("while true...")     
+for key, value := range data {
+    fmt.Println("while true...")
 }
 ```
 

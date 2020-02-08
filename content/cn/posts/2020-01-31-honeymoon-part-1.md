@@ -2,7 +2,7 @@
 title: "旅行之一·可能回不去了"
 date: 2020-01-31T06:38:22+01:00
 aliases:
-  - honeymoon-part-1
+  - /honeymoon-part-1
 ---
 
 蜜月旅行第一站，
