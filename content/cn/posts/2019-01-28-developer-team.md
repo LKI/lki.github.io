@@ -558,7 +558,7 @@ Mia 去年升职为 Manager 以后，
 [day-dream]: /is-it-possible-to-be-rich-easily-by-programming
 [verse]: https://baike.baidu.com/item/%E5%86%99%E7%BB%99%E6%9C%AA%E6%9D%A5%E7%9A%84%E4%BD%A0/20830750
 [lead]: https://zhuanlan.zhihu.com/p/20232566
-[dilemma]: http://daily.zhihu.com/story/9362305
+[dilemma]: https://daily.zhihu.com/story/9362305
 [adult-life]: /adult-life
 [tonegawa]: https://www.bilibili.com/bangumi/media/md102632/
 [culture]: /engineer-culture

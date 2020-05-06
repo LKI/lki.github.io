@@ -131,9 +131,9 @@ Travis 对开源项目免费，
 就算是[像靖哥哥一样只改改文档][doc-only-pr]，
 [混个 contributor 也行][contributor]啊~
 
-[jkzing]: http://www.jingkaizhao.com/
+[jkzing]: https://www.jingkaizhao.com/
 [lowdb]: https://github.com/typicode/lowdb
-[tinydb]: http://tinydb.readthedocs.io/en/latest/intro.html
+[tinydb]: https://tinydb.readthedocs.io/en/latest/intro.html
 [forgive-meme]: /forgive-her-meme
 [forgivedb]: https://github.com/hui-z/ForgiveDB
 [readme]: /assets/pics/github/forgive.jpg

@@ -22,7 +22,7 @@ comments:
 <!--more-->
 
 * 晚上11点断网，早上6点才恢复网络，所以这个“个人博客”会断网
-* 学校把对外的80端口给封了，而域名访问默认就是80，所以校外访问博客要变成 `http://cloudisdream:8080`这种奇怪的模式
+* 学校把对外的80端口给封了，而域名访问默认就是80，所以校外访问博客要变成 `https://cloudisdream:8080`这种奇怪的模式
 * 由于是自己的电脑做服务器，还得保证一直开着，这样始终不太好
 
 ## JAVA / Servlet / Structs + Spring + Hibernate
@@ -87,10 +87,10 @@ comments:
 
 [wiki-LAMP]:     https://en.wikipedia.org/wiki/LAMP_(software_bundle)
 [thats-moon]:    /assets/thatsMoonPage.jpg
-[edward-mj.com]: http://edward-mj.com/
+[edward-mj.com]: https://edward-mj.com/
 [github-pages]:  https://pages.github.com/
-[jekyll]:        http://jekyllrb.com/
-[duoshuo]:       http://duoshuo.com/
+[jekyll]:        https://jekyllrb.com/
+[duoshuo]:       https://duoshuo.com/
 [disqus]:        https://disqus.com/
 [disqus-jekyll]: https://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions
 [github-render]: https://github.com/LKI/blogs/issues/3

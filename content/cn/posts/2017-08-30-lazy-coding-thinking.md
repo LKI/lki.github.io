@@ -195,7 +195,7 @@ soft/hard lock等。
 [wakatime]: https://wakatime.com/dashboard
 [old-waka]: /assets/pics/wakatime_dashboard.jpg
 [new-waka]: /assets/pics/wakatime.png
-[QAD]: http://www.qad.com/about
+[QAD]: https://www.qad.com/about
 [xkcd-git]: https://xkcd.com/1597/
 [pl]: https://www.tiobe.com/tiobe-index/
 [jokes]: https://coolshell.cn/articles/1903.html

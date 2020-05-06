@@ -252,5 +252,5 @@ Git优秀的原因在于它：
 
 （完）
 
-[message]: http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
+[message]: https://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html
 

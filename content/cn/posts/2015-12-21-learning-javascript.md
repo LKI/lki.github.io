@@ -51,4 +51,4 @@ aliases:
 [iprs]:             https://github.com/Water-Drop/iprs
 [teampicker]:       /teampicker
 [lorem_ipsum]:      https://en.wikipedia.org/wiki/Lorem_ipsum
-[free_code_camp]:   http://www.freecodecamp.com/
+[free_code_camp]:   https://www.freecodecamp.com/

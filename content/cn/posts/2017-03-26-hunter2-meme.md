@@ -77,10 +77,10 @@ aliases:
 
 [weakest-password]: https://blog.keepersecurity.com/2017/01/13/most-common-passwords-of-2016-research-study/
 [password-rank-on-leak]: https://36kr.com/p/5038663.html
-[hunter2]: http://bash.org/?244321
+[hunter2]: https://bash.org/?244321
 [hunter2-img]: /assets/hunter2.jpg
 [hunter2-god-img]: /assets/hunter2-god.jpg
 [xkcd-936]: https://xkcd.com/936/
 [xkcd-936-img]: https://imgs.xkcd.com/comics/password_strength.png
 [reddit-password]: https://www.reddit.com/r/xkcd/comments/2f5xps/my_university_has_good_password_instructions/
-[reddit-password-img]: http://i.imgur.com/ElRxuGK.png
+[reddit-password-img]: https://i.imgur.com/ElRxuGK.png

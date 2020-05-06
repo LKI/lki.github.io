@@ -81,5 +81,5 @@ aliases:
 就好像 [Valve员工手册][valve] 里独特的 Valve 文化一样。
 
 
-[valve]: http://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf
+[valve]: https://www.valvesoftware.com/company/Valve_Handbook_LowRes.pdf
 

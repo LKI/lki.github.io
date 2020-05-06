@@ -192,15 +192,15 @@ nginx    STARTING    pid 1020, uptime 0:00:00
 [jenkins-demo]: /assets/pics/zaihui_jenkins.jpg
 [fabric]: https://github.com/fabric/fabric
 [ansible]: https://github.com/ansible/ansible
-[ant]: http://ant.apache.org/
+[ant]: https://ant.apache.org/
 [gradle]: https://gradle.org/
 [npm]: https://www.npmjs.com/
 [ssh]: https://en.wikipedia.org/wiki/Secure_Shell
-[which-python]: http://docs.python-guide.org/en/latest/starting/which-python/
+[which-python]: https://docs.python-guide.org/en/latest/starting/which-python/
 [fabric3]: https://github.com/mathiasertl/fabric/
-[invoke]: http://www.pyinvoke.org/
+[invoke]: https://www.pyinvoke.org/
 [invoker]: https://dota2.gamepedia.com/Invoker
-[supervisor]: http://supervisord.org/
+[supervisor]: https://supervisord.org/
 [self]: /python-deployment-automation-one-sample
 [about-me]: /about/
 

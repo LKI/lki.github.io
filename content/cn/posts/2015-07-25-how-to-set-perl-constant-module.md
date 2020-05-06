@@ -172,7 +172,7 @@ aliases:
 此时便可以使用[一个酷炫的Git Commit Message][5]来提交工作啦！
 
 [1]:https://coolshell.cn/articles/4758.html
-[2]:http://perldoc.perl.org/Exporter.html
+[2]:https://perldoc.perl.org/Exporter.html
 [3]:https://coolshell.cn/articles/2058.html
-[4]:http://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable
-[5]:http://whatthecommit.com/
+[4]:https://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable
+[5]:https://whatthecommit.com/

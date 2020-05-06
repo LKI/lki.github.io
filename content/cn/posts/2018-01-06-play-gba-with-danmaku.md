@@ -130,7 +130,7 @@ fork了这个项目，
 ```
 import danmu
 
-client = danmu.DanMuClient('http://www.douyu.com/lisp')
+client = danmu.DanMuClient('https://www.douyu.com/lisp')
 
 @client.danmu
 def receive(message):
@@ -205,7 +205,7 @@ import danmu
 import keyboard
 import constants
 
-client = danmu.DanMuClient('http://www.douyu.com/lisp')
+client = danmu.DanMuClient('https://www.douyu.com/lisp')
 
 @client.danmu
 def receive(message):

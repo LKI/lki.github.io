@@ -196,7 +196,7 @@ RedShift 的最大的好处在于用钱换取生产力，
 
 ## 课外阅读
 
-* [AWS - RedShift 官方教程 - http://docs.aws.amazon.com/zh_cn/redshift/latest/dg/tutorial-tuning-tables.html][aws-redshift]
+* [AWS - RedShift 官方教程 - https://docs.aws.amazon.com/zh_cn/redshift/latest/dg/tutorial-tuning-tables.html][aws-redshift]
 
 * [酷壳 - 由12306.CN谈谈网站性能技术 - https://coolshell.cn/articles/6470.html][coolshell-12306]
 
@@ -204,13 +204,13 @@ RedShift 的最大的好处在于用钱换取生产力，
 
 * [全面了解mysql中utf8和utf8mb4的区别 - https://my.oschina.net/xsh1208/blog/1052781][utf8mb4]
 
-* [西乔 - 历史悲剧 - http://blog.xiqiao.info/2013/01/14/1366][utf8-enough]
+* [西乔 - 历史悲剧 - https://blog.xiqiao.info/2013/01/14/1366][utf8-enough]
 
 
 [cash-cow]: /what-is-cash-cow
-[aws-redshift]: http://docs.aws.amazon.com/zh_cn/redshift/latest/dg/tutorial-tuning-tables.html
+[aws-redshift]: https://docs.aws.amazon.com/zh_cn/redshift/latest/dg/tutorial-tuning-tables.html
 [coolshell-12306]: https://coolshell.cn/articles/6470.html
 [wiki-dw]: https://en.wikipedia.org/wiki/Data_warehouse
 [utf8mb4]: https://my.oschina.net/xsh1208/blog/1052781
-[utf8-enough]: http://blog.xiqiao.info/2013/01/14/1366
+[utf8-enough]: https://blog.xiqiao.info/2013/01/14/1366
 

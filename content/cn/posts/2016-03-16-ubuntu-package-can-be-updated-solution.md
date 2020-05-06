@@ -81,5 +81,5 @@ Ubuntu系统里，MOTD的脚本默认放在`/etc/update-motd.d`下，
 
 2. 系统一开始显示的Message叫[MOTD][motd]，默认放在`/etc/update-motd.d`下。
 
-[dist-upgrade]: http://ubuntuforums.org/showthread.php?t=1222909
+[dist-upgrade]: https://ubuntuforums.org/showthread.php?t=1222909
 [motd]: https://en.wikipedia.org/wiki/Motd_(Unix)

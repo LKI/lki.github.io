@@ -130,12 +130,12 @@ choco install -y 7zip everything git jdk8 nodejs npm python2 putty vagrant virtu
 [everything]: https://www.voidtools.com/
 [git-scm]: https://git-scm.com/downloads
 [jetbrains]: https://www.jetbrains.com/
-[mingw]: http://www.mingw.org/
+[mingw]: https://www.mingw.org/
 [myconf]: https://github.com/LKI/myconf
 [no-baidu]: https://coolshell.cn/articles/9308.html
-[putty]: http://www.putty.org/
+[putty]: https://www.putty.org/
 [vagrant]: https://www.vagrantup.com/
 [virtualbox]: https://www.virtualbox.org/wiki/VirtualBox
 [we-are-the-same]: https://www.zhihu.com/question/24270600
 [wox-sample]: /assets/windows_wox.jpg
-[wox]: http://www.getwox.com/
+[wox]: https://www.getwox.com/

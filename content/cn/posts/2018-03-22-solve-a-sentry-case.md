@@ -261,7 +261,7 @@ ea064a694da5        zaihui-push     ...
 
 [mia503]: https://github.com/MIA503
 [stats]: /assets/pics/cases/sentry_stats.jpg
-[lxkaka]: http://lxkaka.wang/
+[lxkaka]: https://lxkaka.wang/
 [hulucc]: https://github.com/hulucc
 [tags]: /assets/pics/cases/sentry_tags.jpg
 [raven]: https://pypi.python.org/pypi/raven

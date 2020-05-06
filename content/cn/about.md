@@ -228,8 +228,8 @@ Lirian 是我高中写的小说的主角之一，
 [build-blog]: /how-this-blog-was-built
 [commentit]: /use-commentit
 [git]: /philosophy-of-git
-[jekyll.com]: http://jekyllrb.com/
-[kezaihui]: http://www.kezaihui.com/
+[jekyll.com]: https://jekyllrb.com/
+[kezaihui]: https://www.kezaihui.com/
 [ldsink]: /my-friend-ldsink
 [lki.github.io]: https://github.com/LKI/lki.github.io
 [logic]: /programmers-logic
@@ -241,12 +241,12 @@ Lirian 是我高中写的小说的主角之一，
 [python-zen]: https://www.python.org/dev/peps/pep-0020/
 [work]: /my-work
 [read-blog]: /read-blogs-to-write-blogs
-[sudoku]: http://cojs.tk/cogs/problem/problem.php?pid=407
+[sudoku]: https://cojs.tk/cogs/problem/problem.php?pid=407
 [vim]: /use-vundle-for-dotvim
 [why-blog]: /why-im-blogging
 [wiki-QAD]: https://en.wikipedia.org/wiki/QAD_Inc
 [win-env]: /windows-dev-env
-[xkcd-246]: http://imgs.xkcd.com/comics/labyrinth_puzzle.png
+[xkcd-246]: https://imgs.xkcd.com/comics/labyrinth_puzzle.png
 [zhoucheng]: https://www.zhihu.com/people/ldsink/activities
 [myconf]: https://github.com/LKI/LKI
 [chinese-calendar]: https://github.com/LKI/chinese-calendar

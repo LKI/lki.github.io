@@ -235,7 +235,7 @@ aliases:
 （完）
 
 
-[hungary-post]: http://jakabandor.blog.hu/2011/07/27/tolem_ezert_nem_kapsz_munkat
-[english-post]: http://andorjakab.blog.hu/2012/01/06/this_is_why_i_don_t_give_you_a_job
+[hungary-post]: https://jakabandor.blog.hu/2011/07/27/tolem_ezert_nem_kapsz_munkat
+[english-post]: https://andorjakab.blog.hu/2012/01/06/this_is_why_i_don_t_give_you_a_job
 [protected-age]: https://en.wikipedia.org/wiki/Protected_class
 [hungary-tax]:  /assets/hungary_tax.jpg

@@ -31,14 +31,14 @@ app.listen(8080)
 IOLoop.current().start()
 ```
 
-但是访问`http://localhost:8080/浮云计算`却只能得到`æµ®äº�è®¡ç®�`这样一坨东西...
+但是访问`https://localhost:8080/浮云计算`却只能得到`æµ®äº�è®¡ç®�`这样一坨东西...
 
 ## 解决方案
 
 长话短说，这是因为`URL中文解码不正确`的原因导致的。
 所以我们利用[站长工具url编码][urlencode]手动替换中文访问即可：
 
-访问`http://localhost:8080/%e6%b5%ae%e4%ba%91%e8%ae%a1%e7%ae%97`就可以得到`浮云计算`啦。
+访问`https://localhost:8080/%e6%b5%ae%e4%ba%91%e8%ae%a1%e7%ae%97`就可以得到`浮云计算`啦。
 
 ## 详细原因
 
@@ -56,7 +56,7 @@ self.write(path.encode('utf8'))
 最终我找到了[一个前人的经验][outofmemory]，里面是这么讲的：
 
 > 看来你是不知道在浏览器地址栏手动输入中文和在页面上一个的链接的编码处理方式是不同的。。。。
-> 打个比方，在windows系统上，你在FF地址栏输入"http://localhost/中文.html?m=汉语"，这里的“中文”两字的编码是utf8（这一点应该是跟浏览器设置相关），而“汉语”则是gbk，跟操作系统相关（大部分中国人的windows应该都是cp936，也就是gbk）。
+> 打个比方，在windows系统上，你在FF地址栏输入"https://localhost/中文.html?m=汉语"，这里的“中文”两字的编码是utf8（这一点应该是跟浏览器设置相关），而“汉语”则是gbk，跟操作系统相关（大部分中国人的windows应该都是cp936，也就是gbk）。
 > 如果你是通过某个页面访问这个链接的，则所有字符的编码都是跟页面的编码相关。
 > 在IE上也是一样。
 > 所以，我觉得还是打消在浏览器地址栏输入中文这个想法吧，要不然你要解码两次，而且还要保证页面上的编码跟系统一样，不然无法保证手动输入和页面点击的兼容性。。。。
@@ -70,5 +70,5 @@ self.write(path.encode('utf8'))
 
 （或者Python3 XD）
 
-[urlencode]: http://tool.chinaz.com/tools/urlencode.aspx
-[outofmemory]: http://ju.outofmemory.cn/entry/62161
+[urlencode]: https://tool.chinaz.com/tools/urlencode.aspx
+[outofmemory]: https://ju.outofmemory.cn/entry/62161

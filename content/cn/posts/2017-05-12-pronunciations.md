@@ -64,8 +64,8 @@ Tmux 的读法可以当做辩题…
 也能选择自己觉得最科学的发音来与人讨论问题 :)
 
 [chinese]: https://github.com/shimohq/chinese-programmer-wrong-pronunciation
-[binghe]: http://tianchunbinghe.blog.163.com
-[binghe-cl]: http://music.163.com/#/song?id=28707021
+[binghe]: https://tianchunbinghe.blog.163.com
+[binghe-cl]: https://music.163.com/#/song?id=28707021
 [tmux-dispute]: https://www.reddit.com/r/linux/comments/yz4r6/screen_vs_tmux/c6034gp/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=linux
 [xkcd686]: https://imgs.xkcd.com/comics/admin_mourning.png
 

@@ -180,7 +180,7 @@ x = modu.sqrt(4)  # sqrt is visibly part of modu's namespace
 [xkcd-standards]: https://imgs.xkcd.com/comics/standards.png
 [thinking]: /lazy-coding-thinking
 [zaihui]: /my-work
-[virtualenv]: http://docs.python-guide.org/en/latest/dev/virtualenvs/
+[virtualenv]: https://docs.python-guide.org/en/latest/dev/virtualenvs/
 [gofmt]: https://blog.golang.org/go-fmt-your-code
 [six]: https://pythonhosted.org/six/
 [zen]: https://www.python.org/dev/peps/pep-0020/

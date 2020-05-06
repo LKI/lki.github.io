@@ -42,7 +42,7 @@ aliases:
 这是一个样例的HTTP GET请求：
 
 ``` http
-GET http://example.com:8000/resource/1?b=1&a=2
+GET https://example.com:8000/resource/1?b=1&a=2
 ```
 
 要通过Hawk验证，
@@ -78,7 +78,7 @@ some-app-ext-data
 请求就会变成这样子：
 
 ``` http
-GET http://example.com:8000/resource/1?b=1&a=2
+GET https://example.com:8000/resource/1?b=1&a=2
 Authorization: Hawk id="dh37fgj492je", ts="1353832234", nonce="j4h3g2", ext="some-app-ext-data", mac="6R4rV5iE+NPoym+WwjeHzjAGXUtLNIxmo1vpMofpLAE="
 ```
 

@@ -140,7 +140,7 @@ _//此处都是主观感受，缺少引用，因为找不到怎么生成微信�
 
 ## [王垠][yin]，[《完全用Linux工作》][work-with-linux]的作者
 
-王垠（下称垠神），博客是 [当然我在扯淡 (http://www.yinwang.org/)][yin]
+王垠（下称垠神），博客是 [当然我在扯淡 (https://www.yinwang.org/)][yin]
 早年间一篇[《完全用Linux工作》][work-with-linux]收获了很多迷弟，
 后来的好几篇文章，比如[《微软的秘密离职协议》][microsoft-separation]也收获了很多黑子。
 在我心目中，垠神是知乎三大话题性程序员之一
@@ -259,24 +259,24 @@ ice1000 能在高中的时候，
 [se]: https://coolshell.cn/articles/17497.html
 [caoz]: https://www.zhihu.com/people/cao-zheng/activities
 [tothegump]: https://www.zhihu.com/people/jia-jia-15-81
-[xiqiao]: http://blog.xiqiao.info/
-[huoju]: http://blog.devep.net/virushuo/
-[wechat-mactalk]: http://weixin.sogou.com/weixin?type=1&query=mactalkpro
-[wechat-tinyfool]: http://weixin.sogou.com/weixin?type=1&query=tiny4voice
-[wechat-angelatalk]: http://weixin.sogou.com/weixin?type=1&query=angelatalk
-[wechat-keso]: http://weixin.sogou.com/weixin?type=1&query=kesoview
-[wechat-caoz]: http://weixin.sogou.com/weixin?type=1&query=caozsay
+[xiqiao]: https://blog.xiqiao.info/
+[huoju]: https://blog.devep.net/virushuo/
+[wechat-mactalk]: https://weixin.sogou.com/weixin?type=1&query=mactalkpro
+[wechat-tinyfool]: https://weixin.sogou.com/weixin?type=1&query=tiny4voice
+[wechat-angelatalk]: https://weixin.sogou.com/weixin?type=1&query=angelatalk
+[wechat-keso]: https://weixin.sogou.com/weixin?type=1&query=kesoview
+[wechat-caoz]: https://weixin.sogou.com/weixin?type=1&query=caozsay
 [caoz-4399]: https://www.zhihu.com/question/19596615/answer/14322195
 [fenng]: https://www.zhihu.com/people/fenng/activities
-[yin]: http://www.yinwang.org/
+[yin]: https://www.yinwang.org/
 [work-with-linux]: https://www.douban.com/group/topic/12121637/
-[microsoft-separation]: http://www.yinwang.org/blog-cn/2017/05/10/microsoft-separation
+[microsoft-separation]: https://www.yinwang.org/blog-cn/2017/05/10/microsoft-separation
 [bo]: https://zhuanlan.zhihu.com/p/25031872
 [yin-pr]: https://www.zhihu.com/question/20102511
 [linux-eh]: https://www.douban.com/group/topic/44818003/
 [yin-ms]: https://www.zhihu.com/question/50128385
-[yin-strike]: http://www.yinwang.org/blog-cn/2017/04/11/strike
-[kotlin-ce]: http://www.yinwang.org/blog-cn/2017/05/23/kotlin
+[yin-strike]: https://www.yinwang.org/blog-cn/2017/04/11/strike
+[kotlin-ce]: https://www.yinwang.org/blog-cn/2017/05/23/kotlin
 [ice1000]: https://www.zhihu.com/people/ice1000/activities
 [github-ice1000]: https://github.com/ice1000
 [highschool-ice1000]: https://www.zhihu.com/question/64427785
@@ -284,14 +284,14 @@ ice1000 能在高中的时候，
 [real-ice1000]: https://www.zhihu.com/question/57850781
 [i-like-coding]: /my-programmer-habits
 [ocarina]: https://weibo.com/echohall?profile_ftype=1&is_all=1
-[uc-nothing]: http://www.u17.com/comic/16179.html
-[green-blue-life]: http://ac.qq.com/Comic/comicInfo/id/536332
+[uc-nothing]: https://www.u17.com/comic/16179.html
+[green-blue-life]: https://ac.qq.com/Comic/comicInfo/id/536332
 [sunzha]: https://weibo.com/u/6365729214
 [a4typhoon]: https://weibo.com/A4TYPHOON
 [franken-fran]: https://en.wikipedia.org/wiki/Franken_Fran
 [xkcd]: https://xkcd.com/
 [ocarina-strong]: https://zh.moegirl.org/zh-hans/Ocarina
-[gb-talent]: http://ac.qq.com/ComicView/index/id/536332/cid/95
+[gb-talent]: https://ac.qq.com/ComicView/index/id/536332/cid/95
 [cest-tama-la-vie]: /assets/cest_tama_la_vie.jpg
 [cest-tama-la-vie-translate]: /assets/cest_tama_la_vie_translate.jpg
 

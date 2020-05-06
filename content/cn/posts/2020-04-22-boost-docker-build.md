@@ -60,11 +60,11 @@ WORKDIR /app
 
 # 默认使用上海时区 + 阿里源
 RUN echo "Asia/Shanghai" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata && \
-    echo "deb http://mirrors.aliyun.com/debian/ buster main non-free contrib" > /etc/apt/sources.list
+    echo "deb https://mirrors.aliyun.com/debian/ buster main non-free contrib" > /etc/apt/sources.list
 
 # 预装必须的包，sentry-cli 是预先存入内网的
 RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install git && \
-    wget http://internal-nginx-service.domain.com/sentry.sh /usr/bin/sentry-cli && \
+    wget https://internal-nginx-service.domain.com/sentry.sh /usr/bin/sentry-cli && \
     pip install pipenv
 
 # 装依赖，顺便祝 pipenv 早日发布新版本

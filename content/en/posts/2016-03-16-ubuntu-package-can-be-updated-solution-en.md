@@ -69,5 +69,5 @@ We can also customize our MOTD.
 
 2. We have [MOTD][motd] for displaying message when log in, which is put under `/etc/update-motd.d`.
 
-[dist-upgrade]: http://ubuntuforums.org/showthread.php?t=1222909
+[dist-upgrade]: https://ubuntuforums.org/showthread.php?t=1222909
 [motd]: https://en.wikipedia.org/wiki/Motd_(Unix)

@@ -197,5 +197,5 @@ aliases:
 >
 > 于 2015年06月12日晚10点
 
-[ooCast]: http://weibo.com/n/ooCast
-[ffbank]: http://www.fairfaxcryobank.com/index.shtml
+[ooCast]: https://weibo.com/n/ooCast
+[ffbank]: https://www.fairfaxcryobank.com/index.shtml

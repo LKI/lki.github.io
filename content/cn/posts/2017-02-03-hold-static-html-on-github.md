@@ -45,7 +45,7 @@ $ git remote add origin https://github.com/<username>/<repository>
 $ git push -u origin gh-pages     # 推到GitHub服务器上
 ```
 
-然后我们就可以在`http://<username>.github.io/<repository>`上看到刚提交上去的index.html了。
+然后我们就可以在`https://<username>.github.io/<repository>`上看到刚提交上去的index.html了。
 最后假如你希望在GitHub上搭建个人博客，
 可以参照[我的搭建方案][build-a-blog]
 

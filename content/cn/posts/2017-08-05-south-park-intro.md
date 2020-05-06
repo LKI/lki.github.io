@@ -131,6 +131,6 @@ SP就在其中的某一集里面塞了两百多个 F-word…
 [trans]: /assets/pics/sp/cartman_trans.jpg
 [elon]: /assets/pics/sp/elon.jpg
 [t-p]: /assets/pics/sp/t_and_p.jpg
-[rm]: http://www.adultswim.com/videos/rick-and-morty/
+[rm]: https://www.adultswim.com/videos/rick-and-morty/
 [htf]: https://mondomedia.com/channel/HappyTreeFriends
-[speech]: http://wiki.southpark.cc.com/wiki/Kyle_Broflovski
+[speech]: https://wiki.southpark.cc.com/wiki/Kyle_Broflovski

@@ -60,14 +60,14 @@ XKCD的自我描述是
 >Pick whatever schedule works for you. And be realistic. I think starting with one post a month, like Catto, is a fine goal. Try to slowly ramp it up a bit over time as you get into the groove, and you're on your way.
 
 [howToWriteBadCode]:    https://coolshell.cn/articles/4758.html
-[pixelMoon]:            http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html
-[emacsGeniusInOneYear]: http://blog.csdn.net/redguardtoo/article/details/7222501
-[showDontTell]:         http://blog.codinghorror.com/show-dont-tell/
+[pixelMoon]:            https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html
+[emacsGeniusInOneYear]: https://blog.csdn.net/redguardtoo/article/details/7222501
+[showDontTell]:         https://blog.codinghorror.com/show-dont-tell/
 [nakedVimTip]:          https://coolshell.cn/articles/11312.html
 [haoel]:                https://coolshell.cn/haoel
-[Jeff Atwood]:          http://blog.codinghorror.com/about-me/
-[standards]:            http://imgs.xkcd.com/comics/standards.png
-[times-report]:         http://time.com/money/3896219/internet-users-worldwide/
+[Jeff Atwood]:          https://blog.codinghorror.com/about-me/
+[standards]:            https://imgs.xkcd.com/comics/standards.png
+[times-report]:         https://time.com/money/3896219/internet-users-worldwide/
 [vagrant-up-zh]:        /vagrant-up-but-mount-no-device-zh
 [vagrant-up-en]:        /vagrant-up-but-mount-no-device-en
-[blog-frequency]:       http://discourse.codinghorror.com/t/how-to-achieve-ultimate-blog-success-in-one-easy-step/445/27
+[blog-frequency]:       https://discourse.codinghorror.com/t/how-to-achieve-ultimate-blog-success-in-one-easy-step/445/27

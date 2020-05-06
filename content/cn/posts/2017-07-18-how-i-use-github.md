@@ -161,7 +161,7 @@ GitHub 就是这么一个本来是放程序，
 [user-page]: /assets/pics/github/mine_panel.jpg
 [hacker-scripts]: https://github.com/NARKOZ/hacker-scripts
 [fouber-blog]: https://github.com/fouber/blog/issues/1
-[suning]: http://shell909090.org/blog/archives/2792/
+[suning]: https://shell909090.org/blog/archives/2792/
 [reddit-programming-humor]: https://www.reddit.com/r/ProgrammerHumor/
 [xkcd]: https://xkcd.com
 [xkcd221]: https://imgs.xkcd.com/comics/random_number.png

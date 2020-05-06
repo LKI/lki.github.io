@@ -110,10 +110,10 @@ Putty会默认启用“Application Keypad Mode”，这个选项被启用以后
 
 
 [app-keypad-mode]: /assets/putty_application_keypad_mode.jpg
-[putty-appkeypad]: http://the.earth.li/~sgtatham/putty/0.60/htmldoc/Chapter4.html#config-appkeypad
-[putty]: http://www.putty.org/
+[putty-appkeypad]: https://the.earth.li/~sgtatham/putty/0.60/htmldoc/Chapter4.html#config-appkeypad
+[putty]: https://www.putty.org/
 [vagrant]: https://www.vagrantup.com/
-[vim-wiki-comment]: http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings#Comments
-[vim-wiki-keypad]: http://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings
-[xkcd-1172]: http://imgs.xkcd.com/comics/workflow.png
-[xkcd-979]: http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png
+[vim-wiki-comment]: https://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings#Comments
+[vim-wiki-keypad]: https://vim.wikia.com/wiki/PuTTY_numeric_keypad_mappings
+[xkcd-1172]: https://imgs.xkcd.com/comics/workflow.png
+[xkcd-979]: https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png

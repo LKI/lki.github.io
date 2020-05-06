@@ -206,7 +206,7 @@ hugo server -D
 [xkcd-303]: https://imgs.xkcd.com/comics/compiling.png
 [github-custom-domain]: https://help.github.com/en/github/working-with-github-pages/about-custom-domains-and-github-pages
 [github-pages]: /assets/blog-hugo/github-pages.png
-[busuanzi]: http://busuanzi.ibruce.info/
+[busuanzi]: https://busuanzi.ibruce.info/
 [blog-header]: /assets/blog-hugo/header.png
 [blackfriday-hlb]: https://gohugo.io/getting-started/configuration/#blackfriday-extensions
 [star-history]: /assets/blog-hugo/star_history.png

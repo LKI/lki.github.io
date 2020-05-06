@@ -87,4 +87,4 @@ Windows上很多Python库都依赖于C++ 9.0，
 [get-pip]:   https://bootstrap.pypa.io/get-pip.py
 [pypa]:      https://pip.pypa.io/en/stable/installing/
 [vc-python]: https://www.microsoft.com/en-us/download/details.aspx?id=44266
-[so]:        http://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows
+[so]:        https://stackoverflow.com/questions/4750806/how-do-i-install-pip-on-windows

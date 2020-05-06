@@ -72,8 +72,8 @@ Docker项目的目标是实现轻量级的虚拟化方案，它和Virtual Machin
 
 [why-vagrant]:             https://docs.vagrantup.com/v2/why-vagrant/index.html
 [hashicorp-box]:           https://atlas.hashicorp.com/boxes/search
-[virtual-machine]:         http://dockerpool.com/static/books/docker_practice/_images/virtualization.png
-[docker-engine]:           http://dockerpool.com/static/books/docker_practice/_images/docker.png
-[docker-the-book]:         http://dockerpool.com/static/books/docker_practice/index.html
+[virtual-machine]:         https://dockerpool.com/static/books/docker_practice/_images/virtualization.png
+[docker-engine]:           https://dockerpool.com/static/books/docker_practice/_images/docker.png
+[docker-the-book]:         https://dockerpool.com/static/books/docker_practice/index.html
 [docker-by-shell909090]:   https://github.com/shell909090/slides/blob/master/md/docker.md
-[so-vagrant-or-docker]:    http://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment
+[so-vagrant-or-docker]:    https://stackoverflow.com/questions/16647069/should-i-use-vagrant-or-docker-io-for-creating-an-isolated-environment

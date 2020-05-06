@@ -60,8 +60,8 @@ GitHub Pages是一个让用户很方便托管项目网页在GitHub的服务。
 [build-blog]: /how-this-blog-was-built
 [lki-github]: https://github.com/LKI/lki.github.io
 [git-submodule]: https://github.com/LKI/lki.github.io/commit/86d73353e4b8f93ea7e759fb0d2f47b5d9ad8904
-[remove-submodule]: http://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
-[zhangwenli]: http://zhangwenli.com/
+[remove-submodule]: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+[zhangwenli]: https://zhangwenli.com/
 [issue3]: https://github.com/Ovilia/cv/issues/3
 [git-mymenu]: https://github.com/LKI/mymenu
 [mymenu]: /mymenu
