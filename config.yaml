@@ -21,7 +21,9 @@ params:
     - name: about
       link: /about
     - name: github
-      link: https://github.com/LKI/LKI
+      link: https://github.com/LKI
+    - name: zhihu
+      link: https://www.zhihu.com/people/liriansu
     - name: rss
       link: /index.xml
 theme: yinyang

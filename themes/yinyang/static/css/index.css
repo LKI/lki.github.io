@@ -34,8 +34,8 @@ a:hover {
 /* fonts */
 
 @font-face {
-	font-family: xkcd-script;
-	src: url('fonts/xkcd-script.woff') format('woff');
+        font-family: xkcd-script;
+        src: url('fonts/xkcd-script.woff') format('woff');
 }
 
 /* header */
@@ -69,6 +69,15 @@ a:hover {
 
 .lang-switch {
   font-weight: 600;
+}
+
+.site-header-right {
+  display: flex;
+  margin-left: auto;
+}
+
+.site-header-item {
+  margin-right: 12px;
 }
 
 /* posts */
