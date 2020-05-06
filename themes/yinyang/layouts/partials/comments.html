@@ -1,0 +1,85 @@
+<!-- compatible comments -->
+{{ if .Params.comments }}
+<div class="compatible-comments">
+  <style scoped>
+article {
+  align-items: flex-start;
+  display: flex;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 14px;
+  margin: 16px 0;
+  padding: 0 4px;
+}
+
+.avatar {
+  background-color: transparent;
+  display: block;
+  margin-right: 16px;
+}
+
+img {
+  border-radius: 3px;
+  border-style: none;
+}
+
+.comment {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+}
+
+.comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #586069;
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 10px 16px;
+}
+
+strong {
+  color: #586069;
+}
+
+.comment-body {
+  padding: 0px 16px;
+  font-size: 14px;
+}
+  </style>
+  {{ range .Params.comments }}
+  <article>
+    <a class="avatar" href="{{ .author.url }}" target="_blank">
+      <img height="44" width="44" src="{{ .author.picture }}">
+    </a>
+    <div class="comment">
+      <header class="comment-header">
+        <a class="text-link" href="{{ .author.url }}" target="_blank"><strong>{{ .author.displayName }}</strong></a> (compatible) commented at {{ .date }}
+      </header>
+      <p class="comment-body">{{ .content | safeHTML }}</p>
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
+
+<!-- utterance comments -->
+<div class="post-comments">
+  <script src="https://utteranc.es/client.js"
+          repo="LKI/lki.github.io"
+          issue-term="title"
+          label="comment"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+</div>

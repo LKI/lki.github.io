@@ -26,23 +26,14 @@
         <div class="post-content markdown-body">
           {{ .Content }}
         </div>
+
         {{ if in site.Params.mainSections .Type }}
-
-        {{ partial "related.html" . }}
-
-        <!-- split -->
-        <div style="height: 20px;"></div>
+          {{ partial "related.html" . }}
+          <!-- split -->
+          <div style="height: 20px;"></div>
         {{ end }}
-        <div class="post-comments">
-          <script src="https://utteranc.es/client.js"
-                  repo="LKI/lki.github.io"
-                  issue-term="title"
-                  label="comment"
-                  theme="github-light"
-                  crossorigin="anonymous"
-                  async>
-          </script>
-        </div>
+
+        {{ partial "comments.html" . }}
 
         {{ partial "footer.html" . }}
       </div>
