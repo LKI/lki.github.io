@@ -5,6 +5,12 @@ body {
   margin: 0 20px;
 }
 
+article {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
 a {
   color: #000;
   text-decoration: none;
