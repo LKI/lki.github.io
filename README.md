@@ -14,4 +14,5 @@
   - 白俄罗斯的英文叫 Belarus, 当然也可以叫 White Russia. 所以这个译名即时意译，也是音译。[link](https://en.wikipedia.org/wiki/Belarus)
   - 上海日月光商场的英文简称是 ASE Mall, 全称是高级半导体工程商场 (Advanced Semiconductor Engineering Inc. Mall). 这个名字的由来是星云法师起的名字，因为“电和光代表快”。[link](https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%88%E5%85%89%E5%8D%8A%E5%B0%8E%E9%AB%94)
   - Bill 这个名字其实是 William 的简称，比如 Bill Gates 全名是 William Henry Gates III. [link](https://en.wikipedia.org/wiki/Bill_Gates)
-
+- **技术**
+  - YAML 的官方推荐后缀是 `.yaml`, 而不是 `.yml`. [link](https://yaml.org/faq.html)
