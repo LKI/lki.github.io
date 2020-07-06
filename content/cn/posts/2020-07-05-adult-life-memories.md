@@ -2,7 +2,7 @@
 title: "毕业五年的报告之回忆"
 date: 2020-07-05T21:46:03+08:00
 aliases:
-  - adult-life-memories
+  - /adult-life-memories
 ---
 
 这周末去安吉吃了烧烤。
