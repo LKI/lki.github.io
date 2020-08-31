@@ -5,6 +5,8 @@ blackfriday:
   extensions:
     - hardLineBreak
 defaultContentLanguage: cn
+markup:
+  defaultMarkdownHandler: blackfriday
 languageCode: en-us
 languages:
   cn:
