@@ -25,7 +25,7 @@ aliases:
 
 
 ## （一）终身学习
-在 QAD 时，我的并不了解很多 Web 知识，
+在 QAD 时，我并不了解很多 Web 知识，
 比如像 RESTful 这样的概念我就不甚了解。
 当时系统要接入 Jira RESTful API,
 这个事情分给了队友 Raymond 做，
