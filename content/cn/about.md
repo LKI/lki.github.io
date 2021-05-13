@@ -238,11 +238,12 @@ I use Python.
 ## 附录
 
 最近我花在写代码上的时间：
+(没错，这个哥最近写代码的时间变少了)
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/37832e6e-1750-417a-96be-0c54efbe71f9.svg" /></figure>
 
 最近我用的编辑器：
-(最近在认真调教我的 Vim)
+(我查数据的 GUI 也是 PyCharm)
 
 <figure><embed src="https://wakatime.com/share/@65efbae2-afbf-4a69-8ee5-194f43ef9289/6d5b6087-b30c-4d0a-ae8c-d220f6726ce0.svg" /></figure>
 
