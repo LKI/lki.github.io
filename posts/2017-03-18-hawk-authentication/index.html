@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -133,11 +133,11 @@
 <p><a href="https://github.com/hueniverse/hawk1">Hawk</a>协议规定的加密方式如下：</p>
 
 <p>这是一个样例的HTTP GET请求：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">GET https://example.com:8000/resource/1?b=1&amp;a=2</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">GET https://example.com:8000/resource/1?b=1&amp;a=2</span></code></pre></div>
 <p>要通过Hawk验证，<br />
 我们会把请求的特征用换行符拼接成如下格式，<br />
 最后再用<code>HMAC sha256</code>进行加密：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">hawk.1.header
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">hawk.1.header
 </span><span style="color:#960050;background-color:#1e0010">1353832234
 </span><span style="color:#960050;background-color:#1e0010">j4h3g2
 </span><span style="color:#960050;background-color:#1e0010">GET
@@ -160,7 +160,7 @@
 
 <p>最后我们把基本信息加入Http Header里，<br />
 请求就会变成这样子：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">GET https://example.com:8000/resource/1?b=1&amp;a=2
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-http" data-lang="http"><span style="color:#960050;background-color:#1e0010">GET https://example.com:8000/resource/1?b=1&amp;a=2
 </span><span style="color:#960050;background-color:#1e0010">Authorization: Hawk id=&#34;dh37fgj492je&#34;, ts=&#34;1353832234&#34;, nonce=&#34;j4h3g2&#34;, ext=&#34;some-app-ext-data&#34;, mac=&#34;6R4rV5iE+NPoym+WwjeHzjAGXUtLNIxmo1vpMofpLAE=&#34;</span></code></pre></div>
 <p>服务器端拿到<code>HttpHeader.Authorization</code>以后进行加密比对即可。</p>
 

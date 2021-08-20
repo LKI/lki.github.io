@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -128,7 +128,7 @@
 总的来说我觉得这几个语法很好玩。</p>
 
 <h2 id="循环">循环</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// 直接 for 就可以写死循环
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// 直接 for 就可以写死循环
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> {
     <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;while true...&#34;</span>)
 }
@@ -141,7 +141,7 @@
     <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;while true...&#34;</span>)
 }</code></pre></div>
 <h2 id="枚举">枚举</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// iota 居然被做成了关键字
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// iota 居然被做成了关键字
 </span><span style="color:#75715e">// 这里后面的俩 iota 是可以省略的
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> {
     <span style="color:#a6e22e">Unknown</span> = <span style="color:#66d9ef">iota</span>  <span style="color:#75715e">// 0
@@ -157,7 +157,7 @@
 </span><span style="color:#75715e"></span>    <span style="color:#a6e22e">Female</span>  = <span style="color:#66d9ef">iota</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">10</span>  <span style="color:#75715e">// 20
 </span><span style="color:#75715e"></span>}</code></pre></div>
 <h2 id="多表达式判断">多表达式判断</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// if 语句会取最后的表达式值，所以这么判断是很常见的
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// if 语句会取最后的表达式值，所以这么判断是很常见的
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#a6e22e">f</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">Open</span>(<span style="color:#a6e22e">path</span>); <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
     <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Response</span>(<span style="color:#ae81ff">400</span>, <span style="color:#a6e22e">err</span>.<span style="color:#a6e22e">Error</span>())
 }
@@ -167,7 +167,7 @@
     <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">Response</span>(<span style="color:#ae81ff">400</span>, <span style="color:#e6db74">&#34;invalid json body&#34;</span>)
 }</code></pre></div>
 <h2 id="goroutine">goroutine</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// go 的天生并发也是非常优雅的地方
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#75715e">// go 的天生并发也是非常优雅的地方
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">sendTemplate</span>() {
     <span style="color:#75715e">// 这里是耗时很久的网络请求
 </span><span style="color:#75715e"></span>}

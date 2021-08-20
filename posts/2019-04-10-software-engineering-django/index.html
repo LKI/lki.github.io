@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -183,7 +183,7 @@
 
 <p>使用现成框架的好处是语言表达力极强，<br />
 最终我们实现一个“解密微信提供的手机号”接口的<del>伪</del>业务代码大概如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WeChatVS</span>(BaseVS):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WeChatVS</span>(BaseVS):
 
     <span style="color:#a6e22e">@with_response</span>(empty<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
     <span style="color:#a6e22e">@with_request</span>(DecryptionSiri)
@@ -288,7 +288,7 @@ python 是能完美表达开发者心中所想的。</p>
 <p>为了达到了这么高的覆盖率，<br />
 我们也专门强化过单元测试的表达力，<br />
 比如一段测试创建用户接口的<del>伪</del>代码可能如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_create_account</span>(self):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">test_create_account</span>(self):
     <span style="color:#e6db74">&#34;&#34;&#34; 测试创建用户 &#34;&#34;&#34;</span>
     <span style="color:#66d9ef">with</span> self<span style="color:#f92672">.</span>assert_model_increase(Account, delta<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>):
         response <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>client<span style="color:#f92672">.</span>post(self<span style="color:#f92672">.</span>account_url(), {<span style="color:#e6db74">&#39;username&#39;</span>: <span style="color:#e6db74">&#39;hulucc&#39;</span>})

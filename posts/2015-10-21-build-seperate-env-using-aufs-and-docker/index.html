@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -128,7 +128,7 @@
 </blockquote>
 
 <p>假设我们有一个目录如下：</p>
-<pre><code>$ tree
+<pre tabindex="0"><code>$ tree
 .
 └── public
     ├── database
@@ -139,7 +139,7 @@
         └── sudoku.lisp</code></pre>
 <p>我们希望以public目录为基础，给每个人创建一个private环境<br />
 于是我们跑几条命令：</p>
-<pre><code>$ mkdir change private
+<pre tabindex="0"><code>$ mkdir change private
 $ mount -t aufs -o dirs=./change:./public none ./private
 $ tree
 .
@@ -162,7 +162,7 @@ $ tree
 把change命令以读写权限，public目录以只读权限mount到了private里面</p>
 
 <p>假设我们在private命令中新增，修改了一个文件：</p>
-<pre><code>$ cd private/
+<pre tabindex="0"><code>$ cd private/
 $ touch newfile
 $ echo &#34;Changes&#34; &gt; src/sudoku.lisp
 $ cd ..
@@ -196,7 +196,7 @@ $ tree
 
 <p>有了上例中的mount，那和Docker就很好叠加了<br />
 利用<a href="https://docs.docker.com/userguide/dockervolumes/">Docker的Volume</a>：</p>
-<pre><code>docker run -ti -v /tmp/docker/private:/work ubuntu /bin/bash</code></pre>
+<pre tabindex="0"><code>docker run -ti -v /tmp/docker/private:/work ubuntu /bin/bash</code></pre>
 <p>这样就可以把private目录作为volume映射到docker container里面的/work目录了。<br />
 剩下的就是<a href="https://docs.docker.com/userguide/dockerimages/">Get good use of docker images</a>了~</p>
         </div>

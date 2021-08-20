@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -145,7 +145,7 @@
 <a href="https://github.com/fabric/fabric">Fabric</a>里基于<a href="https://en.wikipedia.org/wiki/Secure_Shell">ssh</a>，<br />
 实现了一套方便的远程命令接口，<br />
 比如这么一段代码就可以把配置上传到远程服务器：</p>
-<pre><code>from fabric.api import *  # NOQA
+<pre tabindex="0"><code>from fabric.api import *  # NOQA
 
 # 不用试了，这里的两个都是假的domain，对应放上ssh的host/user即可
 env.hosts = [&#39;www.kezaihui.com&#39;, &#39;zaihuiwebserver-814613977.cn-north-1.elb.amazonaws.com.cn&#39;]
@@ -173,7 +173,7 @@ run(&#39;supervisorctl update&#39;, use_sudo=True)</code></pre></li>
 我们使用了 <a href="https://supervisord.org/">supervisor</a> 来监控进程状态。</p>
 
 <p>一个简单的 nginx supervisor 的配置会长这样子：</p>
-<pre><code>[program:nginx]
+<pre tabindex="0"><code>[program:nginx]
 command=/usr/sbin/nginx
 autostart=true
 autorestart=true
@@ -181,7 +181,7 @@ stdout_logfile=/var/log/supervisor/nginx.log
 stderr_logfile=/var/log/supervisor/nginx_error.log</code></pre>
 <p>把配置文件放到 <code>/etc/supervisor/conf.d/nginx.conf</code> 以后，<br />
 就可以使用一系列命令把服务起起来：</p>
-<pre><code>$ supervisorctl update  # supervisorctl 是 supervisor 的命令行工具，更新一波配置
+<pre tabindex="0"><code>$ supervisorctl update  # supervisorctl 是 supervisor 的命令行工具，更新一波配置
 nginx    STARTING    pid 1000, uptime 0:00:00
 
 $ supervisorctl status  # 查看进程状态

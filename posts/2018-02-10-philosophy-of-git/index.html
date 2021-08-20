@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -208,7 +208,7 @@ Commit是大部分Git操作的最小单位。<br />
 他在wechat这个分支上commit了很多次，<br />
 快下班了，小成想回顾一下今天的改动。<br />
 假设他的log长这样子：</p>
-<pre><code>&gt; git log --oneline --graph
+<pre tabindex="0"><code>&gt; git log --oneline --graph
 * f01c8d1 (HEAD -&gt; wechat) refactor: improve project layout
 * 2f9c867 feat: add rest api to create card
 * 5d5242b feat: custom wechat card background
@@ -219,7 +219,7 @@ Commit是大部分Git操作的最小单位。<br />
 * 2727226 migration: add Settings.enable_level
 ...</code></pre>
 <p>那么以下命令是完全等价的：</p>
-<pre><code># 查看从master到wechat的diff
+<pre tabindex="0"><code># 查看从master到wechat的diff
 &gt; git diff master..wechat
 
 # 查看从master到当前的diff（HEAD代表当前位置，也就是wechat分支）
@@ -248,7 +248,7 @@ Commit是大部分Git操作的最小单位。<br />
 <code>git init</code>命令可以初始化一个Repository。</p>
 
 <p>一个Git Repository结构可能是这样的：</p>
-<pre><code>- .git/
+<pre tabindex="0"><code>- .git/
   - hooks/
   - objects/
   - refs/
@@ -271,7 +271,7 @@ Commit是大部分Git操作的最小单位。<br />
 Git支持本地Remote。</p>
 
 <p>比如样例的命令如下：</p>
-<pre><code># 假设在服务器上的 /home/lirian/chinese-calendar 路径下有一个 Repository
+<pre tabindex="0"><code># 假设在服务器上的 /home/lirian/chinese-calendar 路径下有一个 Repository
 &gt; cd /home/lirian
 
 # 把它 clone 到某一个地方

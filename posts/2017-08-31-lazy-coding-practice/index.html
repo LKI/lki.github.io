@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -168,7 +168,7 @@
 处理<code>URL</code>实际上是字符串拼接。<br />
 比如<code>Python</code>里面把一个<code>dict</code>转换成<code>query string</code>格式，<br />
 我以前会这么写：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3">params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;afu&#39;</span>, <span style="color:#e6db74">&#39;action&#39;</span>: <span style="color:#e6db74">&#39;take a plane&#39;</span>}
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3">params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;afu&#39;</span>, <span style="color:#e6db74">&#39;action&#39;</span>: <span style="color:#e6db74">&#39;take a plane&#39;</span>}
 query_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&amp;&#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">=</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">.</span>format(k, v) <span style="color:#66d9ef">for</span> k, v <span style="color:#f92672">in</span> params<span style="color:#f92672">.</span>items()])  <span style="color:#75715e"># &#39;name=afu&amp;action=take a plane&#39;</span></code></pre></div>
 <p>当时自我感觉良好，<br />
 觉得<code>Python</code>不愧是<code>Python</code>啊，<br />
@@ -176,7 +176,7 @@ query_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#
 然而这段代码不仅有Bug，<br />
 其实<code>Python</code>有专门的库<code>urllib</code>来处理这类问题，<br />
 <code>urllib</code>也已经考虑了各种边界情况（比如带非法字符等）：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#75715e"># 举Python3为例</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python3" data-lang="python3"><span style="color:#75715e"># 举Python3为例</span>
 <span style="color:#f92672">import</span> urllib
 
 params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;afu&#39;</span>, <span style="color:#e6db74">&#39;action&#39;</span>: <span style="color:#e6db74">&#39;take a plane&#39;</span>}
@@ -184,7 +184,7 @@ query_string <span style="color:#f92672">=</span> urllib<span style="color:#f926
 <p>后来又学到了<code>urlencode</code>函数在<code>Python2</code>和<code>Python3</code>的位置都不一样，<br />
 一般是用<a href="https://pythonhosted.org/six/"><code>six</code></a>这个库去处理兼容性的。<br />
 下面这段代码就不需要额外说明_举Python3为例_了：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> six
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> six
 
 params <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;name&#39;</span>: <span style="color:#e6db74">&#39;afu&#39;</span>, <span style="color:#e6db74">&#39;action&#39;</span>: <span style="color:#e6db74">&#39;take a plane&#39;</span>}
 query_string <span style="color:#f92672">=</span> six<span style="color:#f92672">.</span>moves<span style="color:#f92672">.</span>urllib<span style="color:#f92672">.</span>parse<span style="color:#f92672">.</span>urlencode(params)  <span style="color:#75715e"># &#39;name=afu&amp;action=take+a+plane&#39;</span></code></pre></div>
@@ -205,7 +205,7 @@ query_string <span style="color:#f92672">=</span> six<span style="color:#f92672"
 <p>后来读到<a href="docs.python-guide.org/en/latest/"><code>Kenneth Reitz</code>的<code>Hitchhiker's Guide to Python</code></a>的时候我才明白，<br />
 <code>Explicit is better than implicit</code>的体现就是显式指定包名，<br />
 这样代码表现力就会更强，也更易读。</p>
-<pre><code>## Very bad
+<pre tabindex="0"><code>## Very bad
 
 [...]
 from modu import *

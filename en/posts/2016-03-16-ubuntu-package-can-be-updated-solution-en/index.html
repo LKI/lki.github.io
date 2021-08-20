@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -105,19 +105,19 @@
 <h2 id="x-package-can-be-updated">x package can be updated</h2>
 
 <p>Recently I get this message when log into the system.</p>
-<pre><code>    x packages can be updated.
+<pre tabindex="0"><code>    x packages can be updated.
     y updates are security updates.</code></pre>
 <p>Ummm, the &ldquo;You have X app to update&rdquo; hint.<br />
 It should be done with this command I think:</p>
-<pre><code>    apt-get update
+<pre tabindex="0"><code>    apt-get update
     apt-get upgrade</code></pre>
 <p>But seems this update&amp;&amp;upgrade command does nothing:</p>
-<pre><code>    x packages can be updated.
+<pre tabindex="0"><code>    x packages can be updated.
     y updates are security updates.</code></pre>
 <p><a href="https://ubuntuforums.org/showthread.php?t=1222909">After I google</a>,<br />
 I get to know that <code>update</code> + <code>upgrade</code> can&rsquo;t do the whole upgrade.<br />
 We need one more command:</p>
-<pre><code>    apt-get dist-upgrade</code></pre>
+<pre tabindex="0"><code>    apt-get dist-upgrade</code></pre>
 <p>So we can get rid of this little annoying hint.</p>
 
 <h2 id="motd">MOTD</h2>

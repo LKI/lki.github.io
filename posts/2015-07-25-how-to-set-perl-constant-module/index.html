@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -117,13 +117,13 @@
 <p>当然了，根据<a href="https://coolshell.cn/articles/4758.html">如何写出无法维护的代码</a>的指导我们不应当定义常量，Number越Magic越好。</p>
 
 <p>一般来说，Perl中的常量如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">use</span> constant CONST_PI <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">3.1416</span>;</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">use</span> constant CONST_PI <span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">3.1416</span>;</code></pre></div>
 <p>在模块化的编码过程中，随着常量的增多，我们会需要把这些常量放到一个常量模块(Perl Module)里面：</p>
 
 <p>这样的做法也符合DRY(Don&rsquo;t Repeat Yourself)的原则。#DRYBestPractice?</p>
 
 <p>比如说在哼哧哼哧地写了一阵子以后，我们有下面这个常量模块。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">package</span> Lirian::Constants;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">package</span> Lirian::Constants;
     <span style="color:#66d9ef">use</span> strict;
     <span style="color:#66d9ef">use</span> warnings;
 
@@ -172,7 +172,7 @@
 <p>在上一节中，通过对Exporter的继承，我们有了一个Lirian::Constants模块。</p>
 
 <p>而一般地，我们会这么使用：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">package</span> Lirian::Math;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">package</span> Lirian::Math;
 
     <span style="color:#66d9ef">use</span> Lirian::Constants <span style="color:#e6db74">qw(:all)</span>;
     <span style="color:#66d9ef">use</span> strict;
@@ -190,11 +190,11 @@
 <p>在程序的开始时，我们需要检验用户的配置文件，确保每个条目用户都是有效的。</p>
 
 <p>比如说需求文件如下：</p>
-<pre><code class="language-config" data-lang="config">    dbName=github
+<pre tabindex="0"><code class="language-config" data-lang="config">    dbName=github
     dbHost=localhost
     gitUser=LKI</code></pre>
 <p>显然地，一种简单但稍微蠢了点的方法是这么做：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">validate_config_dumb</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">validate_config_dumb</span> {
         <span style="color:#66d9ef">my</span> ($conf) <span style="color:#f92672">=</span> @_;
 
         validate_parm($conf, PARM_DB_NAME);
@@ -213,14 +213,14 @@
 <h2 id="利用perl的export机制">利用Perl的Export机制</h2>
 
 <p>在Exporter中，定义在%EXPORT_TAGS中的文件可以直接引用：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">my</span> $tags      <span style="color:#f92672">=</span> <span style="color:#f92672">\</span>$Lirian::Constants::EXPORT_TAGS;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">my</span> $tags      <span style="color:#f92672">=</span> <span style="color:#f92672">\</span>$Lirian::Constants::EXPORT_TAGS;
     <span style="color:#66d9ef">my</span> $math_tags <span style="color:#f92672">=</span> $tags<span style="color:#f92672">-&gt;</span>{math}; <span style="color:#75715e"># [&#39;CONST_PI&#39;, &#39;CONST_E&#39;];</span>
     <span style="color:#66d9ef">my</span> $parm_tags <span style="color:#f92672">=</span> $tags<span style="color:#f92672">-&gt;</span>{parm}; <span style="color:#75715e"># [&#39;PARM_DB_NAME&#39;, &#39;PARM_DB_HOST&#39;, &#39;PARM_GIT_USER&#39;];</span></code></pre></div>
 <p>这样就可以拿到常量的名字了，此时我们便需要<a href="https://stackoverflow.com/questions/2187682/how-do-i-access-a-constant-in-perl-whose-name-is-contained-in-a-variable">在Perl中根据变量名获取变量值</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">my</span> $name  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;CONST_PI&#39;</span>;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">my</span> $name  <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;CONST_PI&#39;</span>;
     <span style="color:#66d9ef">my</span> $value <span style="color:#f92672">=</span> Lirian::Constants<span style="color:#f92672">-&gt;</span>$name; <span style="color:#75715e"># 3.1416</span></code></pre></div>
 <p>所以在上一小节的问题中，我们可以得出一个更优雅的解决方案啦~</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">validate_config</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#66d9ef">sub</span> <span style="color:#a6e22e">validate_config</span> {
         <span style="color:#66d9ef">my</span> ($conf) <span style="color:#f92672">=</span> @_;
 
         <span style="color:#66d9ef">my</span> $tags      <span style="color:#f92672">=</span> <span style="color:#f92672">\</span>$Lirian::Constants::EXPORT_TAGS;

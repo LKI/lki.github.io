@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -171,7 +171,7 @@ Django也自带了一个<a href="https://pypi.python.org/pypi/six">six</a>在<co
 对于Unicode一类的问题，<br />
 我们使用了<code>__future__</code>这个功能，<br />
 确保每个文件的头都是：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># -*- coding: utf-8 -*-</span>
 <span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> absolute_import, unicode_literals
 
 <span style="color:#75715e"># 第一行指定 encoding</span>
@@ -245,7 +245,7 @@ Python3 Consumer能接，<br />
 
 <p>最后还有就是大家的开发环境也切换一下 Python3 啦，<br />
 以前写的 docstring 可以切换成 <a href="https://docs.python.org/3/library/typing.html">type hintings</a> 啦之类的微小的工作了。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Python 2 的时候这么写</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Python 2 的时候这么写</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">old_hint</span>(messages, data<span style="color:#f92672">=</span>()):
     <span style="color:#e6db74">&#34;&#34;&#34;
 </span><span style="color:#e6db74">    :type messages: list

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -150,10 +150,10 @@ Java 工程师和 C# 工程师则互相鄙视。<br />
 但是非常好用。</p>
 
 <p>以管理员身份打开 <code>cmd.exe</code> 后运行一行命令即可装成功：</p>
-<pre><code>@powershell -NoProfile -ExecutionPolicy Bypass -Command &#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34; &amp;&amp; SET &#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</code></pre>
+<pre tabindex="0"><code>@powershell -NoProfile -ExecutionPolicy Bypass -Command &#34;iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&#34; &amp;&amp; SET &#34;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin&#34;</code></pre>
 <p>装好以后一行命令就可以装上常用软件，<br />
 以及把 Path 环境变量配好：</p>
-<pre><code>choco install -y 7zip everything git jdk8 nodejs npm python2 putty vagrant virtualbox vim wox</code></pre>
+<pre tabindex="0"><code>choco install -y 7zip everything git jdk8 nodejs npm python2 putty vagrant virtualbox vim wox</code></pre>
 <p>唯一缺点是安装过程都是采用默认值静默安装的，<br />
 假如有些软件要取消掉右键菜单，<br />
 或者放在特定文件夹内则需要自己搞一下。</p>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -102,7 +102,7 @@
         <div class="post-content markdown-body">
           <p>Today I encounter a problem running <code>vagrant up</code>：</p>
 
-<pre><code>==&gt; cvc-tools: Machine booted and ready!
+<pre tabindex="0"><code>==&gt; cvc-tools: Machine booted and ready!
 ==&gt; cvc-tools: Checking for guest additions in VM...
 ==&gt; cvc-tools: Configuring and enabling network interfaces...
 ==&gt; cvc-tools: Mounting shared folders...
@@ -125,7 +125,7 @@ The error output from the last command was:
 
 <p>kernel without rebuilding the VirtualBox Guest Additions_ by lenciel. So<br />
 we run vboxadd accordingly:</p>
-<pre><code>    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
+<pre tabindex="0"><code>    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
     Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
     Building the VirtualBox Guest Additions kernel modules
     The headers for the current running kernel were not found. If the

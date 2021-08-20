@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -115,7 +115,7 @@
 Server端要返回一个7天有效的token，<br />
 那么对应的Python的样例代码会是这样的：<br />
 （<a href="https://github.com/jpadilla/pyjwt">使用了PyJWT包：<code>pip install pyjwt</code></a>）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> time
 
 <span style="color:#f92672">import</span> jwt
 
@@ -125,7 +125,7 @@ key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;hunter
 payload <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;exp&#39;</span>: exp, <span style="color:#e6db74">&#39;user&#39;</span>: user}  <span style="color:#75715e"># JSON 数据</span>
 token <span style="color:#f92672">=</span> jwt<span style="color:#f92672">.</span>encode(payload, key)
 
-<span style="color:#66d9ef">print</span>(token)
+print(token)
 <span style="color:#75715e"># token可能会长这样子</span>
 <span style="color:#75715e"># eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.EoKoMCjq_zGqUg5HDfqw4EN7EiG6gMjkUZle0uGJDGU</span></code></pre></div>
 <blockquote>

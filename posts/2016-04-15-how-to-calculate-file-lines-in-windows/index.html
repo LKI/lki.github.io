@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -105,7 +105,7 @@
 <h2 id="linux-统计代码行数">Linux 统计代码行数</h2>
 
 <p>在 Linux 下这是一件很简单的事情：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    find . -name <span style="color:#e6db74">&#34;*.py&#34;</span> | wc -l</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">    find . -name <span style="color:#e6db74">&#34;*.py&#34;</span> | wc -l</code></pre></div>
 <p>这行语句就可以很简单地统计出当前目录下所有py后缀文件的行数了。</p>
 
 <h2 id="windows-统计代码行数">Windows 统计代码行数</h2>
@@ -116,9 +116,9 @@
 （其实就是新版命令行）</p>
 
 <p>然后我们可以输入：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">    dir .\ -Recurse *.py | Get-Content | Measure-Object</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">    dir .\ -Recurse *.py | Get-Content | Measure-Object</code></pre></div>
 <p>我们就可以看到输出：</p>
-<pre><code>Count : 1253</code></pre>
+<pre tabindex="0"><code>Count : 1253</code></pre>
 <p>表示当前目录下py后缀文件一共有1253行。</p>
         </div>
 

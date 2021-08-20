@@ -76,19 +76,19 @@ It is necessary that you align yourself with people and attract people into your
 &lt;h2 id=&#34;x-package-can-be-updated&#34;&gt;x package can be updated&lt;/h2&gt;
 
 &lt;p&gt;Recently I get this message when log into the system.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    x packages can be updated.
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    x packages can be updated.
     y updates are security updates.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Ummm, the &amp;ldquo;You have X app to update&amp;rdquo; hint.&lt;br /&gt;
 It should be done with this command I think:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    apt-get update
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    apt-get update
     apt-get upgrade&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;But seems this update&amp;amp;&amp;amp;upgrade command does nothing:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    x packages can be updated.
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    x packages can be updated.
     y updates are security updates.&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href=&#34;https://ubuntuforums.org/showthread.php?t=1222909&#34;&gt;After I google&lt;/a&gt;,&lt;br /&gt;
 I get to know that &lt;code&gt;update&lt;/code&gt; + &lt;code&gt;upgrade&lt;/code&gt; can&amp;rsquo;t do the whole upgrade.&lt;br /&gt;
 We need one more command:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    apt-get dist-upgrade&lt;/code&gt;&lt;/pre&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    apt-get dist-upgrade&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;So we can get rid of this little annoying hint.&lt;/p&gt;
 
 &lt;h2 id=&#34;motd&#34;&gt;MOTD&lt;/h2&gt;
@@ -125,7 +125,7 @@ you can delete the file &lt;code&gt;/etc/update-motd.d/90-updates-available&lt;/
       <guid>https://liriansu.com/en/posts/2015-05-15-vagrant-up-but-mount-no-device-en/</guid>
       <description>&lt;p&gt;Today I encounter a problem running &lt;code&gt;vagrant up&lt;/code&gt;：&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;==&amp;gt; cvc-tools: Machine booted and ready!
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;==&amp;gt; cvc-tools: Machine booted and ready!
 ==&amp;gt; cvc-tools: Checking for guest additions in VM...
 ==&amp;gt; cvc-tools: Configuring and enabling network interfaces...
 ==&amp;gt; cvc-tools: Mounting shared folders...
@@ -148,7 +148,7 @@ The error output from the last command was:
 
 &lt;p&gt;kernel without rebuilding the VirtualBox Guest Additions_ by lenciel. So&lt;br /&gt;
 we run vboxadd accordingly:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;    [lirian@localhost ~]$ sudo /etc/init.d/vboxadd setup
     Removing existing VirtualBox non-DKMS kernel modules       [  OK  ]
     Building the VirtualBox Guest Additions kernel modules
     The headers for the current running kernel were not found. If the

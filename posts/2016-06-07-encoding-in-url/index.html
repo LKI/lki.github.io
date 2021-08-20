@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -110,14 +110,14 @@
 <p><strong>Tornado无法解析URL的中文</strong></p>
 
 <p>比如说样例小程序如下：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tornado.ioloop <span style="color:#f92672">import</span> IOLoop
-<span style="color:#f92672">import</span> tornado.web <span style="color:#f92672">as</span> tw
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> tornado.ioloop <span style="color:#f92672">import</span> IOLoop
+<span style="color:#f92672">import</span> tornado.web <span style="color:#66d9ef">as</span> tw
 
 <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SampleHandler</span>(tw<span style="color:#f92672">.</span>RequestHandler):
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get</span>(self, path):
         self<span style="color:#f92672">.</span>write(path)
 
-app <span style="color:#f92672">=</span> tw<span style="color:#f92672">.</span>Application([(<span style="color:#e6db74">ur</span><span style="color:#e6db74">&#39;/(.*)&#39;</span>, SampleHandler)])
+app <span style="color:#f92672">=</span> tw<span style="color:#f92672">.</span>Application([(ur<span style="color:#e6db74">&#39;/(.*)&#39;</span>, SampleHandler)])
 app<span style="color:#f92672">.</span>listen(<span style="color:#ae81ff">8080</span>)
 IOLoop<span style="color:#f92672">.</span>current()<span style="color:#f92672">.</span>start()</code></pre></div>
 <p>但是访问<code>https://localhost:8080/浮云计算</code>却只能得到<code>æµ®äº�è®¡ç®�</code>这样一坨东西&hellip;</p>
@@ -133,7 +133,7 @@ IOLoop<span style="color:#f92672">.</span>current()<span style="color:#f92672">.
 
 <p>一开始我怀疑是因为字符串没用utf8编码，<br />
 于是尝试了不同的转换方式：</p>
-<pre><code>self.write(str(path))
+<pre tabindex="0"><code>self.write(str(path))
 self.write(unicode(path))
 self.write(path.encode(&#39;utf8&#39;))</code></pre>
 <p>这些常识不是报错，就是根本没变化。</p>

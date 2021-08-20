@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -119,7 +119,7 @@ pulling in over 11,000,000 downloads every month.</p>
 </blockquote>
 
 <p>这个库的 API 用起来大概是这样的：</p>
-<pre><code>&gt;&gt;&gt; response = requests.get(&#39;https://api.github.com/user&#39;, auth=(&#39;user&#39;, &#39;pass&#39;))
+<pre tabindex="0"><code>&gt;&gt;&gt; response = requests.get(&#39;https://api.github.com/user&#39;, auth=(&#39;user&#39;, &#39;pass&#39;))
 &gt;&gt;&gt; response.status_code
 200
 &gt;&gt;&gt; response.headers[&#39;content-type&#39;]
@@ -155,7 +155,7 @@ The only thing I really care about is interface design.<br />
 <p>最早接触 <code>**kwargs</code> 这个东西的时候，<br />
 我非常喜欢用这个语法，<br />
 比如我常常会写这么一种函数：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Record</span>:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Record</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create</span>(<span style="color:#f92672">**</span>kwargs):
         now <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;now&#39;</span>, datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now())
         key <span style="color:#f92672">=</span> kwargs<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;key&#39;</span>)
@@ -172,15 +172,15 @@ The only thing I really care about is interface design.<br />
 这样就很难方便找出根源了。</p>
 
 <p>后来我大部分情况会这么写：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Record</span>:
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create</span>(now<span style="color:#f92672">=</span>None, key<span style="color:#f92672">=</span>None, value<span style="color:#f92672">=</span>None):
-        <span style="color:#66d9ef">if</span> now <span style="color:#f92672">is</span> None:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Record</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create</span>(now<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, key<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, value<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+        <span style="color:#66d9ef">if</span> now <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
             now <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()
         <span style="color:#f92672">...</span></code></pre></div>
 <p>这样的显式调用强制要求参数的正确性，<br />
 虽然实现起来要写的参数多了，<br />
 但是调用和阅读的时候更加明确。</p>
-<pre><code>&gt;&gt;&gt; import this
+<pre tabindex="0"><code>&gt;&gt;&gt; import this
 The Zen of Python, by Tim Peters
 
 Beautiful is better than ugly.
@@ -215,19 +215,19 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 
 <p>比如我们写后端的时候，<br />
 经常会遇到要转化框架错误类的情况：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">service_call</span>(<span style="color:#f92672">...</span>):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">service_call</span>(<span style="color:#f92672">...</span>):
     <span style="color:#66d9ef">try</span>:
         external_service<span style="color:#f92672">.</span>call()
     <span style="color:#66d9ef">except</span> ExternalServiceError <span style="color:#66d9ef">as</span> ex:
         log_error(ex)
         <span style="color:#66d9ef">raise</span> APIError(<span style="color:#e6db74">&#39;Error calling external service&#39;</span>)</code></pre></div>
 <p>对应的，我们会有个这样的装饰器来封装错误处理：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@contextlib.contextmanager</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@contextlib</span><span style="color:#f92672">.</span>contextmanager
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">catches</span>(<span style="color:#f92672">*</span>exceptions,
-            raise_to: <span style="color:#a6e22e">BaseException</span> <span style="color:#f92672">=</span> None,
-            raise_from: Callable[[<span style="color:#a6e22e">Exception</span>], <span style="color:#a6e22e">BaseException</span>] <span style="color:#f92672">=</span> None,
-            log<span style="color:#f92672">=</span>False,
-            ignore<span style="color:#f92672">=</span>False):
+            raise_to: <span style="color:#a6e22e">BaseException</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
+            raise_from: Callable[[<span style="color:#a6e22e">Exception</span>], <span style="color:#a6e22e">BaseException</span>] <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>,
+            log<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>,
+            ignore<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
     <span style="color:#66d9ef">try</span>:
         <span style="color:#66d9ef">yield</span>
     <span style="color:#66d9ef">except</span> exceptions <span style="color:#66d9ef">as</span> ex:
@@ -240,7 +240,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
                 <span style="color:#66d9ef">raise</span> raise_to  <span style="color:#75715e"># pylint: disable=raising-bad-type</span></code></pre></div>
 <p>有了封装的装饰器以后，<br />
 简单的错误转化就可以跟业务代码相分离：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@catches</span>(ExternalServiceError, raise_to<span style="color:#f92672">=</span>APIError(<span style="color:#e6db74">&#39;Error calling external service&#39;</span>), log<span style="color:#f92672">=</span>True)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@catches</span>(ExternalServiceError, raise_to<span style="color:#f92672">=</span>APIError(<span style="color:#e6db74">&#39;Error calling external service&#39;</span>), log<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">service_call</span>(<span style="color:#f92672">...</span>):
     external_service<span style="color:#f92672">.</span>call()</code></pre></div>
 <p>但是这样的装饰器实现会在 Code Review 阶段就会被像 <a href="https://github.com/hulucc">@hulucc</a> 这样的铁血队友锤回来，<br />
@@ -258,8 +258,8 @@ Namespaces are one honking great idea -- let&#39;s do more of those!</code></pre
 <p>一波讨论以后，<br />
 顺带顺手支持 <code>catches(Exception, raises=raise_api_error)</code> 的快捷写法，<br />
 装饰器的实现就改成了这样子。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@contextlib.contextmanager</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">catches</span>(<span style="color:#f92672">*</span>exceptions, raises: Union[<span style="color:#a6e22e">BaseException</span>, Callable[[<span style="color:#a6e22e">Exception</span>], <span style="color:#a6e22e">BaseException</span>]], log<span style="color:#f92672">=</span>False):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a6e22e">@contextlib</span><span style="color:#f92672">.</span>contextmanager
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">catches</span>(<span style="color:#f92672">*</span>exceptions, raises: Union[<span style="color:#a6e22e">BaseException</span>, Callable[[<span style="color:#a6e22e">Exception</span>], <span style="color:#a6e22e">BaseException</span>]], log<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>):
     exceptions <span style="color:#f92672">=</span> exceptions <span style="color:#f92672">or</span> (<span style="color:#a6e22e">Exception</span>,)
     <span style="color:#66d9ef">try</span>:
         <span style="color:#66d9ef">yield</span>

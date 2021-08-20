@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -107,7 +107,7 @@
 Dockerfile 是最基础的文件。</p>
 
 <p>一个包括了系统配置、依赖安装、业务代码的 Dockerfile 可能长这样子：</p>
-<pre><code>FROM python:3.8-buster
+<pre tabindex="0"><code>FROM python:3.8-buster
 WORKDIR /app
 
 COPY Pipfile Pipfile.lock ./
@@ -144,7 +144,7 @@ RUN curl -sL https://sentry.io/get-cli/ | bash</code></pre>
 </ul>
 
 <p>改写以后的 Dockerfile 可能长这样：</p>
-<pre><code>FROM python:3.8-buster
+<pre tabindex="0"><code>FROM python:3.8-buster
 WORKDIR /app
 
 # 默认使用上海时区 + 阿里源
@@ -180,7 +180,7 @@ CI/CD 一般都是分布式多台机器的，<br />
 
 <p>简单的办法是使用 <code>docker build --cache-from</code> 指定镜像，<br />
 我们会在 ci 脚本中这么写：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker pull LKI/code:latest <span style="color:#f92672">||</span> true
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker pull LKI/code:latest <span style="color:#f92672">||</span> true
 docker build . -t LKI/code:latest --cache-from LKI/code:latest
 docker push LKI/code:latest</code></pre></div>
 <p>但是这样手写的弊端是逻辑比较臃肿，<br />
@@ -194,7 +194,7 @@ docker push LKI/code:latest</code></pre></div>
 
 <p>使用 kaniko + docker 的构建，<br />
 我们可以把上面的 pull/build/push 三连改写为以下这样：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 这个命令包括了 cache/build/push</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 这个命令包括了 cache/build/push</span>
 docker run <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  -v <span style="color:#e6db74">&#34;</span>$CODE<span style="color:#e6db74">&#34;</span>/LKI/code:/workspace <span style="color:#ae81ff">\
 </span><span style="color:#ae81ff"></span>  gcr.io/kaniko-project/executor:latest <span style="color:#ae81ff">\
@@ -204,7 +204,7 @@ docker run <span style="color:#ae81ff">\
 <h2 id="and-kubernetes">and Kubernetes?</h2>
 
 <p>上面提到，kaniko 可以直接丢到 kubernetes 集群中构建：</p>
-<pre><code>apiVersion: v1
+<pre tabindex="0"><code>apiVersion: v1
 kind: Pod
 metadata:
   name: kaniko

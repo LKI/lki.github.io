@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -276,7 +276,7 @@ nginx 有时会比 uwsgi 终止的更早，<br />
 <p>网上的老哥们也遇到过类似的问题，<br />
 解决方法也简单地有点滑稽：<br />
 <a href="https://github.com/kubernetes/ingress-nginx/issues/322#issuecomment-298016539">加点 sleep</a></p>
-<pre><code>container:
+<pre tabindex="0"><code>container:
   name: nginx
   lifecycle:
     preStop:

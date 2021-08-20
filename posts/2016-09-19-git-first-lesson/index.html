@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Hugo 0.83.1" />
+  <meta name="generator" content="Hugo 0.87.0" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -160,7 +160,7 @@
 并且打开以后我们输入<code>git version</code><br />
 可以查看到git版本号信息，<br />
 这就说明我们安装成功了。</p>
-<pre><code>$ git version
+<pre tabindex="0"><code>$ git version
 git version 2.9.0.windows.1
 （具体版本可能会随时间变化，但这并不重要）</code></pre>
 <h2 id="新手上路">新手上路</h2>
@@ -191,12 +191,12 @@ git version 2.9.0.windows.1
 
 <p><strong>想了解一个目录的状态，就使用<code>git status</code>命令</strong>。<br />
 我们可以试着跑一下这个命令，但是Git会报这样的错误：</p>
-<pre><code>$ git status
+<pre tabindex="0"><code>$ git status
 fatal: Not a git repository (or any of the parent directories): .git</code></pre>
 <p>这个错误的字面意思是“错误：你并没有把当前目录（或者任何父目录纳入git版本控制）”。</p>
 
 <p>所以<strong>为了将一个文件夹纳入版本控制，我们要使用<code>git init</code>命令</strong>:</p>
-<pre><code>$ git init
+<pre tabindex="0"><code>$ git init
 Initialized empty Git repository in D:/git-first-lesson/XML/.git/</code></pre>
 <p>提示信息表示git已经初始化完成。<br />
 这个过程实际上是git在<strong>当前目录</strong>新建了一个<strong>.git</strong>文件夹：</p>
@@ -219,11 +219,11 @@ Initialized empty Git repository in D:/git-first-lesson/XML/.git/</code></pre>
 <p><img src="/assets/git_first_lesson/touch.jpg" alt="touch" /></p>
 
 <p>假如我们想无视wmv文件，bak文件和Data文件夹，我们修改.gitignore内容为：</p>
-<pre><code>*.wmv
+<pre tabindex="0"><code>*.wmv
 *.bak
 Data\</code></pre>
 <p>假如我们只想控制xml文件，我们可以修改为：</p>
-<pre><code>*
+<pre tabindex="0"><code>*
 !*/
 !.gitignore
 !*.xml</code></pre>
