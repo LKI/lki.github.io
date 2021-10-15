@@ -1,12 +1,12 @@
 author:
   name: Lirian Su
 baseURL: https://liriansu.com/
-blackfriday:
-  extensions:
-    - hardLineBreak
 defaultContentLanguage: cn
 markup:
-  defaultMarkdownHandler: blackfriday
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      hardWraps: true
 languageCode: en-us
 languages:
   cn:
