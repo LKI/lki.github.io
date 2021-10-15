@@ -19,7 +19,8 @@ fi
 if [[ "$(git -C public status)" =~ "nothing to commit" ]]; then
   echo "Already latest."
 else
-  git -C reset --soft origin/dev
+  git -C public fetch origin
+  git -C public reset --soft origin/dev
   git -C public add .
   git -C public commit -m "chore: auto build from hugo"
   git -C public push -u origin master -f
