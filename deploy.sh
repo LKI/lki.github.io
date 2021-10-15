@@ -12,15 +12,15 @@ if [[ -d public/.git ]]; then
   git -C public reset --soft origin/master
 else
   rm -rf .deploy
-  git clone -n -b master --single-branch git@github.com:LKI/lki.github.io.git .deploy
+  git clone -n -b master git@github.com:LKI/lki.github.io.git .deploy
   mv .deploy/.git public
 fi
-
-git -C public add .
 
 if [[ "$(git -C public status)" =~ "nothing to commit" ]]; then
   echo "Already latest."
 else
+  git -C reset --soft origin/dev
+  git -C public add .
   git -C public commit -m "chore: auto build from hugo"
-  git -C public push -u origin master
+  git -C public push -u origin master -f
 fi
