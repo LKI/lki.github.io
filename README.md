@@ -17,5 +17,6 @@
 - **技术**
   - YAML 的官方推荐后缀是 `.yaml`, 而不是 `.yml`. [link](https://yaml.org/faq.html)
   - 命令行获取证书内容：`openssl s_client -showcerts -servername liriansu.example.com -connect 1.2.3.4:443 </dev/null`
+  - K8S 资源限制中，`M` 指的是 1000进制，而 `Mi` 表示的是 1024进制，其中 `129M≈123Mi`. [link](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#meaning-of-memory)
 - **Windows**
   - 语言设置里，可以开启全局 utf-8，以避免各种奇怪的 gbk 错误（比如 `pip install`）。[link](https://jingyan.baidu.com/article/25648fc1471e6a9191fd002e.html)
