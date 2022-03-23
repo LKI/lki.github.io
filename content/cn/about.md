@@ -157,14 +157,21 @@ QAD 是一个跨国团队，
 不仅要让努力的同事获得事业上的奖赏，
 还会想尽办法让大家一起走在技术的最前线。
 
-这两年多以来，
+在担任 Team Leader 的几年来，
 我每周都跟团队的伙伴们有着固定的周会，
 大家一起分享技术、讨论职业成长。
 我真心开心的一点，
 是跟我一起工作的伙伴们离职率都比较低，
 这也勉励着我继续向着更好的方向去努力。
 
-即使承担了技术负责人的角色，
+2022 年 2 月开始，
+我加入了[北极数据][arcticdata]。
+主要负责上海研发的我，
+也兼顾了产品的职责。
+在北极的故事，
+待我日后慢慢道来。
+
+从一线开发成长为技术负责人以后，
 我也一直把自己当一个主程序员在用。
 
 工程上，我会推动项目去遵循社区的最佳实践，
@@ -275,3 +282,4 @@ I use Python.
 [myconf]: https://github.com/LKI/LKI
 [chinese-calendar]: https://github.com/LKI/chinese-calendar
 [zhihu-zaihui]: https://www.zhihu.com/question/19596230/answer/152193862
+[arcticdata]: https://datarc.cn/
