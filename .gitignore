@@ -7,7 +7,6 @@
 Thumbs.db
 db.json
 
-.deploy*/
 .idea/
 _site/
 node_modules/
