@@ -238,7 +238,7 @@ I use Python.
 ## 关于本博客
 
 [搭建博客很简单][build-blog]，[做个决定却不容易][why-blog]
-由[Jekyll][jekyll.com]生成, 挂在[GitHub][lki.github.io]上,
+由[Hugo][gohugo.io]生成, 挂在[GitHub][lki.github.io]上,
 评论系统是用的[commentit][commentit]，PV和UV是用的busuanzi
 
 
