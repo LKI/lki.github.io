@@ -225,6 +225,8 @@ I use Python.
 
 不会主动参加社交活动，
 [平常空余时间基本在陪女朋友][my-gf]。
+当然了，现在女朋友已经是我夫人了，
+她在持续更新一档名为[不可逃课 BookTalk][booktalk]的博客节目。
 
 我的梦想是世界和平，好人都能幸福，
 以及要成为一个很厉害的人。
@@ -285,3 +287,4 @@ I use Python.
 [arcticdata]: https://datarc.cn/
 [ways-in-zaihui]: /ways-in-zaihui
 [gohugo.io]: https://gohugo.io/
+[booktalk]: https://www.xiaoyuzhoufm.com/podcast/6354b5052a992d56e91e6520
