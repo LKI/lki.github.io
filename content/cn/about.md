@@ -157,7 +157,7 @@ QAD 是一个跨国团队，
 不仅要让努力的同事获得事业上的奖赏，
 还会想尽办法让大家一起走在技术的最前线。
 
-在担任 Team Leader 的几年来，
+[在担任 Team Leader 的几年来][ways-in-zaihui]，
 我每周都跟团队的伙伴们有着固定的周会，
 大家一起分享技术、讨论职业成长。
 我真心开心的一点，
@@ -283,3 +283,5 @@ I use Python.
 [chinese-calendar]: https://github.com/LKI/chinese-calendar
 [zhihu-zaihui]: https://www.zhihu.com/question/19596230/answer/152193862
 [arcticdata]: https://datarc.cn/
+[ways-in-zaihui]: /ways-in-zaihui
+[gohugo.io]: https://gohugo.io/
