@@ -168,8 +168,19 @@ QAD 是一个跨国团队，
 我加入了[北极数据][arcticdata]。
 主要负责上海研发的我，
 也兼顾了产品的职责。
-在北极的故事，
-待我日后慢慢道来。
+在北极的一年多，
+[我在更深的水里体验到了数据、AI、技术行业创业的感受][datarc-experience]。
+
+创业是一个被说烂了的词语，
+本质其实就是人与商业。
+对于人来说，思考、拼搏、信任都是关键的要素；
+对于商业而言，现金流、模式、创新则至关重要。
+
+2023 年 9 月，
+我受再惠创始人赵洋的撩拨，
+又开启了在 OpusClip 的旅途。
+这段旅途是我最近几年来最享受的过程，
+有机会再好好给大家讲讲。
 
 从一线开发成长为技术负责人以后，
 我也一直把自己当一个主程序员在用。
@@ -178,8 +189,7 @@ QAD 是一个跨国团队，
 因为这样才能最好地利用各种工具来~~偷懒~~增加生产力。
 语言上，我主要写 Python,
 对 Go/JavaScript/Perl/Java/Lisp 有点了解（排名分先后）。
-Life is short,
-I use Python.
+Life is short, I use Python.
 
 我还主要在知乎、GitHub 上保持活跃。
 我在知乎主要当个看客，
@@ -288,3 +298,4 @@ I use Python.
 [ways-in-zaihui]: /ways-in-zaihui
 [gohugo.io]: https://gohugo.io/
 [booktalk]: https://www.xiaoyuzhoufm.com/podcast/6354b5052a992d56e91e6520
+[datarc-experience]: /first-year-with-datarc
